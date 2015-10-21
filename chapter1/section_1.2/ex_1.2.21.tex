@@ -1,0 +1,87 @@
+% === Exercise 1.2.21 ===
+\begin{Exercise}
+\begin{proof}
+It suffices to prove $Z$ is compatible with the definition from $(VS\ 1)$ to $(VS\ 8)$. We denoted the zero vector in  $V$ is $0_V$ and $W$ is $0_W$. Notice that we have known $V$, $W$ are compatible with the definitions since they are vector spaces by hypothesis.
+
+Suppose $x := (x_1,x_2)$ and $y := (y_1,y_2)$ and $z := (z_1,z_2)$ and the zero vector in $Z$ is $0_Z := (0_V,0_W)$. Here we go by verifying patiently.
+\begin{itemize}
+\item $\mathbf{(VS\ 1)}$
+For all $x,y \in Z$, we have
+$$
+x+y
+= (x_1+y_1,x_2+y_2)
+= (y_1+x_1,y_2+x_2)
+= y+x.
+$$
+
+\item $\mathbf{(VS\ 2)}$
+For all $x,y,z\in Z$, we have
+$$
+(x+y)+z
+= ( (x_1+y_1)+z_1, (x_2+y_2)+z_2 )
+= ( x_1+(y_1+z_1), x_2+(y_2+z_2) )
+= x+(y+z).
+$$
+
+\item $\mathbf{(VS\ 3)}$
+For all $x\in Z$, we have
+$$
+x+0_Z
+= (x_1 + 0_V, x_2+0_W)
+= (x_1,x_2)
+= x.
+$$
+
+\item $\mathbf{(VS\ 4)}$
+For all $x\in Z$, we pick $y' = (-x_1, -x_2)$ since $-x_1\in V$ and $-x_2\in W$. So $y'\in Z$. Then we have
+$$
+x+y'
+= (x_1-x_1, x_2-x_2)
+= 0.
+$$
+
+\item $\mathbf{(VS\ 5)}$
+For all $x\in Z$, we have
+$$
+1x
+= (1 x_1,1 x_2)
+= (x_1, x_2)
+= x.
+$$
+
+\item $\mathbf{(VS\ 6)}$
+For all $a,b\in F$ and $x\in Z$, we have
+\begin{align*}
+(ab)x
+&= ( (ab) x_1, (ab) x_2) \\
+&= (a (b x_1), a (b x_2)) \\
+&= a (b x_1, b x_2) \\
+&= a (b (x_1, x_2) ) \\
+&= a(bx).
+\end{align*}
+
+\item $\mathbf{(VS\ 7)}$
+For all $a\in F$ and $x,y\in Z$, we have
+\begin{align*}
+a(x+y)
+&= (a(x_1+y_1), a(x_2+y_2)) \\
+&= (a x_1 + a y_1, a x_2 + a y_2) \\
+&= (a x_1, a x_2) + (a y_1, a y_2) \\
+&= a(x_1, x_2) + a(y_1,y_2) \\
+&= a x+a y.
+\end{align*}
+
+\item $\mathbf{(VS\ 8)}$
+For all $a,b\in F$ and $x\in Z$, we have
+\begin{align*}
+(a+b)x
+&= ( (a+b) x_1, (a+b) x_2 ) \\
+&= ( a x_1 + b x_1, a x_2 + b x_2 ) \\
+&= (a x_1, a x_2) + (b x_1 + b x_2) \\
+&= a(x_1, x_2) + b(x_1, x_2) \\
+&= a x + b x.
+\end{align*}
+\end{itemize}
+We conclude $Z$ is a vector space over $F$ as promised.
+\end{proof}
+\end{Exercise}
