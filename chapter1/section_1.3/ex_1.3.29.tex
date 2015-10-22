@@ -1,0 +1,27 @@
+% === Exercise 1.3.29 ===
+\begin{Exercise}
+\begin{proof}
+Let $A\in M_{n\times n}(F)$ arbitrarily. And then pick $B\in W_2$ arbitrarily. We know $A-B\in W_1$. Consider
+\begin{align*}
+A 
+&= (A-B) + B \\
+&\in \left\{ x+y:x\in W_1\text{ and }y\in W_2 \right\} \\
+&= W_1+W_2.
+\end{align*}
+By the arbitrary choice of $A$, we know $M_{n\times n}(F)\subseteq W_1+W_2$.
+
+On the other hand, $W_1+W_2\subseteq M_{n\times n}(F)$ trivially. Hence 
+$$
+W_1+W_2 = M_{n\times n}(F).
+$$
+
+Notice that
+\begin{align*}
+W_1\cap W_2
+&= \left\{ A\in M_{n\times n}(F):A_{i j}=0, i\leq j, A_{i j} = A_{j i} \right\} \\
+&= \left\{ \mathbf{O}_{n\times n} \right\}
+\end{align*}
+
+By definition of direct sum, we conclude $M_{n\times n}(F) = W_1\oplus W_2$.
+\end{proof}
+\end{Exercise}
