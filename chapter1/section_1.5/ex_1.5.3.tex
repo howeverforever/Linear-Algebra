@@ -1,0 +1,71 @@
+% === Exercise 1.5.3 ===
+\begin{Exercise}
+\begin{proof}
+Consider
+\begin{equation}\label{eq:1.5.3}
+a\begin{pmatrix}
+1 & 1 \\
+0 & 0 \\
+0 & 0
+\end{pmatrix} + b\begin{pmatrix}
+0 & 0 \\
+1 & 1 \\
+0 & 0
+\end{pmatrix} + c\begin{pmatrix}
+0 & 0 \\
+0 & 0 \\
+1 & 1
+\end{pmatrix} + d\begin{pmatrix}
+1 & 0 \\
+1 & 0 \\
+1 & 0
+\end{pmatrix} + e\begin{pmatrix}
+0 & 1 \\
+0 & 1 \\
+0 & 1
+\end{pmatrix} = \begin{pmatrix}
+0 & 0 \\
+0 & 0 \\
+0 & 0
+\end{pmatrix}.
+\end{equation}
+This means
+$$
+\begin{cases}
+\begin{aligned}
+a+d &= 0 \\
+a+e &= 0 \\
+b+d &= 0 \\
+b+e &= 0 \\
+c+d &= 0 \\
+c+e &= 0
+\end{aligned}
+\end{cases}.
+$$
+Hence $a=b=c$ and $d=e$ and $a+d=0$. Now we can pick $a=b=c=1$ and $d=e=-1$ so that the equation \eqref{eq:1.5.3} holds. Since $a,b,c,d,e$ are not all zeroes, by definition, we conclude the set
+$$
+\left\{\begin{pmatrix}
+1 & 1 \\
+0 & 0 \\
+0 & 0
+\end{pmatrix} , \begin{pmatrix}
+0 & 0 \\
+1 & 1 \\
+0 & 0
+\end{pmatrix} , \begin{pmatrix}
+0 & 0 \\
+0 & 0 \\
+1 & 1
+\end{pmatrix} , \begin{pmatrix}
+1 & 0 \\
+1 & 0 \\
+1 & 0
+\end{pmatrix} , \begin{pmatrix}
+0 & 1 \\
+0 & 1 \\
+0 & 1
+\end{pmatrix}\right\}
+$$
+is linearly dependent.
+\end{proof}
+\end{Exercise}

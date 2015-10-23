@@ -1,0 +1,25 @@
+% === Exercise 1.5.9 ===
+\begin{Exercise}
+\begin{proof}
+$(\Longrightarrow)$
+Consider
+$$
+a u+b v = 0.
+$$
+
+If either $u$ or $v$ is a zero vector, W.L.O.G, we assume $u=0$. Then $u = 0v$ holds. A similar argument proves if $v=0$, then $v = 0u$ also holds.
+
+Otherwise, if $u$ and $v$ are nonzero vectors, we know $a$ and $b$ are both nonzero since ${u,v}$ is linearly dependent. Then
+$$
+u=-\frac{b}{a}v \text{ and } v=-\frac{a}{b}u.
+$$
+All conditions are discussed. It follows that $u$ or $v$ is a multiple of the other.
+
+\vspace{2ex}
+
+$(\Longleftarrow)$
+W.L.O.G., if $u=k v$ where $k$ is a scalar, then $u-k v=0$. Since $1$ and $-k$ are not both zero, we know $\{u,v\}$ is linearly dependent.
+
+A similar argument establishes $v=k u$ where $k$ is a scalar, then $\{u,v\}$ is also linearly dependent.
+\end{proof}
+\end{Exercise}
