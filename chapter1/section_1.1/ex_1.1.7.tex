@@ -1,0 +1,39 @@
+% === Exercise 1.1.7 ===
+\begin{Exercise}
+\begin{proof}
+Consider $\parallelogram A B C D$. Notice that $\overrightarrow{B C} = \overrightarrow{A D}$ since the property of the parallelogram. Then
+\begin{align*}
+\overline{A C} 
+&= \left\{ t\overrightarrow{A C}: 0\leq t\leq 1 \right\} 
+= \left\{ t\left( \overrightarrow{A B} + \overrightarrow{B C} \right): 0\leq t\leq 1 \right\}
+= \left\{ t\left( \overrightarrow{A B} + \overrightarrow{A D} \right): 0\leq t\leq 1 \right\}; \\
+\overline{B D} 
+&= \left\{ \overrightarrow{A B} + s\left( \overrightarrow{A D} - \overrightarrow{AB} \right): 0\leq s\leq 1 \right\}.
+\end{align*}
+Hence the intersection $M$ of $\overline{A C}$ and $\overline{B D}$ is
+\begin{alignat*}{7}
+\quad&& t\left( \overrightarrow{A B} + \overrightarrow{A D} \right)
+&= \overrightarrow{A B} + s\left( \overrightarrow{A D} - \overrightarrow{AB} \right) \\
+\implies&& (1-s-t)\overrightarrow{A B} &= (t-s)\overrightarrow{A D}.
+\end{alignat*}
+Since $\overrightarrow{A B}\nparallel \overrightarrow{A D}$, then
+$$
+1-s-t = 0 \text{ and } t-s=0;
+$$
+therefore 
+$$
+s=t=\frac{1}{2}.
+$$
+Notice that $0\leq s,t \leq 1$, so $M$ exists.
+
+Denote $A = (x_a, y_a)$, $B = (x_b, y_b)$, $D = (x_d, y_d)$.
+We know the coordinates of $M$ is 
+$$
+A+\frac{1}{2}\overrightarrow{A C}
+= \left( \frac{x_c-x_a}{2}, \frac{y_c-y_a}{2} \right).
+$$
+By Exercise 1.1.6, we know $M$ bisects $\overline{A C}$. A similar argument establishes $M$ bisects $\overline{B D}$.
+
+Finally, we conclude the diagonals of a parallelogram bisect each other.
+\end{proof}
+\end{Exercise}
