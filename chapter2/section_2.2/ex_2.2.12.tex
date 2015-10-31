@@ -1,0 +1,29 @@
+% === Exercise 2.2.12 ===
+\begin{Exercise}
+\begin{answer}
+$$
+[T]_{\beta} = \begin{pmatrix}
+I_k & O \\
+O & O 
+\end{pmatrix}.
+$$
+\end{answer}
+\begin{proof}
+Suppose $V$ has the dimension $n$. Let $\{v_1,\cdots,v_k\}, \{v_{k+1},\cdots,v_n\}$ be bases for $W,W'$ respectively. By Exercise 1.6.33(b), we know $\{v_1,\cdots,v_n\}$ is a basis for $V=W\oplus W'$.
+
+By hypothesis and definition of projection, we know
+$$
+T(v_j) = \begin{cases}
+v_j & \mbox{ for } 1\leq j \leq k \\
+0 & \mbox{ otherwise}
+\end{cases}.
+$$
+Then $x = \sum_{i=1}^{n} a_i v_i \in V$ for $a_i\in F$. It follows that
+$$
+T(x) = T\left(\sum_{i=1}^{n}a_i v_i\right) 
+= \sum_{i=1}^{n}a_i T(v_i)
+= \sum_{i=1}^{k}a_i v_i
+= (a_1, a_2, \cdots, a_k, 0, \cdots, 0)_{1\times n} \in W.
+$$
+\end{proof}
+\end{Exercise}
