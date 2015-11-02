@@ -1,0 +1,84 @@
+% === Exercise 2.2.6 ===
+\begin{Exercise}
+\begin{proof}
+It suffices to prove $\mathcal{L}(V,W)$ is compatible with the definition from $(VS\ 1)$ to $(VS\ 8)$. We denoted the zero vector in $W$ is $0_W$. Notice that we have known $V$, $W$ are compatible with the definitions since they are vector spaces by hypothesis.
+
+Suppose an arbitrary vector $v$ in $V$. $T_0$ is a zero transformation that $T_0(v) = 0_W$. Here we go by verifying patiently.
+
+\begin{itemize}
+\item $\mathbf{(VS\ 1)}$
+For all $S,T \in \mathcal{L}(V,W)$, we have
+$$
+(S+T)(v)
+= S(v) + T(v)
+= T(v) + S(v)
+= (T+S)(v).
+$$
+
+\item $\mathbf{(VS\ 2)}$
+For all $S,T,U\in \mathcal{L}(V,W)$, we have
+\begin{gather*}
+((S+T)+U)(v)
+= (S+T)(v) + U(v)
+= S(v) + T(v) + U(v) \\
+= S(v) + (T+U)(v) 
+= (S+(T+U))(v).
+\end{gather*}
+
+\item $\mathbf{(VS\ 3)}$
+For all $T\in \mathcal{L}(V,W)$, we have
+$$
+(T+T_0)(v)
+= T(v) + T_0(v)
+= T(v) + 0_W
+= T(v).
+$$
+
+\item $\mathbf{(VS\ 4)}$
+For all $T\in \mathcal{L}(V,W)$, we pick $-T$ such that $(-T)(v) = -T(v)$. Then we have
+$$
+(T+(-T))(v)
+= T(v) + (-T)(v)
+= T(v) - T(v)
+= 0_W.
+$$
+
+\item $\mathbf{(VS\ 5)}$
+For all $T\in \mathcal{L}(V,W)$, we have
+$$
+(1\cdot T)(v)
+= 1\cdot T(v)
+= T(v).
+$$
+
+\item $\mathbf{(VS\ 6)}$
+For all $a,b\in F$ and $T\in \mathcal{L}(V,W)$, we have
+\begin{align*}
+((ab)T)(v)
+&= (ab)T(v) \\
+&= a(b T(v)) \\
+&= a(b T)(v)
+\end{align*}
+
+\item $\mathbf{(VS\ 7)}$
+For all $a\in F$ and $S,T\in \mathcal{L}(V,W)$, we have
+\begin{align*}
+(a(S+T))(v)
+&= a((S+T))(v)) \\
+&= a(S(v) + T(v)) \\
+&= a S(v) + a T(v) \\
+&= (a S+a T)(v).
+\end{align*}
+
+\item $\mathbf{(VS\ 8)}$
+For all $a,b\in F$ and $T\in \mathcal{L}(V,W)$, we have
+\begin{align*}
+((a+b)T)(v)
+&= (a+b)T(v) \\
+&= (a T)(v) + (b T)(v) \\
+&= (a T + b T)(v).
+\end{align*}
+\end{itemize}
+We conclude $\mathcal{L}(V,W)$ is a vector space over $F$ as promised.
+\end{proof}
+\end{Exercise}

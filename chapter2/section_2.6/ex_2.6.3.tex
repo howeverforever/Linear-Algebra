@@ -1,0 +1,70 @@
+% === Exercise 2.6.3 ===
+\begin{Exercise}
+Let $dim(V) = n$, then we suppose $\beta^* = \{f_1,f_2,\cdots f_n\}$.
+\begin{enumerate}[(a)]
+\item[(a)]
+\begin{answer}
+$f_1(x,y,z) = x-\frac{y}{2},f_2(x,y,z) = \frac{y}{2},f_3(x,y,z) = x-z$.
+\end{answer}
+\begin{solution}
+We should solve the systems of linear equations such that
+$$
+\begin{pmatrix}
+1 & 0 & 1 \\
+1 & 2 & 1 \\
+0 & 0 & 1
+\end{pmatrix} \begin{pmatrix}
+f_1(e_1) & f_2(e_1) & f_3(e_1) \\
+f_1(e_2) & f_2(e_2) & f_3(e_2) \\
+f_1(e_3) & f_2(e_3) & f_3(e_3)
+\end{pmatrix} = I_3.
+$$
+Hence we have
+$$
+\begin{pmatrix}
+f_1(e_1) & f_2(e_1) & f_3(e_1) \\
+f_1(e_2) & f_2(e_2) & f_3(e_2) \\
+f_1(e_3) & f_2(e_3) & f_3(e_3)
+\end{pmatrix} = \begin{pmatrix}
+1 & 0 & -1 \\
+-\frac{1}{2} & \frac{1}{2} & 0 \\
+0 & 0 & 1
+\end{pmatrix}.
+$$
+The answer follows from the change of notations.
+\end{solution}
+
+\item[(b)]
+\begin{answer}
+$f_1(a_0+a_1 x+a_2 x^2) = a_0,f_2(a_0+a_1 x+a_2 x^2) = a_1,f_3(a_0+a_1 x+a_2 x^2) = a_2$.
+\end{answer}
+\begin{solution}
+We should solve the systems of linear equations such that
+$$
+\begin{pmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{pmatrix} \begin{pmatrix}
+f_1(1) & f_2(1) & f_3(1) \\
+f_1(x) & f_2(x) & f_3(x) \\
+f_1(x^2) & f_2(x^2) & f_3(x^2)
+\end{pmatrix} = I_3.
+$$
+Hence we have
+$$
+\begin{pmatrix}
+f_1(1) & f_2(1) & f_3(1) \\
+f_1(x) & f_2(x) & f_3(x) \\
+f_1(x^2) & f_2(x^2) & f_3(x^2)
+\end{pmatrix} = \begin{pmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{pmatrix}.
+$$
+The answer follows from the change of notations.
+\end{solution}
+
+\end{enumerate}
+\end{Exercise}

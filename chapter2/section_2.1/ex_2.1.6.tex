@@ -1,0 +1,23 @@
+% === Exercise 2.1.6 ===
+\begin{Exercise}
+\begin{proof}
+Consider $T(A+c B)$ where $A,B\in M_{n\times n}(F)$ and $c\in F$.
+Then
+$$
+T(A+c B) = \sum_{i=1}^{n} \left( A_{i i}+c B_{i i} \right)
+= \sum_{i=1}^{n} A_{i i} + c\sum_{i=1}^{n} B_{i i}
+= T(A) + c T(B).
+$$
+Hence $T$ is linear.
+
+Now we find $N(T)$ and $R(T)$ with their bases. $N(T) = \{ A:tr(A) = 0\}$ with a basis $\{E_{i j}\}_{i\neq j}\cup \{E_{1 1} - E_{i i} \}_{i=2,3,\cdots,n}$;
+$R(T) = F$ with a basis $\{1\}$.
+
+It follows that $nullity(T) = n^2-1$ and $rank(T) = 1$. We can verify
+$$
+dim(M_{n\times n}(F)) = n^2 = (n^2-1) + 1 =  nullity(T)+rank(T).
+$$
+
+Since $nullity(T)\neq 0$, then $T$ is not one-to-one. But $rank(T) = dim(F)$, then $T$ is onto.
+\end{proof}
+\end{Exercise}
