@@ -1,0 +1,101 @@
+% === Exercise 3.2.7 ===
+\begin{Exercise}
+\begin{solution}
+Let $A := \begin{pmatrix}
+1 & 2 & 1 \\
+1 & 0 & 1 \\
+1 & 1 & 2
+\end{pmatrix}$.
+Consider
+\begin{align*}
+\begin{pmatrix}
+1 & 2 & 1 \\
+1 & 0 & 1 \\
+1 & 1 & 2
+\end{pmatrix} &\overset{E_1}{\longrightarrow} \begin{pmatrix}
+0 & 2 & 0 \\
+1 & 0 & 1 \\
+1 & 1 & 2
+\end{pmatrix} \overset{E_2}{\longrightarrow} \begin{pmatrix}
+0 & 2 & 0 \\
+1 & 0 & 1 \\
+0 & 1 & 1
+\end{pmatrix} \overset{E_3}{\longrightarrow} \begin{pmatrix}
+0 & 1 & 0 \\
+1 & 0 & 1 \\
+0 & 1 & 1
+\end{pmatrix} \\
+&\overset{E_4}{\longrightarrow} \begin{pmatrix}
+0 & 1 & 0 \\
+1 & 0 & 1 \\
+0 & 0 & 1
+\end{pmatrix} \overset{E_5}{\longrightarrow} \begin{pmatrix}
+0 & 1 & 0 \\
+1 & 0 & 0 \\
+0 & 0 & 1
+\end{pmatrix} \overset{E_6}{\longrightarrow} \begin{pmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{pmatrix}.
+\end{align*}
+Put 
+\begin{alignat*}{7}
+\quad&& E_1 &= \begin{pmatrix}
+1 & -1 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{pmatrix}; E_2 &= \begin{pmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & -1 & 1
+\end{pmatrix}; E_3 &= \begin{pmatrix}
+1 & 0 & 0 \\
+0 & \frac{1}{2} & 0 \\
+0 & 0 & 1
+\end{pmatrix}; \\
+\quad&& E_4 &= \begin{pmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+-1 & 0 & 1
+\end{pmatrix}; E_5 &= \begin{pmatrix}
+1 & 0 & 0 \\
+0 & 1 & -1 \\
+0 & 0 & 1
+\end{pmatrix}; E_6 &= \begin{pmatrix}
+0 & 1 & 0 \\
+1 & 0 & 0 \\
+0 & 0 & 1
+\end{pmatrix}.
+\end{alignat*}
+
+It follows that $E_6 E_5 E_4 E_3 E_2 E_1 A = I$. Then $A = E_1^{-1} E_2^{-1} E_3^{-1} E_4^{-1} E_5^{-1} E_6^{-1}$ where \begin{alignat*}{7}
+\quad&& E_1^{-1} &= \begin{pmatrix}
+1 & 1 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{pmatrix}; E_2^{-1} &= \begin{pmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 1 & 1
+\end{pmatrix}; E_3^{-1} &= \begin{pmatrix}
+1 & 0 & 0 \\
+0 & 2 & 0 \\
+0 & 0 & 1
+\end{pmatrix}; \\
+\quad&& E_4^{-1} &= \begin{pmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+1 & 0 & 1
+\end{pmatrix}; E_5^{-1} &= \begin{pmatrix}
+1 & 0 & 0 \\
+0 & 1 & 1 \\
+0 & 0 & 1
+\end{pmatrix}; E_6^{-1} &= \begin{pmatrix}
+0 & 1 & 0 \\
+1 & 0 & 0 \\
+0 & 0 & 1
+\end{pmatrix}.
+\end{alignat*}
+\end{solution}
+\end{Exercise}
