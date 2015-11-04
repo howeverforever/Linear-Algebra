@@ -1,0 +1,27 @@
+% === Exercise 3.2.14 ===
+\begin{Exercise}
+\begin{enumerate}[(a)]
+\item
+\begin{proof}
+Let arbitrary $w\in R(T+U)$, then there exists $v\in V$ such that $w=(T+U)(v) = T(v)+U(v)$. Since $T(v) \subseteq R(T)$ and $U(v) \subseteq R(U)$, we have $T(v)+U(v) \subseteq R(T)+R(U)$. Because $w$ was arbitrary, we conclude $R(T+U)\subseteq R(T)+R(U)$.
+\end{proof}
+
+\item
+\begin{proof}
+Since $dim(W)$ is finite, by Exercise 1.6.29(a), we have
+\begin{align*}
+rank(T+U)
+&\leq dim(R(T)+R(U)) \\
+&= dim(R(T)) + dim(R(U)) - dim(R(T)\cap R(U)) \\
+&\leq dim(R(T)) + dim(R(U)) \\
+&= rank(T)+rank(U).
+\end{align*}
+\end{proof}
+
+\item
+\begin{proof}
+Form part (b), we consider $rank(A+B) = rank(L_{A+B}) = rank(L_A+L_B) \leq rank(L_A) + rank(L_B) = rank(A) + rank(B)$.
+\end{proof}
+
+\end{enumerate}
+\end{Exercise}
