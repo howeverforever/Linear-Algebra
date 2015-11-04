@@ -1,0 +1,86 @@
+% === Exercise 4.1.1 ===
+\begin{Exercise}
+\begin{enumerate}[(a)]
+\item[(a)]
+\begin{answer}
+False.
+\end{answer}
+\begin{solution}
+$\det(2I_2) = 4 \neq 2\det(I_2)$ where $I_2 = \begin{pmatrix}
+1 & 0 \\
+0 & 1
+\end{pmatrix}$.
+\end{solution}
+
+\item[(b)]
+\begin{answer}
+True.
+\end{answer}
+\begin{solution}
+Consider
+\begin{align*}
+\begin{vmatrix}
+a_1 + k a_2 & b_1 + k b_2 \\
+c & d
+\end{vmatrix} 
+&= (a_1 + k a_2) d - (b_1 + k b_2) c \\
+&= (a_1 d - b_1 c) + k (a_2 d - b_2 c) \\
+&= \begin{vmatrix}
+a_1 & b_1 \\
+c & d
+\end{vmatrix} + k\begin{vmatrix}
+a_2 & b_2 \\
+c & d
+\end{vmatrix}.
+\end{align*}
+A similar argument shows that $\begin{vmatrix}
+a & b \\
+c_1 + k c_2 & d_1 + k d_2
+\end{vmatrix} = \begin{vmatrix}
+a & b \\
+c_1 & d_1
+\end{vmatrix} + k\begin{vmatrix}
+a & b \\
+c_2 & d_2
+\end{vmatrix}$.
+\end{solution}
+
+\item[(c)]
+\begin{answer}
+False.
+\end{answer}
+\begin{solution}
+Suppose $A = \begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}$, if $A$ is invertible, then 
+$$
+A^{-1} = \frac{1}{\det(A)}\begin{pmatrix}
+d & -b \\
+-c & a
+\end{pmatrix}.
+$$
+It is easy to observe when $\det(A) = 0$, then $A^{-1}$ is undefined.
+\end{solution}
+
+\item[(d)]
+\begin{answer}
+False.
+\end{answer}
+\begin{solution}
+The area should equal to$\left| \det\begin{pmatrix}
+u \\
+v
+\end{pmatrix} \right|$. i.e., the area can not be negative.
+\end{solution}
+
+\item[(e)]
+\begin{answer}
+True.
+\end{answer}
+\begin{solution}
+It follows from Exercise 4.1.12.
+\end{solution}
+
+\end{enumerate}
+\end{Exercise}
