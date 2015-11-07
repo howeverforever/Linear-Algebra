@@ -49,10 +49,10 @@ Hence from equation \eqref{eq:ex_1.6.29a1}, we obtain $\beta$ is linearly indepe
 
 We prove the claim holds as promised. Finally, we compute
 \begin{align}
-dim(W_1+W_2) 
+\dim(W_1+W_2) 
 &= k+m+p \notag \\
 &= (k+m) + (k+p) - k \notag \\
-&= dim(W_1) + dim(W_2) - dim(W_1\cap W_2). \label{eq:ex_1.6.29a3}
+&= \dim(W_1) + \dim(W_2) - \dim(W_1\cap W_2). \label{eq:ex_1.6.29a3}
 \end{align}
 
 By hypothesis that $W_1,W_2$ are finite-dimensional vector spaces, we know $W_1\cap W_2$ is also finite-dimensional; hence we obtain $k+m,k+p,k<\infty$. From formula \eqref{eq:ex_1.6.29a3}, we conclude $W_1+W_2$ is also a finite-dimensional vector space since $k+m+p<\infty$.
@@ -62,14 +62,14 @@ By hypothesis that $W_1,W_2$ are finite-dimensional vector spaces, we know $W_1\
 \begin{proof}
 From part (a) and by hypothesis, we know
 $$
-dim(W_1+W_2) = dim(W_1)+dim(W_2)-dim(W_1\cap W_2).
+\dim(W_1+W_2) = \dim(W_1)+\dim(W_2)-\dim(W_1\cap W_2).
 $$
 Hence
 \begin{alignat*}{7}
 \quad&& V &= W_1\oplus W_2 \\
 \iff&& V &= W_1+W_2\text{ and }W_1\cap W_2=\{0\} \\
-\iff&& dim(V) &= dim(W_1)+dim(W_2)-dim(\{0\}) \\
-\iff&& dim(V) &= dim(W_1)+dim(W_2)
+\iff&& \dim(V) &= \dim(W_1)+\dim(W_2)-\dim(\{0\}) \\
+\iff&& \dim(V) &= \dim(W_1)+\dim(W_2)
 \end{alignat*}
 \end{proof}
 \end{enumerate}
