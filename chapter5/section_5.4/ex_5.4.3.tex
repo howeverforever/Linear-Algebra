@@ -1,0 +1,29 @@
+% === Exercise 5.4.3 ===
+\begin{Exercise}
+\begin{enumerate}[(a)]
+\item
+\begin{proof}
+Since $T(0)\in \{0\}$, then $\{0\}$ is a $T$-invariant subspace of $V$.
+
+Since $T(V)\subseteq V$ by definition, then $V$ is also a $T$-invariant subspace of $V$.
+\end{proof}
+
+\item
+\begin{proof}
+Let $x\in N(T)$, then $T(x) = 0 \in N(T)$. Since $x$ was arbitrary, $T(N(T))\subseteq N(T)$. Hence $N(T)$ is $T$-invariant.
+
+Let $x\in R(T)$, then $T(x) \in R(T)$ by definition. Since $x$ was arbitrary, $T(R(T))\subseteq R(T)$. Hence $R(T)$ is also $T$-invariant.
+\end{proof}
+
+\item
+\begin{proof}
+Let $x\in E_{\lambda}$, this means $x\in N(T-\lambda I)$. It follows that
+\begin{alignat*}{7}
+\quad&& (T-\lambda I)x &= 0 \\
+\implies&& T x &= \lambda I x \\
+\implies&& T x &= \lambda x.
+\end{alignat*}
+Then $T(x) \in E_{\lambda}$ and hence $E_{\lambda}$ is $T$-invariant.
+\end{proof}
+\end{enumerate}
+\end{Exercise}

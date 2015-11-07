@@ -1,0 +1,36 @@
+% === Exercise 5.4.19 ===
+\begin{Exercise}
+\begin{proof}
+For $k = 1$, $\det(A-t I) = -a_0 - t = (-1)^1(a_0 + t)$, it follows the statement holds.
+
+Suppose the statement holds for $k$. Then for $k+1$, we have
+\begin{align*}
+\det(A-t I) 
+&= \det\begin{pmatrix}
+-t & 0 & \cdots & 0 & -a_0 \\
+1 & -t & \cdots & 0 & -a_1 \\
+0 & 1 & \cdots & 0 & -a_2 \\
+\vdots & \vdots & \ddots & \vdots & \vdots \\
+0 & 0 & \cdots & 0 & -a_{k-1} \\
+0 & 0 & \cdots & 1 & -a_k
+\end{pmatrix} \\
+&= (-t)\det\begin{pmatrix}
+-t & \cdots & 0 & -a_1 \\
+1 & \cdots & 0 & -a_2 \\
+\vdots & \ddots & \vdots & \vdots \\
+0 & \cdots & 1 & -a_k
+\end{pmatrix} + (-1)^{k+2} (-a_0) \det\begin{pmatrix}
+1 & -t & \cdots & 0 & -a_1 \\
+0 & 1 & \cdots & 0 & -a_2 \\
+\vdots & \vdots & \ddots & \vdots & \vdots \\
+0 & 0 & \cdots & 1 & -a_k
+\end{pmatrix} \\
+&= (-t)\left[(-1)^k(a_1+a_2 t+\cdots+a_{k}t^{k}+t^{k+1})\right] + (-1)^{k+2} (-a_0) (1) \\
+&= (-1)^{k+1}(a_1 t+\cdots+a_k t^k+t^{k+1}) + (-1)^{k+1} (a_0) \\
+&= (-1)^{k+1}(a_0 + a_1 t+\cdots+a_k t^k+t^{k+1}).
+\end{align*}
+Hence the statement also holds for $k+1$. 
+
+By induction, we conclude the statement holds for $k\in\mathbb{N}$.
+\end{proof}
+\end{Exercise}

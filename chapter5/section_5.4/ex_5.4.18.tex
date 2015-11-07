@@ -1,0 +1,64 @@
+% === Exercise 5.4.18 ===
+\begin{Exercise}
+\begin{enumerate}[(a)]
+\item
+\begin{proof}
+Consider
+\begin{equation}\label{eq:ex_5.4.18a}
+f(t) = (-1)^n t^n + a_{n-1} t^{n-1} + \cdots + a_1 t + a_0 = \det(A-t I).
+\end{equation}
+We know $f(0) = a_0 = \det(A)$. Hence
+$$
+A\text{ is invertible} \iff \det(A)\neq 0 \iff a_0 \neq 0.
+$$
+\end{proof}
+
+\item
+\begin{proof}
+Consider formula \eqref{eq:ex_5.4.18a}, we have
+$$
+f(A) = (-1)^n A^n + a_{n-1} A^{n-1} + \cdots + a_1 A + a_0 = \det(O).
+$$
+Since $\det(O) = 0$, then $(-1)^n A^n + a_{n-1} A^{n-1} + \cdots + a_1 A + a_0 = 0$. Notice that $A$ is invertible and hence from part (a), $a_0\neq 0$. Then divide $-a_0$ on both sides and rearrange it to obtain
+$$
+\frac{-1}{a_0}\left[ (-1)^n A^n + a_{n-1} A^{n-1} + \cdots + a_1 A \right] = 1.
+$$
+Now multiply $A^{-1}$ on both sides to conclude
+$$
+A^{-1} = \frac{-1}{a_0}\left[ (-1)^n A^{n-1} + a_{n-1} A^{n-2} + \cdots + a_1 I_n \right].
+$$
+\end{proof}
+
+\item
+\begin{proof}
+Compute $\det(A-t I) = -t^3+2 t^2+t-2$ and $A^2 = \begin{pmatrix}
+1 & 6 & 6 \\
+0 & 4 & 3 \\
+0 & 0 & 1
+\end{pmatrix}$.
+From part (b), we know
+\begin{align*}
+A^{-1} 
+&= \frac{-1}{a_0}\left[ (-1)A^2 + 2A + I \right] \\
+&= \frac{-1}{-2} \left[ (-1)\begin{pmatrix}
+1 & 6 & 6 \\
+0 & 4 & 3 \\
+0 & 0 & 1
+\end{pmatrix} + 2\begin{pmatrix}
+1 & 2 & 1 \\
+0 & 2 & 3 \\
+0 & 0 & -1
+\end{pmatrix} + \begin{pmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{pmatrix} \right] \\
+&= \frac{1}{2}\begin{pmatrix}
+2 & -2 & -4 \\
+0 & 1 & 3 \\
+0 & 0 & -2
+\end{pmatrix}.
+\end{align*}
+\end{proof}
+\end{enumerate}
+\end{Exercise}
