@@ -1,0 +1,132 @@
+% === Exercise 5.2.3 ===
+\begin{Exercise}
+\begin{enumerate}[(a)]
+\item[(f)]
+\begin{answer}
+$T$ is diagonalizable. $\beta = \left\{\begin{pmatrix}
+1 \\
+0 \\
+0 \\
+0
+\end{pmatrix},\begin{pmatrix}
+0 \\
+0 \\
+0 \\
+1
+\end{pmatrix},\begin{pmatrix}
+0 \\
+1 \\
+1 \\
+0
+\end{pmatrix},\begin{pmatrix}
+0 \\
+1 \\
+-1 \\
+0
+\end{pmatrix}\right\}$.
+\end{answer}
+\begin{solution}
+Let $\alpha$ be the standard basis for $V$, then $[T]_{\alpha} = \begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1
+\end{pmatrix}$.
+
+Solve $\det(T-\lambda I) = 0$, we have $(\lambda-1)^3(\lambda+1) = 0$. Pick $\lambda_1 = 1$, $\lambda_2 = -1$ with multiplicities $3$, $1$, respectively. We obtain
+$$
+N_{\lambda_1} = \left\{\begin{pmatrix}
+a \\
+b \\
+c \\
+d
+\end{pmatrix}\in\mathbb{R}^4:\begin{pmatrix}
+0 & 0 & 0 & 0 \\
+0 & -1 & 1 & 0 \\
+0 & 1 & -1 & 0 \\
+0 & 0 & 0 & 0
+\end{pmatrix} \begin{pmatrix}
+a \\
+b \\
+c \\
+d
+\end{pmatrix} = \begin{pmatrix}
+0 \\
+0 \\
+0 \\
+0
+\end{pmatrix} \right\}.
+$$
+Hence $\beta_1 = \left\{\begin{pmatrix}
+1 \\
+0 \\
+0 \\
+0
+\end{pmatrix},\begin{pmatrix}
+0 \\
+0 \\
+0 \\
+1
+\end{pmatrix},\begin{pmatrix}
+0 \\
+1 \\
+1 \\
+0
+\end{pmatrix}\right\}$ is a basis for $N_{\lambda_1}$. On the other hand, we also obtain
+$$
+N_{\lambda_2} = \left\{\begin{pmatrix}
+a \\
+b \\
+c \\
+d
+\end{pmatrix}\in\mathbb{R}^4:\begin{pmatrix}
+2 & 0 & 0 & 0 \\
+0 & 1 & 1 & 0 \\
+0 & 1 & 1 & 0 \\
+0 & 0 & 0 & 2
+\end{pmatrix} \begin{pmatrix}
+a \\
+b \\
+c \\
+d
+\end{pmatrix} = \begin{pmatrix}
+0 \\
+0 \\
+0 \\
+0
+\end{pmatrix} \right\}.
+$$
+Hence $\beta_2 = \left\{\begin{pmatrix}
+0 \\
+1 \\
+-1 \\
+0
+\end{pmatrix}\right\}$ is a basis for $N_{\lambda_2}$.
+
+
+We have shown that $dim(N_{\lambda_1}) = 3$, $dim(N_{\lambda_2}) = 1$. It is consistent with the multiplicities $3$, $1$. By Theorem 5.9, we know $T$ is diagonalizable. Moreover, we can construct a basis $\beta = \beta_1\cup \beta_2$ so that
+$$
+[I]_{\beta}^{\alpha} = \begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 0 & 1 & 1 \\
+0 & 0 & 1 & -1 \\
+0 & 1 & 0 & 0
+\end{pmatrix} \text{, and } [I]_{\alpha}^{\beta} = \frac{1}{2} \begin{pmatrix}
+2 & 0 & 0 & 0 \\
+0 & 0 & 0 & 2 \\
+0 & 1 & 1 & 0 \\
+0 & 1 & -1 & 0
+\end{pmatrix}.
+$$
+It follows that
+$$
+[T]_{\beta} = [I]_{\alpha}^{\beta} [T]_{\alpha} [I]_{\beta}^{\alpha} = \begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 0 & 0 & -1
+\end{pmatrix}.
+$$
+\end{solution}
+\end{enumerate}
+\end{Exercise}
