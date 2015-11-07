@@ -1,0 +1,18 @@
+% === Exercise 6.1.11 ===
+\begin{Exercise}
+\begin{proof}
+Consider for all $x,y\in V$,
+\begin{align*}
+\| x+y \|^2 + \| x-y \|^2
+&= \sqrt{\langle x+y, x+y \rangle}^2 + \sqrt{\langle x-y, x-y \rangle}^2 \\
+&= \langle x+y, x+y \rangle + \langle x-y, x-y \rangle \\
+&= (\langle x,x+y \rangle + \langle y,x+y \rangle) + (\langle x,x-y \rangle - \langle y,x-y \rangle) \\
+&= (\langle x,x+y \rangle + \langle x, x-y \rangle) + (\langle y,x+y \rangle + \langle y,x-y \rangle) \\
+&= \langle x,2x \rangle + \langle y,2y \rangle \\
+&= 2\langle x,x \rangle + 2\langle y,y \rangle \\
+&= 2\|x\|^2 + 2\|y\|^2.
+\end{align*}
+This means that the sum of square of the four edges is
+the sum of square of the two diagonals in the same parallelogram.
+\end{proof}
+\end{Exercise}
