@@ -1,0 +1,57 @@
+% === Exercise 7.2.4 ===
+\begin{Exercise}
+\begin{enumerate}[(a)]
+\item
+\begin{answer}
+$\mathcal{J} = \begin{pmatrix}
+1 & 0 & 0 \\
+0 & 2 & 1 \\
+0 & 0 & 2
+\end{pmatrix}$. $Q = \begin{pmatrix}
+1 & 1 & 1 \\
+2 & 1 & 2 \\
+1 & -1 & 0
+\end{pmatrix}$. 
+\end{answer}
+\begin{solution}
+Firstly, we need to find eigenvalues. Solve $\det(A-\lambda I) = -(\lambda-1)(\lambda-2)^2 = 0$. Then $\lambda_1 = 1$, $\lambda_2 = 2$.
+
+Secondly, we need to find a basis. For $\lambda_1 = 1$, since it is with multiplicity $1$, then we just pick eigenvector $\begin{pmatrix}
+1 \\
+2 \\
+1
+\end{pmatrix}$ to be a basis. For $\lambda_2 = 2$, we know $T-2I = \begin{pmatrix}
+-5 & 3 & -2 \\
+-7 & 4 & -3 \\
+1 & -1 & 0
+\end{pmatrix}$ and $(T-2I)^2 = \begin{pmatrix}
+2 & -1 & 1 \\
+4 & -2 & 2 \\
+2 & -1 & 0
+\end{pmatrix}$. Since $\lambda_2$ is with multiplicity $2$ and
+\begin{align*}
+&\dim(A)-\rank(T-2I) = 3-2=1; \\
+&\rank(T-2I)-\rank((T-2I)^2) = 2-1 = 1,
+\end{align*}
+we should find a vector $v$ such that $v\in N\big((T-2I)^2\big)$ and $v\notin N\big(T-2I\big)$. Here we pick $v = \begin{pmatrix}
+1 \\
+2 \\
+0
+\end{pmatrix}$, then $(T-2I)(v) = \begin{pmatrix}
+1 \\
+1 \\
+-1
+\end{pmatrix}$. 
+
+Hence this means $Q = \begin{pmatrix}
+1 & 1 & 1 \\
+2 & 1 & 2 \\
+1 & -1 & 0
+\end{pmatrix}$. $\mathcal{J} = Q^{-1} A Q = \begin{pmatrix}
+1 & 0 & 0 \\
+0 & 2 & 1 \\
+0 & 0 & 2
+\end{pmatrix}$ follows.
+\end{solution}
+\end{enumerate}
+\end{Exercise}
