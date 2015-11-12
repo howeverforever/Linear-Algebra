@@ -17,6 +17,7 @@
 \usepackage{caption}
 
 \usepackage{titletoc}
+\usepackage{titlesec} 
 \usepackage{import}
 \usepackage[yyyymmdd]{datetime}
 
@@ -28,7 +29,7 @@
 \newenvironment{solution}
   {\begin{proof}[Solution]}
   {\end{proof}}
-
+  
 \newenvironment{sketch}
   {\begin{proof}[Sketch]}
   {\end{proof}}
@@ -41,6 +42,11 @@
 \fancyhf{}
 \rhead{\rightmark}
 \rfoot{\thepage}
+%\fancypagestyle{plain}{%
+%  \fancyhf[]{}
+%  \fancyhead[LO,RE]{\slshape \leftmark}
+%  \fancyfoot[RO]{\thepage}
+%}
 
 \renewcommand{\dateseparator}{/}
 \renewcommand{\qedsymbol}{$\blacksquare$}
@@ -55,6 +61,13 @@
 \DeclareMathOperator{\trace}{tr}
 \DeclareMathOperator{\ii}{\mathrm{i}}
 % === -------------------- ===
+
+%\titleformat{\chapter}[display]
+%  {\bfseries\Large}
+%  {\filright\MakeUppercase{\chaptertitlename} \Huge\thechapter}
+%  {1ex}
+%  {\titlerule\vspace{1ex}\filleft}
+%  [\vspace{1ex}\titlerule]
 
 \begin{document}
 \counterwithin{Exercise}{section}
@@ -86,5 +99,6 @@ $\mathbb{}$
 \subimport*{chapter4/}{chapter4}
 \subimport*{chapter5/}{chapter5}
 \subimport*{chapter6/}{chapter6}
+\subimport*{chapter7/}{chapter7}
 
 \end{document}
