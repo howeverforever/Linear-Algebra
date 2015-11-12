@@ -16,6 +16,9 @@
 \usepackage{epstopdf}
 \usepackage{caption}
 
+\usepackage[bookmarks=true]{hyperref}
+\usepackage{bookmark}
+
 \usepackage{titletoc}
 \usepackage{titlesec} 
 \usepackage{import}
@@ -26,55 +29,44 @@
 \usepackage{exercise,chngcntr}
 
 % === Environment Settings ===
+\include{style}
+
+\let\oldproofname=\proofname
+\renewcommand{\proofname}{\rm\bf{\oldproofname}}
+  
 \newenvironment{solution}
-  {\begin{proof}[Solution]}
+  {\begin{proof}[$\mathbf{Solution}$]}
   {\end{proof}}
   
 \newenvironment{sketch}
-  {\begin{proof}[Sketch]}
+  {\begin{proof}[$\mathbf{Sketch}$]}
   {\end{proof}}
 
 \newenvironment{answer}
-  {\begin{proof}[Answer]\renewcommand{\qedsymbol}{}}
+  {\begin{proof}[$\mathbf{Answer}$]\renewcommand{\qedsymbol}{}}
   {\end{proof}}
-  
-\pagestyle{fancy}
-\fancyhf{}
-\rhead{\rightmark}
-\rfoot{\thepage}
-%\fancypagestyle{plain}{%
-%  \fancyhf[]{}
-%  \fancyhead[LO,RE]{\slshape \leftmark}
-%  \fancyfoot[RO]{\thepage}
-%}
 
 \renewcommand{\dateseparator}{/}
 \renewcommand{\qedsymbol}{$\blacksquare$}
-\newcommand\parallelogram{%
-  \mathord{\text{%
+\newcommand\parallelogram{
+  \mathord{\text{
     \tikz[baseline]
       \draw (0,.1ex) -- (.8em,.1ex) -- (1em,1.6ex) -- (.2em,1.6ex) -- cycle;}}}
-      
+% === -------------------- ===
+
+% === DeclareMathOperator ===
 \DeclareMathOperator{\rank}{rank}
 \DeclareMathOperator{\nullity}{nullity}
 \DeclareMathOperator{\spann}{span}
 \DeclareMathOperator{\trace}{tr}
 \DeclareMathOperator{\ii}{\mathrm{i}}
-% === -------------------- ===
-
-%\titleformat{\chapter}[display]
-%  {\bfseries\Large}
-%  {\filright\MakeUppercase{\chaptertitlename} \Huge\thechapter}
-%  {1ex}
-%  {\titlerule\vspace{1ex}\filleft}
-%  [\vspace{1ex}\titlerule]
+% === ------------------- ===
 
 \begin{document}
 \counterwithin{Exercise}{section}
-% === Math Font Setup ===
-$\mathbb{}$
 
 % === Cover Page ===
+\include{cover}
 
 % === Contents Pages ===
 \pagenumbering{roman}
@@ -88,6 +80,7 @@ $\mathbb{}$
 \tableofcontents
 
 % === Preface ===
+\include{abstract}
 \newpage
 
 % === Main Pages ===
