@@ -1,0 +1,21 @@
+% === Exercise 7.3.2 ===
+\begin{Exercise}
+\begin{enumerate}[(a)]
+\item[(d)]
+\begin{answer}
+$p(t) = (t-2)^2$.
+\end{answer}
+\begin{solution}
+Let the matrix be $A$.
+We need to find the characteristic polynomial at first.
+Solve $\det(A-t I)= 0$ to obtain $-(t-2)^3$.
+
+Since the minimal polynomial divides the characteristic polynomial, we just check all possibilities one by one.
+Check $(t-2)$, then $A-2I = \begin{pmatrix}
+1 & 0 & 1 \\
+2 & 0 & 2 \\
+-1 & 0 & -1
+\end{pmatrix} \neq O$. Then check $(t-2)^2$, it follows that $(A-2I)^2 = O$. Hence the minimal polynomial is $(t-2)^2$
+\end{solution}
+\end{enumerate}
+\end{Exercise} 
