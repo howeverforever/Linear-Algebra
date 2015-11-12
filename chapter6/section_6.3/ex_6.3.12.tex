@@ -1,0 +1,21 @@
+% === Exercise 6.3.12 ===
+\begin{Exercise}
+\begin{enumerate}[(a)]
+\item
+\begin{proof}
+It suffice to prove $R(T^*)^{\perp} \subseteq N(T)$ and $N(T) \subseteq R(T^*)^{\perp}$.
+
+First, we claim $N(T) \subseteq R(T^*)^{\perp}$. Let $x\in N(T)$, then $T x = 0$. For any $y\in V$, we consider $
+0 = \langle 0, y \rangle = \langle T x , y \rangle = \langle x, T^* y \rangle$. Hence $x\in R(T^*)^{\perp}$. Because $x$ was arbitrary, the claim holds.
+
+Secondly, we claim $R(T^*)^{\perp} \subseteq N(T)$. Let $x\in R(T^*)^{\perp}$, then for any $y\in V$, we consider $0 = \langle x, T^* y \rangle = \langle T x, y \rangle$. This implies $T x = 0$ and hence $x\in N(T)$. Because $x$ was arbitrary, the claim holds.
+
+Finally, we conclude $R(T^*)^{\perp} = N(T)$.
+\end{proof}
+
+\item
+\begin{proof}
+Since $V$ is finite-dimensional, then both $R(T^*)$ and $N(T)$ are finite-dimensional. From part (a), $(R(T^*)^{\perp})^{\perp} = N(T)^{\perp}$ follows. Hence we obtain $R(T^*) = N(T)^{\perp}$ as desired.
+\end{proof}
+\end{enumerate}
+\end{Exercise}

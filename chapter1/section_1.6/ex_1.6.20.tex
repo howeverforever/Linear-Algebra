@@ -1,0 +1,20 @@
+% === Exercise 1.6.20 ===
+\begin{Exercise}
+\begin{enumerate}[(a)]
+\item
+\begin{proof}
+By the Maximal Principle, we can pick a set $B$ which is a subset of $S$ such that $B$ is linearly independent and is the only linearly independent subset of $S$ that contains $B$ is itself. It suffices to say that $B$ is a maximal linearly independent subset of $S$.
+
+In order to prove $B$ is a basis for $V$, it suffices to prove $B$ generates $V$. We claim $S\subseteq span(B)$.
+
+Suppose to contrary that $S\nsubseteq span(B)$. There exists a $v\in S$ such that $v\notin span(B)$. Since Theorem 1.7 implies that $B\cup \{v\}$ is linearly independent. This contradicts that $B$ is maximal.
+
+Since $span(S) = V$ by hypothesis, it follows from Theorem 1.5 and $B\subseteq S\subseteq span(B)$ that $span(B) = V$.
+\end{proof}
+
+\item
+\begin{proof}
+Let $G$ be any generating set for $V$, then from part (a), we know some subset of $H$ of $G$ is a basis for $V$. By the Corollary 1 of Theorem 1.10, we know $H$ contains exactly $n$ vectors. Since a subset of $G$ contains $n$ vectors, we conclude $G$ must contain at least $n$ vectors. 
+\end{proof}
+\end{enumerate}
+\end{Exercise}

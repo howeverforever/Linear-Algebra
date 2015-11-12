@@ -1,0 +1,43 @@
+% === Exercise 2.3.12 ===
+\begin{Exercise}
+\begin{enumerate}[(a)]
+\item
+\begin{proof}
+Pick arbitrary $v_1, v_2\in V$ such that $T(v_1) = T(v_2)$. Then $U(T(v_1)) = U(T(v_2))$ implies $(UT)(v_1) = (UT)(v_2)$. Since $UT$ is one-to-one, we know $v_1 = v_2$. It follows that $T$ is also one-to-one.
+\end{proof}
+\begin{itemize}
+\item Must $U$ also be one-to-one?
+\end{itemize}
+\begin{answer}
+No.
+\end{answer}
+\begin{proof}
+We pick $V = \mathbb{R}^2$, $W = Z = \mathbb{R}^3$. Suppose $T(a,b) = (a,b,0)$ and $U(a,b,c) = (a,b,0)$. Then $UT$ and $T$ are one-to-one. However, $U$ is not one-to-one.
+\end{proof}
+
+\item
+\begin{proof}
+Notice that $UT:V\to Z$ is onto. Let $z$ is an arbitrary element of $Z$, then exists $v\in V$ such that $UT(v) = z$. This implies $U(T(v)) = z$. We pick $w = T(v)$, then we know $U(w) = U(T(v)) = z$. Hence $U$ is also onto.
+\end{proof}
+\begin{itemize}
+\item Must $T$ also be onto?
+\end{itemize}
+\begin{answer}
+No.
+\end{answer}
+\begin{proof}
+We pick $V=Z=\mathbb{R}^2$ and $W=\mathbb{R}^3$. Suppose $T(a,b) = (a,b,0)$ and $U(a,b,c) = (a,b)$. Then $UT$ and $U$ are onto. However, $T$ is not onto.
+\end{proof}
+
+\item
+\begin{proof}
+First we prove $UT$ is one-to-one, then we prove $UT$ is onto.
+
+Pick arbitrary $v_1,v_2\in V$ such that $(UT)(v_1) = (UT)(v_2)$. This implies $U(T(v_1)) = U(T(v_2))$. Since $U$ is one-to-one, then $T(v_1) = T(v_2)$; also $T$ is one-to-one, so $v_1 = v_2$. This means $UT$ is one-to-one.
+
+Pick arbitrary $z\in Z$. Since $U$ is onto, then there exists $w\in W$ such that $U(w) = z$. Also since $T$ is onto, then there exists $v\in V$ such that $T(v) = w$. They follow that $U(T(v)) = U(w) = z$. Then $UT(v) = z$. Hence $UT$ is onto.
+
+Finally, we conclude $UT$ is one-to-one and onto (bijective).
+\end{proof}
+\end{enumerate}
+\end{Exercise}

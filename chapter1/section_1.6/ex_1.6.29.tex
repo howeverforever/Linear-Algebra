@@ -1,0 +1,76 @@
+% === Exercise 1.6.29 ===
+\begin{Exercise}
+\begin{enumerate}[(a)]
+\item
+\begin{proof}
+Follow the hint. First, we claim $\beta = \{u_1,\cdots,u_k,v_1,\cdots,v_m,w_1,\cdots,w_p\}$ is a basis for $W_1+W_2$. 
+\begin{itemize}
+\item $\mathbf{\boldsymbol{\beta}\ generates\ W_1+W_2}$.
+\end{itemize}
+Let 
+\begin{align*}
+t_1 &:= \sum_{i=1}^{k}a_i u_i + \sum_{i=1}^{m}b_i v_i\in W_1; \\
+t_2 &:= \sum_{i=1}^{k}a'_i u_i + \sum_{i=1}^{p}c_i w_i\in W_2.
+\end{align*}
+Then pick $t = t_1+t_2 \in W_1+W_2$, we have 
+$$
+t = t_1+t_2 = \sum_{i=1}^{k}(a_i+a'_i) u_i + \sum_{i=1}^{m}b_i v_i + \sum_{i=1}^{p}c_i w_i \in span(\beta).
+$$
+Since $t_1$ and $t_2$ are arbitrary, this implies $W_1+W_2 =  span(\beta)$.
+
+\begin{itemize}
+\item $\mathbf{\boldsymbol{\beta}\ is\ linearly\ independent}$.
+\end{itemize}
+Consider
+\begin{equation}\label{eq:ex_1.6.29a1}
+\sum_{i=1}^{k}a_i u_i + \sum_{i=1}^{m}b_i v_i + \sum_{i=1}^{p}c_i w_i = 0.
+\end{equation}
+Let
+\begin{equation}\label{eq:ex_1.6.29a2}
+v := \sum_{i=1}^{k}a_i u_i \sum_{i=1}^{m}b_i v_i = -\sum_{i=1}^{p}c_i w_i.
+\end{equation}
+We know $v\in W_1$ and $v\in W_2$; hence $v\in W_1\cap W_2$. It follows that
+$$
+v = \sum_{i=1}^{k}a'_i u_i.
+$$
+Since $\{u_1, \cdots, u_k, w_1, \cdots, w_p\}$ is a basis for $W_2$ and $v\in W_2$, then
+$$
+\sum_{i=1}^{k}a'_i u_i + \sum_{i=1}^{p}c_i w_i = 0
+\implies
+a'_1 = \cdots = a'_k = c_1 = \cdots = c_p = 0.
+$$
+Also since $\{u_1, \cdots, u_k, v_1, \cdots, v_m\}$ is a basis for $W_1$ and $v\in W_1$, from equation \eqref{eq:ex_1.6.29a2}, we know
+$$
+v = \sum_{i=1}^{k}a_i u_i \sum_{i=1}^{m}b_i v_i = 0
+\implies
+a_1 = \cdots = a_k = b_1 = \cdots = b_m = 0.
+$$
+Hence from equation \eqref{eq:ex_1.6.29a1}, we obtain $\beta$ is linearly independent.
+
+We prove the claim holds as promised. Finally, we compute
+\begin{align}
+\dim(W_1+W_2) 
+&= k+m+p \notag \\
+&= (k+m) + (k+p) - k \notag \\
+&= \dim(W_1) + \dim(W_2) - \dim(W_1\cap W_2). \label{eq:ex_1.6.29a3}
+\end{align}
+
+By hypothesis that $W_1,W_2$ are finite-dimensional vector spaces, we know $W_1\cap W_2$ is also finite-dimensional; hence we obtain $k+m,k+p,k<\infty$. From formula \eqref{eq:ex_1.6.29a3}, we conclude $W_1+W_2$ is also a finite-dimensional vector space since $k+m+p<\infty$.
+\end{proof}
+
+\item
+\begin{proof}
+From part (a) and by hypothesis, we know
+$$
+\dim(W_1+W_2) = \dim(W_1)+\dim(W_2)-\dim(W_1\cap W_2).
+$$
+Hence
+\begin{alignat*}{7}
+\quad&& V &= W_1\oplus W_2 \\
+\iff&& V &= W_1+W_2\text{ and }W_1\cap W_2=\{0\} \\
+\iff&& \dim(V) &= \dim(W_1)+\dim(W_2)-\dim(\{0\}) \\
+\iff&& \dim(V) &= \dim(W_1)+\dim(W_2)
+\end{alignat*}
+\end{proof}
+\end{enumerate}
+\end{Exercise}

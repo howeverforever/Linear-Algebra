@@ -1,0 +1,95 @@
+% === Exercise 2.5.7 ===
+\begin{Exercise}
+\begin{enumerate}[(a)]
+\item[(a)]
+\begin{answer}
+$T(x,y) = \frac{1}{m^2+1}\left((1-m^2)x+2m y,2m x+(m^2-1)y\right)$.
+\end{answer}
+\begin{solution}
+Consider the line $L:y=m x$ where $m\neq 0$. Since $(1,m)\in L$, so the reflection of $(1,m)$ over $L$ is $(1,m)$ itself. Then consider another line $L':y'=-m^{-1} x'$ such that $L\bot L'$. We observe $(-m,1)\in L'$. Notice that the reflection of $(-m,1)$ over $L$ is $(m,-1)$.
+
+Pick $\beta' = \{(1,m),(-m,1)\}$. Also we have
+$$
+T(1,m) = (1,m)\text{, and } T(-m,1) = (m,-1).
+$$
+Since 
+$$
+(1,m) = (1,m)+0(m,-1) \text{, and } (m,-1) = 0(1,m)-(-m,1).
+$$
+It follows that $[T]_{\beta'} = \begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}$. Now pick $\beta = \{e_1,e_2\}$ which is a standard basis for $\mathbb{R}^2$. So we know $[I]_{\beta'}^{\beta} = \begin{pmatrix}
+1 & -m \\
+m & 1
+\end{pmatrix}$. Compute 
+$$
+[I]_{\beta}^{\beta'} = ([I]_{\beta'}^{\beta})^{-1} = \frac{1}{m^2+1}\begin{pmatrix}
+1 & m \\
+-m & 1
+\end{pmatrix}.
+$$
+Hence
+\begin{align*}
+[T]_{\beta} 
+&= [I]_{\beta'}^{\beta} [T]_{\beta'} [I]_{\beta}^{\beta'} \\
+&= \begin{pmatrix}
+1 & -m \\
+m & 1
+\end{pmatrix} \cdot \begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix} \cdot \frac{1}{m^2+1}\begin{pmatrix}
+1 & m \\
+-m & 1
+\end{pmatrix} \\
+&= \frac{1}{m^2+1}\begin{pmatrix}
+1-m^2 & 2m \\
+2m & m^2-1
+\end{pmatrix}.
+\end{align*}
+Finally, the answer follows from $[T]_{\beta}\begin{pmatrix}
+x \\
+y
+\end{pmatrix} = \frac{1}{m^2+1}\begin{pmatrix}
+(1-m^2)x+2m y \\
+2m x + (m^2-1) y
+\end{pmatrix}$.
+\end{solution}
+
+\item[(b)]
+\begin{answer}
+$T(x,y) = \frac{1}{m^2+1}\left(x+m y,m x+m^2 y\right)$.
+\end{answer}
+\begin{solution}
+Define $L$ and $L'$ be the same as part (a). Notice that $\mathbb{R^2} = L\oplus L'$. If $p\in \mathbb{R}^2$ such that $p=p_1+p_2$ where $p_1\in L$ and $p_2\in L'$, then $T(p) = p_1$. Since $(1,m)\in L$, then $T(1,m) = T(1,m)$; on the other hand, since $(-m,1)\in L'$, then $T(-m,1) = (0,0)$. 
+
+Now we pick $\beta,\beta'$ which are the same as part (a). It follows that $[T]_{\beta'} = \begin{pmatrix}
+1 & 0 \\
+0 & 0
+\end{pmatrix}$. Of course, 
+$$
+[I]_{\beta'}^{\beta} = \begin{pmatrix}
+1 & -m \\
+m & 1
+\end{pmatrix}\text{, and } [I]_{\beta}^{\beta'} = \frac{1}{m^2+1}\begin{pmatrix}
+1 & m \\
+-m & 1
+\end{pmatrix}.
+$$
+Hence $[T]_{\beta} = [I]_{\beta'}^{\beta} [T]_{\beta'} [I]_{\beta}^{\beta'} = \frac{1}{m^2+1}\begin{pmatrix}
+1 & m \\
+m & m^2
+\end{pmatrix}$. 
+
+Finally, the answer follows from $[T]_{\beta}\begin{pmatrix}
+x \\
+y
+\end{pmatrix} = \frac{1}{m^2+1}\begin{pmatrix}
+x+m y \\
+m x + m^2 y
+\end{pmatrix}$.
+\end{solution}
+
+\end{enumerate}
+\end{Exercise}

@@ -1,0 +1,47 @@
+% === Exercise 6.4.3 ===
+\begin{Exercise}
+\begin{answer}
+$T(x,y) = (x, 2y)$ and $\{(1,1),(0,1)\}$ is a basis for $\mathbb{R}^2$.
+\end{answer}
+\begin{solution}
+Pick $T:\mathbb{R}^2\to \mathbb{R}^2$ where $T(x,y) = (x,2y)$. Then $T = \begin{pmatrix}
+1 & 0 \\
+0 & 2 
+\end{pmatrix}$. Observe $T = T^*$ and hence $T$ is normal.
+
+Now pick $\beta = \{(1,1),(0,1)\}$, then
+$$
+[T]_{\beta} = \begin{pmatrix}
+1 & 0 \\
+1 & 1
+\end{pmatrix} T = \begin{pmatrix}
+1 & 0 \\
+1 & 2
+\end{pmatrix}.
+$$
+Consequetly, we verify whether it is normal or not.
+\begin{align*}
+[T]_{\beta} [T]_{\beta}^* &= \begin{pmatrix}
+1 & 0 \\
+1 & 2
+\end{pmatrix} \begin{pmatrix}
+1 & 1 \\
+0 & 2
+\end{pmatrix} = \begin{pmatrix}
+1 & 1 \\
+1 & 5
+\end{pmatrix}; \\
+[T]_{\beta}^* [T]_{\beta} &= \begin{pmatrix}
+1 & 1 \\
+0 & 2
+\end{pmatrix} \begin{pmatrix}
+1 & 0 \\
+1 & 2
+\end{pmatrix} = \begin{pmatrix}
+2 & 2 \\
+2 & 4
+\end{pmatrix}.
+\end{align*}
+Hence $[T]_{\beta}$ is not normal.
+\end{solution}
+\end{Exercise}

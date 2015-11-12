@@ -1,0 +1,105 @@
+% === Exercise 1.3.8 ===
+\begin{Exercise} \label{ex:1.3.8}
+\begin{enumerate}[(a)]
+\item[(a)]
+\begin{answer}
+Yes.
+\end{answer}
+\begin{solution}
+Let $x := (3t,t,-t)\in W_1$ for $t\in\mathbb{R}$, and $y := (3k,k,-k)\in W_1$ for $k\in\mathbb{R}$, and $c$ is a  arbitrary scalar. 
+Then
+$$
+x+y
+= (3t+3k,t+k,-(t+k))
+= (3(t+k), t+k, -(t+k)) \in W_1.
+$$
+Also,
+$$
+c x
+= c(3t,t,-t)
+= (3(ct),ct,-ct) \in W_1.
+$$
+Moreover,
+$$
+(0,0,0) \in W_1
+$$
+Hence $W_1$ is a subspace of $\mathbb{R}^3$.
+\end{solution}
+
+\item[(b)]
+\begin{answer}
+No.
+\end{answer}
+\begin{solution}
+Let $x := (x_3+2,x_2,x_3)\in W_2$ and $y := (y_3+2,y_2,y_3)\in W_2$. 
+Then
+$$
+x+y
+= (x_3+y_3+4, x_2+y_2,x_3+y_2) \notin W_2.
+$$
+Hence $W_2$ is not a subspace of $\mathbb{R}^3$.
+\end{solution}
+
+\item[(c)]
+\begin{answer}
+Yes.
+\end{answer}
+\begin{solution}
+Let $x := (x_1,x_2,-2x_1+7x_2)\in W_3$ and $y := (y_1,y_2,-2y_1+7y_2)\in W_3$ and $c$ is a arbitrary scalar. Then
+$$
+x+y
+= (x_1+y_1, x_2+y_2, -2(x_1+y_1)+7(x_2+y_2)) \in W_3.
+$$
+And
+$$
+c x
+= (c x_1, c x_2, c(-2 x_1 + 7x_2)) \in W_3.
+$$
+Moreover,
+$$
+(0,0,0) \in W_3.
+$$
+Hence $W_3$ is a subspace of $\mathbb{R}^3$.
+\end{solution}
+
+\item[(d)]
+\begin{answer}
+Yes.
+\end{answer}
+\begin{solution}
+Let $x := (x_1,x_2,-x_1+4x_2)\in W_4$ and $y := (y_1,y_2,-y_1+4y_2)\in W_4$ and $c$ is a arbitrary scalar. Then
+$$
+x+y
+= (x_1+y_1, x_2+y_2, -(x_1+y_1)+4(x_2+y_2)) \in W_4.
+$$
+And
+$$
+c x
+= (c x_1, c x_2, c(- x_1 + 4x_2)) \in W_4.
+$$
+Moreover,
+$$
+(0,0,0) \in W_4.
+$$
+Hence $W_4$ is a subspace of $\mathbb{R}^3$.
+\end{solution}
+
+\item[(e)]
+\begin{answer}
+No.
+\end{answer}
+\begin{solution}
+Since $(0,0,0)\notin W_5$, then $W_5$ is not a subspace of $\mathbb{R}^3$.
+\end{solution}
+
+\item[(f)]
+\begin{answer}
+No.
+\end{answer}
+\begin{solution}
+Let $x := (1,\frac{\sqrt{33}}{3},1)\in W_6$ and $y := (1,1,\frac{\sqrt{3}}{3})\in W_6$, however $x+y\notin W_6$.
+Since there exists two elements of $W_6$ such that the sum of them is not an element of $W_6$; hence $W_6$ is not a subspace of $\mathbb{R}^3$.
+\end{solution}
+
+\end{enumerate}
+\end{Exercise}

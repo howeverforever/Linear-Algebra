@@ -1,0 +1,40 @@
+% === Exercise 5.1.8 ===
+\begin{Exercise}
+\begin{enumerate}[(a)]
+\item
+\begin{proof}
+$(\Longrightarrow)$
+Suppose to contrary that $\lambda = 0$ is an eigenvalue of $T$. Since $T$ is invertible, then $\det(T) \neq 0$. Consider  $\det(T-\lambda I) = 0$. It follows that $\det(T- 0 I = \det(T) = 0$ which contradicts the supposition. Hence $0$ is not an eigenvalue of $T$.
+
+\vspace{2ex}
+
+$(\Longleftarrow)$
+Suppose $T$ is $\mathbf{not}$ invertible, then $\det(T) = 0$. Then if $\lambda = 0$ is an eigenvalue of $T$, it follows that $\det(T-\lambda I) = \det(T) = 0$ holds. We have proven the contraposition.
+\end{proof}
+
+\item
+\begin{proof}
+Let $v$ be some eigenvectors corresponding to $\lambda$. Notice that $T$ is invertible. Consider
+\begin{alignat*}{7}
+\quad&& T v &= \lambda v \\
+\iff&& v &= T^{-1} \lambda v \\
+\iff&& \lambda^{-1} v &= T^{-1} v.
+\end{alignat*}
+This means $\lambda^{-1}$ is an eigenvalue of $T^{-1}$.
+\end{proof}
+
+\item
+\begin{proof}
+We restate part(a) as a matrix $A$ is singular if and only if $0$ is not an eigenvalue of $L_A$. Here is the proof:
+$$
+A\text{ is singular}
+\iff L_A\text{ is not invertible}
+\iff 0\text{ is an eigenvalue of } L_A.
+$$
+
+We restate part(b) as if $A$ is invertible, then $\lambda$ is an eigenvalue of $L_A$ if and only if $\lambda^{-1}$ is an eigenvalue of $(L_A)^{-1}$. Here is the proof:
+
+Since $A$ is invertible, then $L_A$ is invertible. from part (b), we obtain the statement holds.
+\end{proof}
+\end{enumerate}
+\end{Exercise}

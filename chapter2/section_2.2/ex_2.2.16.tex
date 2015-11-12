@@ -1,0 +1,15 @@
+% === Exercise 2.2.16 ===
+\begin{Exercise}
+\begin{answer}
+$$
+[T]_{\beta}^{\gamma} = \begin{pmatrix}
+O & O \\
+O & I_{n-k}
+\end{pmatrix}.
+$$
+where $n=\dim(V)=\dim(W)$ and $k=\nullity(T)$.
+\end{answer}
+\begin{proof}
+Suppose $\dim(W) = \dim(V) =: n$. Let $\{v_1,\cdots,v_k\}$ be a basis for $N(T)$. Now extend it to a basis $\beta = \{v_1,\cdots,v_k,v_{k+1},\cdots,v_n\}$ for $V$. For $j=k+1,\cdots, n$, we set $w_j = T(v_j)$ where $T = [T]_{\beta}^{\gamma}$ is mentioned in the answer, then $\{w_{k+1},\cdots, w_n\}$ is linear independent. Again, we extend it to a basis $\gamma = \{w_1,\cdots, w_k,w_{k+1},\cdots,w_n\}$ for $W$.
+\end{proof}
+\end{Exercise}

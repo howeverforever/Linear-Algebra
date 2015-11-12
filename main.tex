@@ -1,0 +1,97 @@
+\documentclass{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{natbib}
+\usepackage{mathpazo}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{caption}
+
+\usepackage[bookmarks=true]{hyperref}
+\usepackage{bookmark}
+
+\usepackage{titletoc}
+\usepackage{titlesec} 
+\usepackage{import}
+\usepackage[yyyymmdd]{datetime}
+
+\usepackage{enumerate}
+\usepackage{type1cm}
+\usepackage{exercise,chngcntr}
+
+% === Environment Settings ===
+\include{style}
+
+\let\oldproofname=\proofname
+\renewcommand{\proofname}{\rm\bf{\oldproofname}}
+  
+\newenvironment{solution}
+  {\begin{proof}[$\mathbf{Solution}$]}
+  {\end{proof}}
+  
+\newenvironment{sketch}
+  {\begin{proof}[$\mathbf{Sketch}$]}
+  {\end{proof}}
+
+\newenvironment{answer}
+  {\begin{proof}[$\mathbf{Answer}$]\renewcommand{\qedsymbol}{}}
+  {\end{proof}}
+
+\renewcommand{\dateseparator}{/}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\newcommand\parallelogram{
+  \mathord{\text{
+    \tikz[baseline]
+      \draw (0,.1ex) -- (.8em,.1ex) -- (1em,1.6ex) -- (.2em,1.6ex) -- cycle;}}}
+% === -------------------- ===
+
+% === DeclareMathOperator ===
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\nullity}{nullity}
+\DeclareMathOperator{\spann}{span}
+\DeclareMathOperator{\trace}{tr}
+\DeclareMathOperator{\ii}{\mathrm{i}}
+% === ------------------- ===
+
+\begin{document}
+\counterwithin{Exercise}{section}
+
+% === Cover Page ===
+\include{cover}
+
+% === Contents Pages ===
+\pagenumbering{roman}
+
+\titlecontents{chapter}
+  [0pt]
+  {\addvspace{1em}}
+  {\bfseries\chaptername\ \thecontentslabel\quad}
+  {}
+  {\bfseries\hfill\contentspage}
+\tableofcontents
+
+% === Preface ===
+\include{abstract}
+\newpage
+
+% === Main Pages ===
+\newpage
+\pagenumbering{arabic}
+\subimport*{chapter1/}{chapter1}
+\subimport*{chapter2/}{chapter2}
+\subimport*{chapter3/}{chapter3}
+\subimport*{chapter4/}{chapter4}
+\subimport*{chapter5/}{chapter5}
+\subimport*{chapter6/}{chapter6}
+\subimport*{chapter7/}{chapter7}
+
+\end{document}

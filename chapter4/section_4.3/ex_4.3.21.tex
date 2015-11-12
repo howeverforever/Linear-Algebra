@@ -1,0 +1,35 @@
+% === Exercise 4.3.21 ===
+\begin{Exercise}
+\begin{proof}
+For $n=2$, we know $M = \begin{pmatrix}
+A & B \\
+O_1 & C
+\end{pmatrix}$ where $A,B,C,O_1\in M_{1\times 1}(F)$. Then $\det(M) = \det(A)\det(C)$ by definition. Suppose for $n-1$, the statement holds; then for $n$, we know the cofactor expansion of $M$ along the first column gives
+$$
+\det(M) = \sum_{i=1}^{n}(-1)^{i+1} M_{i 1} \det(\tilde{M}_{i 1}).
+$$
+Assume $A$ is a $k\times k$ matrix where $k<n$. Since $M_{i 1} = 0$ for $i>k$. The formula leads to
+$$
+\det(M) = \sum_{i=1}^{k}(-1)^{i+1} M_{i 1} \det(\tilde{M}_{i 1}).
+$$
+Suppose
+$
+\tilde{M}_{i 1} = \begin{pmatrix}
+\tilde{A}_{i 1} & \tilde{B} \\
+O_{n-k-1} & C
+\end{pmatrix}
+$
+where $\tilde{B}$ is obtained from deleting the $i$-th row of $B$. Since $\tilde{M}_{i 1}$ is a $(n-1)\times(n-1)$ matrix, by supposition of induction, we have $\det(\tilde{M}_{i 1}) = \det(\tilde{A}_{i 1})\det(C)$. Hence
+$$
+\det(M) = \sum_{i=1}^{k}(-1)^{i+1} M_{i 1} \det(\tilde{A}_{i 1})\det(C).
+$$
+Notice that $M_{i 1} = A_{i 1}$ for each $i=1,2,\cdots,k$, then it follows that
+$$
+\det(M) = \left(\sum_{i=1}^{k}(-1)^{i+1} A_{i 1} \det(\tilde{A}_{i 1}) \right)\det(C)
+= \det(A)\det(C).
+$$
+This means the statement also holds for $n$.
+
+By induction, we conclude the statement holds for $n\geq 2$.
+\end{proof}
+\end{Exercise}

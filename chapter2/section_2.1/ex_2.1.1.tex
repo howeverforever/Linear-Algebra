@@ -1,0 +1,84 @@
+% === Exercise 2.1.1 ===
+\begin{Exercise}
+\begin{enumerate}[(a)]
+\item[(a)]
+\begin{answer}
+True.
+\end{answer}
+\begin{solution}
+This is by definition.
+\end{solution}
+
+\item[(b)]
+\begin{answer}
+False.
+\end{answer}
+\begin{solution}
+Let $T:\mathbb{C}\to\mathbb{C}$ such that $T(a+b i) = a$, and $x := a_1 + b_1 i$ and $y := a_2 + b_2 i$.
+
+Notice that $T(x+y) = T(a_1 + b_1 i + a_2 + b_2 i) = a_1 + a_2 = T(x) + T(y)$. However, $T(c i) = 0$ and $i T(c) = c i$ are distinct. So $T$ is not linear.
+\end{solution}
+
+\item[(c)]
+\begin{answer}
+False.
+\end{answer}
+\begin{solution}
+We will give a counter-example for each direction.
+
+$(\Longrightarrow)$
+Let $T:\mathbb{R}\to\mathbb{R}$ such that $T(x) = x+1$. We know $T$ is one-to-one, however $T(x) = 0$ implies $x=-1$.
+
+\vspace{2ex}
+
+$(\Longleftarrow)$
+Let $T(x) = |x|$. Since $T(x) = 1$ implies $x = 1$ or $x=-1$, then $T$ is not one-to-one.
+\end{solution}
+
+\item[(d)]
+\begin{answer}
+True.
+\end{answer}
+\begin{solution}
+Since
+$$
+T(0_V) = T(0_V+0_V) = T(0_V) + T(0_V),
+$$
+then we conclude $T(0_V) = 0_W$.
+\end{solution}
+
+\item[(e)]
+\begin{answer}
+False.
+\end{answer}
+\begin{solution}
+It follows from Theorem 2.3. Notice that it equals to $\dim(V)$, not $\dim(W)$.
+\end{solution}
+
+\item[(f)]
+\begin{answer}
+False.
+\end{answer}
+\begin{solution}
+Consider $T:\mathbb{R}\to\mathbb{R}$ such that $T(x) = 0$.
+\end{solution}
+
+\item[(g)]
+\begin{answer}
+True.
+\end{answer}
+\begin{solution}
+It follows from the Corollary of Theorem 2.6.
+\end{solution}
+
+\item[(h)]
+\begin{answer}
+False.
+\end{answer}
+\begin{solution}
+It is precise to say this statement might hold or not hold. In other words, it doesn't hold always.
+
+For example, we set $x_2 = 2x_1$, then $T(x_2) = T(2 x_1) = 2T(x_1) = 2 y_1$. Hence if $y_2\neq 2 y_1$, there doesn't exist such a linear transformation.
+\end{solution}
+\end{enumerate}
+\end{Exercise}

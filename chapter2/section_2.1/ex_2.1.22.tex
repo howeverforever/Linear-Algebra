@@ -1,0 +1,50 @@
+% === Exercise 2.1.22 ===
+\begin{Exercise}
+\begin{itemize}
+\item $T:\mathbb{R}^3\to\mathbb{R}$ is linear
+\end{itemize}
+\begin{proof}
+Let $\beta := \{e_1, e_2, e_3\}$ be a basis for $\mathbb{R}^3$.
+Set $T(e_1) = a$, $T(e_2) = b$, $T(e_3) = c$.
+For any $(x,y,z)\in\mathbb{R}^3$, we have
+$$
+T(x,y,z) 
+= T(x e_1+y e_2+z e_3) 
+= x T(e_1)+y T(e_2)+ z T(e_3)
+= a x+b y+c z.
+$$
+\end{proof}
+
+\begin{itemize}
+\item $T:F^n\to F$ is linear
+\end{itemize}
+\begin{proof}
+Let $\beta := \{e_1, \cdots, e_n\}$ be a basis for $F^n$.
+Set $T(e_i) = c_i\in F$ for each $i=1,\cdots,n$.
+For any $(x_1,\cdots,x_n)\in F^n$, we have
+$$
+T(x_1, \cdots, x_n)
+= T(x_1 e_1+\cdots, x_n e_n)
+= x_1 T(e_1)+\cdots+x_n T(e_n)
+= c_1 x_1 + \cdots c_n x_n.
+$$
+\end{proof}
+
+\begin{itemize}
+\item $T:F^n\to F^m$ is linear
+\end{itemize}
+\begin{proof}
+Let $\beta := \{e_1, \cdots, e_n\}$ be a basis for $F^n$.
+Set $T(e_i) = \sum_{j=1}^{m} c_{i j} w_j\in F$ for each $i=1,\cdots,n$.
+For any $(x_1,\cdots,x_n)\in F^n$, we have
+\begin{align*}
+T(x_1,\cdots, x_n)
+&= T\left( \sum_{i=1}^{n} x_i e_i \right) \\
+&= \sum_{i=1}^{n} x_i T(e_i) \\
+&= \sum_{i=1}^{n} x_i \sum_{j=1}^{m} c_{i j} w_j \\
+&= \sum_{i=1}^{n} \sum_{j=1}^{m} c_{i j} x_i w_j \\
+&= \sum_{j=1}^{m} \left( \sum_{i=1}^{n} c_{i j} x_i \right) w_j \\
+&= (\sum_{i=1}^{n} c_{i 1} x_1, \cdots, \sum_{i=1}^{n} c_{i m} x_m).
+\end{align*}
+\end{proof}
+\end{Exercise}

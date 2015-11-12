@@ -1,0 +1,43 @@
+% === Exercise 2.6.9 ===
+\begin{Exercise}
+\begin{proof}
+Follow the hint. Let $\{e_1,e_2,\cdots,e_m\}$ be the standard basis for $F^m$.
+
+$(\Longrightarrow)$
+Since $g_i\in (F^m)^*$ for each $i=1,2,\cdots,m$, then we know for all $1\leq i,j\leq m$,
+$$
+g_i(e_j) = \delta_{i j} = \begin{cases}
+1 & \mbox{for } i=j \\
+0 & \mbox{otherwise}
+\end{cases}.
+$$
+Given arbitrary $x\in F^n$, then
+$$
+T(x) = (c_1,c_2,\cdots,c_m) = \sum_{j=1}^{m} c_j e_j
+$$
+where $c_j \in F$ for each $j$. Since $T, g_i$ are linear, we consider
+$$
+f_i(x) = (g_i T)(x) = g_i(T(x)) = g_i(\sum_{j=1}^{m} c_j e_j) = \sum_{j=1}^{m} c_j g_i(e_j) = c_i.
+$$
+It follows that
+$(f_1(x), f_2(x), \cdots, f_m(x)) = (c_1, c_2, \cdots, c_m) = T(x)$.
+
+Since $x$ was arbitrary, we obtain
+$$
+T(x) = (f_1(x), f_2(x), \cdots, f_m(x)), \forall x\in F^n.
+$$
+
+\vspace{2ex}
+
+$(\Longleftarrow)$
+Notice that $f_i$ is linear. For $x,y \in F^n$ and $c\in F$, we consider
+\begin{align*}
+T(x+c y)
+&= ( f_1(x+c y), f_2(x+c y), \cdots, f_m(x+c y) ) \\
+&= ( f_1(x)+c f_1(y), f_2(x)+c f_2(y), \cdots, f_m(x)+c f_m(y) ) \\
+&= ( f_1(x), f_2(x), \cdots, f_m(x) ) + c( f_1(y), f_2(y), \cdots, f_m(y) ) \\
+&= T(x) + c T(y).
+\end{align*}
+Hence $T$ is linear.
+\end{proof}
+\end{Exercise}

@@ -1,0 +1,27 @@
+% === Exercise 1.6.34 ===
+\begin{Exercise}
+\begin{enumerate}[(a)]
+\item
+\begin{proof}
+Since $V$ is a finite-dimensional vector space and $W_1$ is a subspace of $V$, by Theorem 1.11, $W_1$ is also a finite-dimensional vector space and $\dim(W_1) < \dim(V)$.
+
+Suppose $\dim(V) = n < \infty$. Let $\dim(W_1) = k \leq n$ and $\beta_1 = \{u_1, \cdots, u_k\}$ is a basis for $W_1$. By the Corollary 2(c) of Theorem 1.10, we can extend $\beta_1$ to $\beta$ so that $\beta = \{u_1,\cdots,u_k,u_{k+1},\cdots,u_n\}$ is a basis for $V$. We pick $\beta_2 = \{u_{k+1},\cdots,u_n\}$ such that $\beta_2$ is a basis for $W_2$.
+
+Notice that $\beta_1\cup\beta_2 = \beta$. Since $\beta_1,\beta_2,\beta$ are bases for $W_1,W_2,V$, respectively; by Exercise 1.6.33(b), we conclude $V=W_1\oplus W_2$.
+\end{proof}
+
+\item
+\begin{answer}
+$$
+W_2 = \left\{ (0,a_2):a_2\in\mathbb{R} \right\}\text{ and }
+W'_2 = \left\{ (a_2,a_2):a_2\in\mathbb{R} \right\}.
+$$
+($\star$ Notice that answers are not unique)
+\end{answer}
+\begin{solution}
+$\beta_1 = \{(1,0)\}$ is a basis for $W_1$, and $\beta_2 = \{(0,1)\}$ is a basis for $W_2$. Since $\beta_1\cap\beta_2 =\emptyset$ and $\beta_1\cup\beta_2$ is a basis for $\mathbb{R}^2$, by Exercise 1.6.33(b), we know $V=W_1\oplus W_2$. 
+
+A similar argument shows that $\beta'_2 = \{(1,1)\}$ is a basis for $W'_2$ and hence $V=W_1\oplus W'_2$.
+\end{solution}
+\end{enumerate}
+\end{Exercise}

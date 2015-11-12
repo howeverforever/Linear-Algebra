@@ -1,0 +1,53 @@
+% === Exercise 3.2.6 ===
+\begin{Exercise}
+We pick the standard basis $\alpha$ for domain of $T$, and the standard basis $\beta$ for codomain of $T$.
+\begin{enumerate}[(a)]
+\item[(a)]
+\begin{answer}
+$[T]_{\alpha}^{\beta}$ is invertible; $[T^{-1}]_{\beta}^{\alpha} = \begin{pmatrix}
+-1 & -2 & -10 \\
+0 & -1 & -4 \\
+0 & 0 & -1
+\end{pmatrix}$.
+\end{answer}
+\begin{solution}
+Notice that $T(a x^2 +b x+c) = -a x^2 + (4a-b)x+(2a+2b-c)$. 
+
+Then we know $[T]_{\alpha}^{\beta}=\begin{pmatrix}
+-1 & 2 & 2 \\
+0 & -1 & 4 \\
+0 & 0 & -1
+\end{pmatrix}$.
+\end{solution}
+
+\item[(b)]
+\begin{answer}
+$[T]_{\alpha}^{\beta}$ is not invertible.
+\end{answer}
+\begin{solution}
+Notice that $T(a x^2 +b x+c) = 2a x^2 + (2a+b)x+b$. 
+
+Then we know $[T]_{\alpha}^{\beta}=\begin{pmatrix}
+0 & 1 & 0 \\
+0 & 1 & 2 \\
+0 & 0 & 2
+\end{pmatrix}$. But $\rank(T) = 2 \neq 3$.
+\end{solution}
+
+\item[(c)]
+\begin{answer}
+$[T]_{\alpha}^{\beta}$ is invertible; $[T^{-1}]_{\beta}^{\alpha} = \frac{1}{6}\begin{pmatrix}
+1 & -2 & 3 \\
+3 & 0 & -3 \\
+-1 & 2 & 3
+\end{pmatrix}$.
+\end{answer}
+\begin{solution}
+We know $[T]_{\alpha}^{\beta}=\begin{pmatrix}
+1 & 2 & 1 \\
+-1 & 1 & 2 \\
+1 & 0 & 1
+\end{pmatrix}$.
+\end{solution}
+\end{enumerate}
+\end{Exercise}

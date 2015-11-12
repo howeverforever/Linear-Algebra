@@ -1,0 +1,34 @@
+% === Exercise 7.1.3 ===
+\begin{Exercise}
+\begin{enumerate}[(a)]
+\item
+\begin{answer}
+For $\lambda = 2$, $\{2,-2x,x^2\}$ is a basis. $\mathcal{J} = \begin{pmatrix}
+2 & 1 & 0 \\
+0 & 2 & 1 \\
+0 & 0 & 2
+\end{pmatrix}$.
+\end{answer}
+\begin{solution}
+Let $\beta$ be the standard basis for $P_2(\mathbb{R})$, then $[T]_{\beta} = \begin{pmatrix}
+2 & -1 & 0 \\
+0 & 2 & -2 \\
+0 & 0 & 2
+\end{pmatrix}$. We observe the eigenvalue is $2$ with multiplicity $3$. Now we should pick $v = (0,0,1)$ such that $v\neq 0$, $(T-2I)(v) \neq 0$, $(T-2I)^2(v) \neq 0$, and $(T-2I)^3(v) = 0$. That is, $\{2,-2x,x^2\}$ is a basis for $T$. By doing so, we obtain $Q = \begin{pmatrix}
+2 & 0 & 0 \\
+0 & -2 & 0 \\
+0 & 0 & 1
+\end{pmatrix}$ and $Q^{-1} = \begin{pmatrix}
+\frac{1}{2} & 0 & 0 \\
+0 & -\frac{1}{2} & 0 \\
+0 & 0 & 1
+\end{pmatrix}$. We get the Jordan canonical form of $T$ is $$
+\mathcal{J} = Q^{-1} A Q = \begin{pmatrix}
+2 & 1 & 0 \\
+0 & 2 & 1 \\
+0 & 0 & 2
+\end{pmatrix}.
+$$
+\end{solution}
+\end{enumerate}
+\end{Exercise}

@@ -1,0 +1,45 @@
+% === Exercise 6.1.4 ===
+\begin{Exercise}
+\begin{enumerate}[(a)]
+\item
+\begin{proof}
+Let $A,B,C\in V$ and $c\in F$. We prove it is compatible with definitions.
+\begin{itemize}
+\item $\langle A+B,C \rangle = \langle A,C \rangle + \langle B,C \rangle$.
+$$
+\langle A+B,C \rangle
+= \trace(C^*(A+B))
+= \trace(C^* A) + \trace(C^* B)
+= \langle A,C \rangle + \langle B,C \rangle.
+$$
+
+\item $\langle c A, B \rangle = c\langle A,B \rangle$.
+$$
+\langle c A,B \rangle
+= \trace(B^*(c A) )
+= c \trace( B^* A)
+= c\langle A,B \rangle.
+$$
+
+\item $\overline{\langle A,B \rangle} = \langle B,A \rangle$.
+$$
+\overline{\langle A,B \rangle}
+= \trace(\overline{B^* A} )
+= \trace(A^* B)
+= \langle B, A \rangle.
+$$
+
+\item $\langle A,A \rangle > 0\iff A\neq O$.
+
+\begin{align*}
+\langle A,A \rangle
+&= tr(A^* A) \\
+&= \sum_{i=1}^{n} \sum_{k=1}^{n} (A^*)_{i k} A_{k i} \\
+&=  \sum_{i=1}^{n} \sum_{k=1}^{n} \overline{A_{k i}} A_{k i} \\
+&= \sum_{i=1}^{n} \sum_{k=1}^{n} |A_{k i}|^2.
+\end{align*}
+Hence $A\neq 0 \iff \exists i,k:A_{k i} \neq 0 \iff \langle A,A \rangle > 0$.
+\end{itemize}
+\end{proof}
+\end{enumerate}
+\end{Exercise}
