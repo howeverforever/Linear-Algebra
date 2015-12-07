@@ -1,0 +1,31 @@
+% === Config ===
+\let\oldproofname=\proofname
+\renewcommand{\proofname}{\rm\bf{\oldproofname}}
+  
+\newenvironment{solution}
+  {\begin{proof}[$\mathbf{Solution}$]}
+  {\end{proof}}
+  
+\newenvironment{sketch}
+  {\begin{proof}[$\mathbf{Sketch}$]}
+  {\end{proof}}
+
+\newenvironment{answer}
+  {\begin{proof}[$\mathbf{Answer}$]\renewcommand{\qedsymbol}{}}
+  {\end{proof}}
+
+\renewcommand{\dateseparator}{/}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\newcommand\parallelogram{
+  \mathord{\text{
+    \tikz[baseline]
+      \draw (0,.1ex) -- (.8em,.1ex) -- (1em,1.6ex) -- (.2em,1.6ex) -- cycle;}}}
+% === -------------------- ===
+
+% === DeclareMathOperator ===
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\nullity}{nullity}
+\DeclareMathOperator{\spann}{span}
+\DeclareMathOperator{\trace}{tr}
+\DeclareMathOperator{\ii}{\mathrm{i}}
+% === ------------------- ===
