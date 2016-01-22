@@ -1,0 +1,99 @@
+% === Exercise 6.7.3 ===
+\begin{Exercise}
+	\begin{enumerate}[(a)]
+		\item[(a)]
+		\begin{answer}
+			$ A = \left[\dfrac{1}{\sqrt{6}}\begin{pmatrix}
+			\sqrt{2} & \sqrt{3} & 1 \\
+			\sqrt{2} & -\sqrt{3} & 1 \\
+			-\sqrt{2} & 0 & 2
+			\end{pmatrix}\right] \begin{pmatrix}
+			\sqrt{6} & 0 \\
+			0 & 0 \\
+			0 & 0
+			\end{pmatrix} \left[\dfrac{1}{\sqrt{2}}\begin{pmatrix}
+			1 & 1 \\
+			1 & -1
+			\end{pmatrix}\right]^*$.
+		\end{answer}
+		\begin{solution}
+			Let $A = \begin{pmatrix}
+			1 & 1 \\
+			1 & 1 \\
+			-1 & -1
+			\end{pmatrix}$.
+			Calculate $A^* A = \begin{pmatrix}
+			3 & 3 \\
+			3 & 3
+			\end{pmatrix}$.
+			Hence we know the eigenvalues are
+			$$
+			\lambda_1 = 6,~ \lambda_2 = 0.
+			$$
+			It follows that
+			$$
+			v'_1 = \begin{pmatrix}
+			1 \\
+			1
+			\end{pmatrix},~ v'_2 = \begin{pmatrix}
+			1 \\
+			-1
+			\end{pmatrix}
+			$$
+			are corresponding eigenvectors.
+			Normalize them to obtain
+			$$
+			v_1 = \dfrac{1}{\sqrt{2}}\begin{pmatrix}
+			1 \\
+			1
+			\end{pmatrix},~ v_2 = \dfrac{1}{\sqrt{2}}\begin{pmatrix}
+			1 \\
+			-1
+			\end{pmatrix}.
+			$$
+			We know the singular value is
+			$$
+			\sigma_1 = \sqrt{\lambda_1} = \sqrt{6}.
+			$$
+			This means
+			$$
+			u_1 = \frac{1}{\sigma_1}A v_1 = \frac{1}{\sqrt{6}} \begin{pmatrix}
+			1 & 1 \\
+			1 & 1 \\
+			-1 & -1
+			\end{pmatrix} \dfrac{1}{\sqrt{2}}\begin{pmatrix}
+			1 \\
+			1
+			\end{pmatrix} = \frac{1}{\sqrt{3}}\begin{pmatrix}
+			1 \\
+			1 \\
+			-1
+			\end{pmatrix}.
+			$$
+			Put $u_2 = \frac{1}{\sqrt{2}}\begin{pmatrix}
+			1 \\
+			-1 \\
+			0
+			\end{pmatrix}$ and $u_3 = \frac{1}{\sqrt{6}}\begin{pmatrix}
+			1 \\
+			1 \\
+			2
+			\end{pmatrix}$ such that $\{u_1, u_2, u_3\}$ is an orthonormal basis.
+			We obtain the singular value decomposition $A = U\Sigma V^*$ where
+			$$
+			U = \frac{1}{\sqrt{6}}\begin{pmatrix}
+			\sqrt{2} & \sqrt{3} & 1 \\
+			\sqrt{2} & -\sqrt{3} & 1 \\
+			-\sqrt{2} & 0 & 2
+			\end{pmatrix},~ \Sigma = \begin{pmatrix}
+			\sqrt{6} & 0 \\
+			0 & 0 \\
+			0 & 0
+			\end{pmatrix},~ V = \frac{1}{\sqrt{2}}\begin{pmatrix}
+			1 & 1 \\
+			1 & -1
+			\end{pmatrix}.
+			$$ 
+		\end{solution}
+	\end{enumerate}
+\end{Exercise}

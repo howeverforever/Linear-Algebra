@@ -1,0 +1,22 @@
+% === Exercise 2.6.5 ===
+\begin{Exercise}
+	\begin{proof}
+		Suppose $p(x) = ax + b$.
+		Then we have
+		\begin{align*}
+		f_1(p(x)) &= \int_{0}^{1}(at + b) dt = \frac{1}{2}a + b; \\
+		f_2(p(x)) &= \int_{0}^{2}(at + b) dt = 2a+2b.
+		\end{align*}
+		We can observe that
+		$$
+		ax+b = \left(\frac{1}{2}a + b\right) (-2x+2) + (2a+2b)\left(-\frac{1}{2}+x\right).
+		$$
+		Consider
+		$$
+		k \left( -2x+2 \right) + t \left( x-\frac{1}{2} \right) = 0.
+		$$
+		This implies $t = k = 0$.
+		It follows that $\left\{-2x+2, x-\dfrac{1}{2}\right\}$ is a basis for $V$.
+		By Theorem 2.24, we know $\{f_1, f_2\}$ is basis for $V^*$.
+	\end{proof}
+\end{Exercise}
