@@ -1,0 +1,62 @@
+% === Exercise 7.3.3 ===
+\begin{Exercise}
+	Find $[T]_{\beta}$ and use a similar argument from previous exercise. Here we use the standard basis $\beta$.
+	\begin{enumerate}[(a)]
+		\item[(a)]
+		\begin{answer}
+			$p(t) = (t-\sqrt{2})(t+\sqrt{2})$. 	
+		\end{answer}
+		\begin{solution}
+			Calculate $[T]_{\beta} = \begin{pmatrix}
+			1 & 1 \\
+			1 & -1
+			\end{pmatrix}$.
+			Then the Jordan canonical form is $\begin{pmatrix}
+			-\sqrt{2} & 0 \\
+			0 & \sqrt{2}
+			\end{pmatrix}$.
+			Hence the minimal polynomial is $(t-\sqrt{2})(t+\sqrt{2})$.
+		\end{solution}
+		
+		\item[(b)]
+		\begin{answer}
+			$p(t) = (t-2)^3$. 	
+		\end{answer}
+		\begin{solution}	
+			Calculate $[T]_{\beta} = \begin{pmatrix}
+			2 & 1 & 0 \\
+			0 & 2 & 2 \\
+			0 & 0 & 2
+			\end{pmatrix}$.
+			Then the Jordan canonical form is $\begin{pmatrix}
+			2 & 1 & 0 \\
+			0 & 2 & 1 \\
+			0 & 0 & 2
+			\end{pmatrix}$.
+			Hence the minimal polynomial is $(t-2)^3$.
+		\end{solution}
+		
+		\item[(c)]
+		\begin{answer}
+			$p(t) = (t-2)^2$. 	
+		\end{answer}
+		\begin{solution}
+			Calculate $[T]_{\beta} = \begin{pmatrix}
+			2 & 1 & 0 \\
+			0 & 2 & 0 \\
+			0 & 0 & 2
+			\end{pmatrix}$ which is the Jordan canonical form coincidentally. 
+			Hence we know the minimal polynomial is $(t-2)^2$.
+		\end{solution}
+		\item[(d)]
+		\begin{answer}
+			$p(t) = (t-1)(t+1)$.
+		\end{answer}
+		\begin{solution}
+			Following the hint, we have $(T-I)(T+I) = O$.
+			Put $f(t) = (t-1)(t+1)$ with $f(T) = O$.
+			By the Cayley-Hamilton Theorem, $f$ is the characteristic polynomial.
+			Since $T-I \neq O$ and $T+I \neq O$, then the minimal polynomial must be $(t-1)(t+1)$.
+		\end{solution}
+	\end{enumerate}
+\end{Exercise} 
