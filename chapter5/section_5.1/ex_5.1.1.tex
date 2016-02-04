@@ -1,121 +1,121 @@
 % === Exercise 5.1.1 ===
 \begin{Exercise}
-\begin{enumerate}[(a)]
-\item[(a)]
-\begin{answer}
-False.
-\end{answer}
-\begin{solution}
-$I_2$ has duplicate eigenvalues $1$.
-\end{solution}
-
-\item[(b)]
-\begin{answer}
-True.
-\end{answer}
-\begin{solution}
-Since a real matrix $A$ has one eigenvector $v$, by Theorem 5.4, we know $(A-\lambda I)(v) = 0$ for $v\neq 0$. It follows that $(A-\lambda I)(t v) = t(A-\lambda I)(v) = t\cdot 0 = 0$ for $t\in\mathbb{R}$. This means $t v$ is also an eigenvector. Since $\mathbb{R}$ is an infinite set, then we have infinite eigenvectors. 
-
-Notice that this statement will fail if the field is finite.
-\end{solution}
-
-\item[(c)]
-\begin{answer}
-True.
-\end{answer}
-\begin{solution}
-Consider the square matrix $\begin{pmatrix}
-0 & 1 \\
--1 & 0
-\end{pmatrix}$. Since it has no eigenvalues, and hence has no eigenvectors.
-\end{solution}
-
-\item[(d)]
-\begin{answer}
-False.
-\end{answer}
-\begin{solution}
-The zero matrix $\begin{pmatrix}
-0 & 0 \\
-0 & 0
-\end{pmatrix}$ has duplicate eigenvalues $0$.
-\end{solution}
-
-\item[(e)]
-\begin{answer}
-False.
-\end{answer}
-\begin{solution}
-The vectors $(1,0),(2,0)$ are eigenvectors of $I_2$. However they are linearly dependent.
-\end{solution}
-
-\item[(f)]
-\begin{answer}
-False.
-\end{answer}
-\begin{solution}
-Consider $I_2$ which has two eigenvalues $1,1$; however $1+1=2$, and $2$ is not an eigenvalue of $I_2$ obviously.
-\end{solution}
-
-\item[(g)]
-\begin{answer}
-False.
-\end{answer}
-\begin{solution}
-Put a linear operator $T$ on $P(\mathbb{R})$. Then $T$ has an eigenvalue $1$.
-\end{solution}
-
-\item[(h)]
-\begin{answer}
-True.
-\end{answer}
-\begin{solution}
-Put $A = Q^{-1} D Q$ where $D$ is a diagonal matrix and $P,Q\in M_{n\times n}(F)$. Let $\alpha$ be a basis and $\beta$ be the standard basis for $F_n$. Since $Q$ is invertible, then $Q = [I]_{\beta}^{\alpha}$. Since $A$ is diagonalizable, by Theorem 5.1, we know $\beta$ can be consisted of the eigenvectors of $A$.
-\end{solution}
-
-\item[(i)]
-\begin{answer}
-True.
-\end{answer}
-\begin{solution}
-Suppose $A$ is similar to $B$, then there exists $Q$ which is invertible such that $A = Q^{-1} B Q$. If $Av = \lambda v$ for any eigenvalues $\lambda$ corresponding to some eigenvectors $v$, then we have
-\begin{alignat*}{7}
-\quad&& Av &= \lambda v \\
-\implies&& (Q^{-1} B Q ) v &= \lambda v \\
-\implies&& (B Q)v &= Q \lambda v \\
-\implies&& B(Q v) &= \lambda (Q v).
-\end{alignat*}
-This means $A,B$ have the same eigenvalues.
-\end{solution}
-
-\item[(j)]
-\begin{answer}
-False.
-\end{answer}
-\begin{solution}
-Suppose $A$ is similar to $B$, then there exists $Q$ which is invertible such that $A = Q^{-1} B Q$. Put $A = \begin{pmatrix}
-1 & 1 \\
-0 & 2
-\end{pmatrix}$ and $B = \begin{pmatrix}
-2 & 0 \\
-1 & 1
-\end{pmatrix}$ and $Q = Q^{-1} = \begin{pmatrix}
-0 & 1 \\
-1 & 0
-\end{pmatrix}$.
-It follows that $(1,0)$ is an eigenvector of $A$, but so is not $B$.
-\end{solution}
-
-\item[(k)]
-\begin{answer}
-False.
-\end{answer}
-\begin{solution}
-Put $T = \begin{pmatrix}
-2 & 1 \\
-3 & 0
-\end{pmatrix}$. Then $(1,1)$ and $(1,-3)$ are eigenvectors of $T$; however, $(1,1)+(1,-3) = (2,-2)$ is not an eigenvector of $T$.
-\end{solution}
-
-\end{enumerate}
+	\begin{enumerate}[(a)]
+		\item[(a)]
+		\begin{answer}
+			False.
+		\end{answer}
+		\begin{solution}
+			$I_2$ has duplicate eigenvalues $1$.
+		\end{solution}
+		
+		\item[(b)]
+		\begin{answer}
+			True.
+		\end{answer}
+		\begin{solution}
+			Since a real matrix $A$ has one eigenvector $v$, by Theorem 5.4, we know $(A-\lambda I)(v) = 0$ for $v\neq 0$. It follows that $(A-\lambda I)(t v) = t(A-\lambda I)(v) = t\cdot 0 = 0$ for $t\in\mathbb{R}$. This means $t v$ is also an eigenvector. Since $\mathbb{R}$ is an infinite set, then we have infinite eigenvectors. 
+			
+			Notice that this statement will fail if the field is finite.
+		\end{solution}
+		
+		\item[(c)]
+		\begin{answer}
+			True.
+		\end{answer}
+		\begin{solution}
+			Consider the square matrix $\begin{pmatrix}
+			0 & 1 \\
+			-1 & 0
+			\end{pmatrix}$. Since it has no eigenvalues, and hence has no eigenvectors.
+		\end{solution}
+		
+		\item[(d)]
+		\begin{answer}
+			False.
+		\end{answer}
+		\begin{solution}
+			The zero matrix $\begin{pmatrix}
+			0 & 0 \\
+			0 & 0
+			\end{pmatrix}$ has duplicate eigenvalues $0$.
+		\end{solution}
+		
+		\item[(e)]
+		\begin{answer}
+			False.
+		\end{answer}
+		\begin{solution}
+			The vectors $(1,0),(2,0)$ are eigenvectors of $I_2$. However they are linearly dependent.
+		\end{solution}
+		
+		\item[(f)]
+		\begin{answer}
+			False.
+		\end{answer}
+		\begin{solution}
+			Consider $I_2$ which has two eigenvalues $1,1$; however $1+1=2$, and $2$ is not an eigenvalue of $I_2$ obviously.
+		\end{solution}
+		
+		\item[(g)]
+		\begin{answer}
+			False.
+		\end{answer}
+		\begin{solution}
+			Put a linear operator $T$ on $P(\mathbb{R})$. Then $T$ has an eigenvalue $1$.
+		\end{solution}
+		
+		\item[(h)]
+		\begin{answer}
+			True.
+		\end{answer}
+		\begin{solution}
+			Put $A = Q^{-1} D Q$ where $D$ is a diagonal matrix and $P,Q\in M_{n\times n}(F)$. Let $\alpha$ be a basis and $\beta$ be the standard basis for $F_n$. Since $Q$ is invertible, then $Q = [I]_{\beta}^{\alpha}$. Since $A$ is diagonalizable, by Theorem 5.1, we know $\beta$ can be consisted of the eigenvectors of $A$.
+		\end{solution}
+		
+		\item[(i)]
+		\begin{answer}
+			True.
+		\end{answer}
+		\begin{solution}
+			Suppose $A$ is similar to $B$, then there exists $Q$ which is invertible such that $A = Q^{-1} B Q$. If $Av = \lambda v$ for any eigenvalues $\lambda$ corresponding to some eigenvectors $v$, then we have
+			\begin{alignat*}{7}
+			\quad&& Av &= \lambda v \\
+			\implies&& (Q^{-1} B Q ) v &= \lambda v \\
+			\implies&& (B Q)v &= Q \lambda v \\
+			\implies&& B(Q v) &= \lambda (Q v).
+			\end{alignat*}
+			This means $A,B$ have the same eigenvalues.
+		\end{solution}
+		
+		\item[(j)]
+		\begin{answer}
+			False.
+		\end{answer}
+		\begin{solution}
+			Suppose $A$ is similar to $B$, then there exists $Q$ which is invertible such that $A = Q^{-1} B Q$. Put $A = \begin{pmatrix}
+			1 & 1 \\
+			0 & 2
+			\end{pmatrix}$ and $B = \begin{pmatrix}
+			2 & 0 \\
+			1 & 1
+			\end{pmatrix}$ and $Q = Q^{-1} = \begin{pmatrix}
+			0 & 1 \\
+			1 & 0
+			\end{pmatrix}$.
+			It follows that $(1,0)$ is an eigenvector of $A$, but so is not $B$.
+		\end{solution}
+		
+		\item[(k)]
+		\begin{answer}
+			False.
+		\end{answer}
+		\begin{solution}
+			Put $T = \begin{pmatrix}
+			2 & 1 \\
+			3 & 0
+			\end{pmatrix}$. Then $(1,1)$ and $(1,-3)$ are eigenvectors of $T$; however, $(1,1)+(1,-3) = (2,-2)$ is not an eigenvector of $T$.
+		\end{solution}
+		
+	\end{enumerate}
 \end{Exercise}

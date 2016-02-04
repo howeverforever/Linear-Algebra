@@ -1,34 +1,34 @@
 % === Exercise 2.3.13 ===
 \begin{Exercise}
-\begin{itemize}
-\item $tr(AB) = tr(BA)$.
-\end{itemize}
-\begin{proof}
-Consider
-\begin{gather*}
-tr(AB)
-= \sum_{i=1}^{n} (AB)_{i i}
-= \sum_{i=1}^{n}\left( \sum_{j=1}^{n} A_{i j} B_{j i} \right)
-= \sum_{j=1}^{n} \left( \sum_{i=1}^{n} A_{i j} B_{j i} \right) \\
-= \sum_{j=1}^{n} \left( \sum_{i=1}^{n} B_{j i} A_{i j}  \right)
-= \sum_{j=1}^{n} (BA)_{j j}
-= tr(BA).
-\end{gather*}
-Hence we obtain what to prove.
-\end{proof}
-
-\begin{itemize}
-\item $tr(A) = tr(A^t)$.
-\end{itemize}
-\begin{proof}
-Notice that $A_{i j} = A^t_{j i}$ for all $i,j$. So $A_{i i} = A^t_{i i}$.
-Consider
-$$
-tr(A)
-= \sum_{i=1}^{n} A_{i i}
-= \sum_{i=1}^{n} A^t_{i i}
-= tr(A^t).
-$$
-Hence we obtain what to prove.
-\end{proof}
+	\begin{itemize}
+		\item $\trace(AB) = \trace(BA)$.
+	\end{itemize}
+	\begin{proof}
+		Consider
+		\begin{gather*}
+		\trace(AB)
+		= \sum_{i=1}^{n} (AB)_{i i}
+		= \sum_{i=1}^{n}\left( \sum_{j=1}^{n} A_{i j} B_{j i} \right)
+		= \sum_{j=1}^{n} \left( \sum_{i=1}^{n} A_{i j} B_{j i} \right) \\
+		= \sum_{j=1}^{n} \left( \sum_{i=1}^{n} B_{j i} A_{i j}  \right)
+		= \sum_{j=1}^{n} (BA)_{j j}
+		= \trace(BA).
+		\end{gather*}
+		Hence we obtain what to prove.
+	\end{proof}
+	
+	\begin{itemize}
+		\item $\trace(A) = \trace(A^t)$.
+	\end{itemize}
+	\begin{proof}
+		Notice that $A_{i j} = A^t_{j i}$ for all $i,j$. So $A_{i i} = A^t_{i i}$.
+		Consider
+		$$
+		\trace(A)
+		= \sum_{i=1}^{n} A_{i i}
+		= \sum_{i=1}^{n} A^t_{i i}
+		= \trace(A^t).
+		$$
+		Hence we obtain what to prove.
+	\end{proof}
 \end{Exercise}

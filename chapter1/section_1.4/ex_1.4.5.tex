@@ -1,234 +1,234 @@
 % === Exercise 1.4.5 ===
 \begin{Exercise}
-\begin{enumerate}[(a)]
-\item[(a)]
-\begin{answer}
-Yes.
-\end{answer}
-\begin{solution}
-Consider
-$$
-a(1,0,2)+b(-1,1,1) = (2,-1,1).
-$$
-This implies
-$$
-\begin{cases}
-\begin{aligned}
-a-b &= 2 \\
-b &= -1 \\
-2a+b &= 1
-\end{aligned}
-\end{cases}.
-$$
-Solve to obtain
-$$
-\begin{cases}
-\begin{aligned}
-a &= 1 \\
-b &= -1
-\end{aligned}
-\end{cases}.
-$$
-Hence $(2,-1,1) = (1,0,2)-(-1,1,1) \in span(S)$.
-\end{solution}
-
-\item[(b)]
-\begin{answer}
-No.
-\end{answer}
-\begin{solution}
-Consider
-$$
-a(1,0,2)+b(-1,1,1) = (-1,2,1).
-$$
-This implies
-$$
-\begin{cases}
-\begin{aligned}
-a-b &= -1 \\
-b &= 2 \\
-2a+b &= 1
-\end{aligned}
-\end{cases}.
-$$
-This systems of linear equations has no solution. Hence $(-1,2,1)\notin span(S)$.
-\end{solution}
-
-\item[(c)]
-\begin{answer}
-No.
-\end{answer}
-\begin{solution}
-Consider
-$$
-a(1,0,1,-1)+b(0,1,1,1) = (-1,1,1,2).
-$$
-This implies
-$$
-\begin{cases}
-\begin{aligned}
-a &= -1 \\
-b &= 1 \\
-a+b &= 1 \\
--a+b &= 2
-\end{aligned}
-\end{cases}.
-$$
-This systems of linear equations has no solution. Hence $(-1,1,1,2)\notin span(S)$.
-\end{solution}
-
-\item[(d)]
-\begin{answer}
-Yes.
-\end{answer}
-\begin{solution}
-Consider
-$$
-a(1,0,1,-1)+b(0,1,1,1) = (2,-1,1,-3).
-$$
-This implies
-$$
-\begin{cases}
-\begin{aligned}
-a &= 2 \\
-b &= -1 \\
-a+b &= 1 \\
--a+b &= -3
-\end{aligned}
-\end{cases}.
-$$
-Hence $(2,-1,1,-3) = 2(1,0,1,-1)-(0,1,1,1) \in span(S)$.
-\end{solution}
-
-\item[(e)]
-\begin{answer}
-Yes.
-\end{answer}
-\begin{solution}
-Consider
-$$
-a(x^3+x^2+x+1)+b(x^2+x+1)+c(x+1) = -x^3+2x^2+3x+3.
-$$
-This implies
-$$
-\begin{cases}
-\begin{aligned}
-a &= -1 \\
-a+b &= 2 \\
-a+b+c &= 3 \\
-a+b+c &= 3
-\end{aligned}
-\end{cases}.
-$$
-Solve to obtain $a=-1,b=3,c=1$. Hence 
-$$
--x^3+2x^2+3x+3=-(x^3+x^2+x+1)+3(x^2+x+1)+(x+1)\in span(S).
-$$
-\end{solution}
-
-\item[(f)]
-\begin{answer}
-No.
-\end{answer}
-\begin{solution}
-Consider
-$$
-a(x^3+x^2+x+1)+b(x^2+x+1)+c(x+1) = 2x^3-x^2+x+3.
-$$
-This implies
-$$
-\begin{cases}
-\begin{aligned}
-a &= 2 \\
-a+b &= -1 \\
-a+b+c &= 1 \\
-a+b+c &= 3
-\end{aligned}
-\end{cases}.
-$$
-This system of linear equations have no solution. Hence $2x^3-x^2+x+3\notin span(S)$.
-\end{solution}
-
-\item[(g)]
-\begin{answer}
-Yes.
-\end{answer}
-\begin{solution}
-Consider
-$$
-a\begin{pmatrix}
-1 & 0 \\
--1 & 0
-\end{pmatrix} + b\begin{pmatrix}
-0 & 1 \\
-0 & 1
-\end{pmatrix} + c\begin{pmatrix}
-1 & 1 \\
-0 & 0
-\end{pmatrix} = \begin{pmatrix}
-1 & 2 \\
--3 & 4
-\end{pmatrix}.
-$$
-This implies
-$$
-\begin{cases}
-\begin{aligned}
-a+c &= 1 \\
-b+c &= 2 \\
--a &= -3 \\
-b &= 4
-\end{aligned}
-\end{cases}.
-$$
-Solve to obtain $a=3,b=4,c=-2$. Hence
-$
-\begin{pmatrix}
-1 & 2 \\
--3 & 4
-\end{pmatrix} \in span(S).
-$
-\end{solution}
-
-\item[(h)]
-\begin{answer}
-No.
-\end{answer}
-\begin{solution}
-Consider
-$$
-a\begin{pmatrix}
-1 & 0 \\
--1 & 0
-\end{pmatrix} + b\begin{pmatrix}
-0 & 1 \\
-0 & 1
-\end{pmatrix} + c\begin{pmatrix}
-1 & 1 \\
-0 & 0
-\end{pmatrix} = \begin{pmatrix}
-1 & 0 \\
-0 & 1
-\end{pmatrix}.
-$$
-This implies
-$$
-\begin{cases}
-\begin{aligned}
-a+c &= 1 \\
-b+c &= 0 \\
--a &= 0 \\
-b &= 1
-\end{aligned}
-\end{cases}.
-$$
-This system of linear equations have no solution. Hence 
-$
-\begin{pmatrix}
-1 & 0 \\
-0 & 1
-\end{pmatrix} \notin span(S).
-$
-\end{solution}
-\end{enumerate}
+	\begin{enumerate}[(a)]
+		\item[(a)]
+		\begin{answer}
+			Yes.
+		\end{answer}
+		\begin{solution}
+			Consider
+			$$
+			a(1,0,2)+b(-1,1,1) = (2,-1,1).
+			$$
+			This implies
+			$$
+			\begin{cases}
+			\begin{aligned}
+			a-b &= 2 \\
+			b &= -1 \\
+			2a+b &= 1
+			\end{aligned}
+			\end{cases}.
+			$$
+			Solve to obtain
+			$$
+			\begin{cases}
+			\begin{aligned}
+			a &= 1 \\
+			b &= -1
+			\end{aligned}
+			\end{cases}.
+			$$
+			Hence $(2,-1,1) = (1,0,2)-(-1,1,1) \in span(S)$.
+		\end{solution}
+		
+		\item[(b)]
+		\begin{answer}
+			No.
+		\end{answer}
+		\begin{solution}
+			Consider
+			$$
+			a(1,0,2)+b(-1,1,1) = (-1,2,1).
+			$$
+			This implies
+			$$
+			\begin{cases}
+			\begin{aligned}
+			a-b &= -1 \\
+			b &= 2 \\
+			2a+b &= 1
+			\end{aligned}
+			\end{cases}.
+			$$
+			This systems of linear equations has no solution. Hence $(-1,2,1)\notin span(S)$.
+		\end{solution}
+		
+		\item[(c)]
+		\begin{answer}
+			No.
+		\end{answer}
+		\begin{solution}
+			Consider
+			$$
+			a(1,0,1,-1)+b(0,1,1,1) = (-1,1,1,2).
+			$$
+			This implies
+			$$
+			\begin{cases}
+			\begin{aligned}
+			a &= -1 \\
+			b &= 1 \\
+			a+b &= 1 \\
+			-a+b &= 2
+			\end{aligned}
+			\end{cases}.
+			$$
+			This systems of linear equations has no solution. Hence $(-1,1,1,2)\notin span(S)$.
+		\end{solution}
+		
+		\item[(d)]
+		\begin{answer}
+			Yes.
+		\end{answer}
+		\begin{solution}
+			Consider
+			$$
+			a(1,0,1,-1)+b(0,1,1,1) = (2,-1,1,-3).
+			$$
+			This implies
+			$$
+			\begin{cases}
+			\begin{aligned}
+			a &= 2 \\
+			b &= -1 \\
+			a+b &= 1 \\
+			-a+b &= -3
+			\end{aligned}
+			\end{cases}.
+			$$
+			Hence $(2,-1,1,-3) = 2(1,0,1,-1)-(0,1,1,1) \in span(S)$.
+		\end{solution}
+		
+		\item[(e)]
+		\begin{answer}
+			Yes.
+		\end{answer}
+		\begin{solution}
+			Consider
+			$$
+			a(x^3+x^2+x+1)+b(x^2+x+1)+c(x+1) = -x^3+2x^2+3x+3.
+			$$
+			This implies
+			$$
+			\begin{cases}
+			\begin{aligned}
+			a &= -1 \\
+			a+b &= 2 \\
+			a+b+c &= 3 \\
+			a+b+c &= 3
+			\end{aligned}
+			\end{cases}.
+			$$
+			Solve to obtain $a=-1,b=3,c=1$. Hence 
+			$$
+			-x^3+2x^2+3x+3=-(x^3+x^2+x+1)+3(x^2+x+1)+(x+1)\in span(S).
+			$$
+		\end{solution}
+		
+		\item[(f)]
+		\begin{answer}
+			No.
+		\end{answer}
+		\begin{solution}
+			Consider
+			$$
+			a(x^3+x^2+x+1)+b(x^2+x+1)+c(x+1) = 2x^3-x^2+x+3.
+			$$
+			This implies
+			$$
+			\begin{cases}
+			\begin{aligned}
+			a &= 2 \\
+			a+b &= -1 \\
+			a+b+c &= 1 \\
+			a+b+c &= 3
+			\end{aligned}
+			\end{cases}.
+			$$
+			This system of linear equations have no solution. Hence $2x^3-x^2+x+3\notin \spann(S)$.
+		\end{solution}
+		
+		\item[(g)]
+		\begin{answer}
+			Yes.
+		\end{answer}
+		\begin{solution}
+			Consider
+			$$
+			a\begin{pmatrix}
+			1 & 0 \\
+			-1 & 0
+			\end{pmatrix} + b\begin{pmatrix}
+			0 & 1 \\
+			0 & 1
+			\end{pmatrix} + c\begin{pmatrix}
+			1 & 1 \\
+			0 & 0
+			\end{pmatrix} = \begin{pmatrix}
+			1 & 2 \\
+			-3 & 4
+			\end{pmatrix}.
+			$$
+			This implies
+			$$
+			\begin{cases}
+			\begin{aligned}
+			a+c &= 1 \\
+			b+c &= 2 \\
+			-a &= -3 \\
+			b &= 4
+			\end{aligned}
+			\end{cases}.
+			$$
+			Solve to obtain $a=3,b=4,c=-2$. Hence
+			$
+			\begin{pmatrix}
+			1 & 2 \\
+			-3 & 4
+			\end{pmatrix} \in \spann(S).
+			$
+		\end{solution}
+		
+		\item[(h)]
+		\begin{answer}
+			No.
+		\end{answer}
+		\begin{solution}
+			Consider
+			$$
+			a\begin{pmatrix}
+			1 & 0 \\
+			-1 & 0
+			\end{pmatrix} + b\begin{pmatrix}
+			0 & 1 \\
+			0 & 1
+			\end{pmatrix} + c\begin{pmatrix}
+			1 & 1 \\
+			0 & 0
+			\end{pmatrix} = \begin{pmatrix}
+			1 & 0 \\
+			0 & 1
+			\end{pmatrix}.
+			$$
+			This implies
+			$$
+			\begin{cases}
+			\begin{aligned}
+			a+c &= 1 \\
+			b+c &= 0 \\
+			-a &= 0 \\
+			b &= 1
+			\end{aligned}
+			\end{cases}.
+			$$
+			This system of linear equations have no solution. Hence 
+			$
+			\begin{pmatrix}
+			1 & 0 \\
+			0 & 1
+			\end{pmatrix} \notin \spann(S).
+			$
+		\end{solution}
+	\end{enumerate}
 \end{Exercise}

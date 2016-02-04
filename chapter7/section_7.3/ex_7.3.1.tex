@@ -1,98 +1,98 @@
 % === Exercise 7.3.1 ===
 \begin{Exercise}
-\begin{enumerate}[(a)]
-\item[(a)]
-\begin{answer}
-False.
-\end{answer}
-\begin{solution}
-Consider $T = \begin{pmatrix}
-3 & -1 & 0 \\
-0 & 2 & 0 \\
-1 & -1 & 2
-\end{pmatrix}$. We know the characteristic polynomial $f(t) = -(t-2)^2 (t-3)$. 
-However, we can pick $p(t) = (t-2)(t-3)$ such that $p(T) = T_0$ where the degree of $p(t)$ is less than $f(t)$.
-\end{solution}
-
-\item[(b)]
-\begin{answer}
-True.
-\end{answer}
-\begin{solution}
-It follows from Theorem 7.12(b).
-\end{solution}
-
-\item[(c)]
-\begin{answer}
-False.
-\end{answer}
-\begin{solution}
-It should be that the minimal polynomial divides the characteristic polynomial. This follows from Theorem 7.12(a).
-\end{solution}
-
-\item[(d)]
-\begin{answer}
-False.
-\end{answer}
-\begin{solution}
-Consider the identity linear operator $T$ which is diagonalizable. Its characteristic polynomial $(t-1)^2$; however its minimal polynomial is $t-1$. 
-Hence they are different.
-\end{solution}
-
-\item[(e)]
-\begin{answer}
-True.
-\end{answer}
-\begin{solution}
-By the Corollary of Theorem 7.14, we suppose 
-$$
-f(t) = (\lambda_1-t)^{n_1} (\lambda_2-t)^{n_2} \cdots (\lambda_k-t)^{n_k}
-$$
-where $\lambda_1, \lambda_2, \cdots, \lambda_k$ are different eigenvalues of $T$. Then there exists $m_1, m_2, \cdots, m_k$ where $1\leq m_i \leq n_i$ for each $i$ such that
-$$
-p(t) = (t-\lambda_1)^{m_1} (t-\lambda_2)^{m_2} \cdots (t-\lambda_k)^{m_k}.
-$$
-Notice that $n_1+n_2+\cdots+n_k = n$. 
-Hence $f(t)$ divides $ \big[p(t)\big]^n$.
-\end{solution}
-
-\item[(f)]
-\begin{answer}
-False.
-\end{answer}
-\begin{solution}
-The counter-example could see part (d).
-\end{solution}
-
-\item[(g)]
-\begin{answer}
-False.
-\end{answer}
-\begin{solution}
-Consider $T = \begin{pmatrix}
-1 & 1 \\
-0 & 1
-\end{pmatrix}$. We know its minimal polynomial $(t-1)^2$ could split.
-However, $T$ is not diagonalizable.
-\end{solution}
-
-\item[(h)]
-\begin{answer}
-True.
-\end{answer}
-\begin{solution}
-It follows from Theorem 7.15.
-\end{solution}
-
-\item[(i)]
-\begin{answer}
-True.
-\end{answer}
-\begin{solution}
-We know the degree of the minimal polynomial must be greater than or equal to $n$ by the Corollary of Theorem 7.14.
-By Cayley-Hamilton Theorem, its degree must be less than or equal to $n$.
-Hence the degree of the minimal polynomial must be equal to $n$.
-\end{solution}
-
-\end{enumerate}
+	\begin{enumerate}[(a)]
+		\item[(a)]
+		\begin{answer}
+			False.
+		\end{answer}
+		\begin{solution}
+			Consider $T = \begin{pmatrix}
+			3 & -1 & 0 \\
+			0 & 2 & 0 \\
+			1 & -1 & 2
+			\end{pmatrix}$. We know the characteristic polynomial $f(t) = -(t-2)^2 (t-3)$. 
+			However, we can pick $p(t) = (t-2)(t-3)$ such that $p(T) = T_0$ where the degree of $p(t)$ is less than $f(t)$.
+		\end{solution}
+		
+		\item[(b)]
+		\begin{answer}
+			True.
+		\end{answer}
+		\begin{solution}
+			It follows from Theorem 7.12(b).
+		\end{solution}
+		
+		\item[(c)]
+		\begin{answer}
+			False.
+		\end{answer}
+		\begin{solution}
+			It should be that the minimal polynomial divides the characteristic polynomial. This follows from Theorem 7.12(a).
+		\end{solution}
+		
+		\item[(d)]
+		\begin{answer}
+			False.
+		\end{answer}
+		\begin{solution}
+			Consider the identity linear operator $T$ which is diagonalizable. Its characteristic polynomial $(t-1)^2$; however its minimal polynomial is $t-1$. 
+			Hence they are different.
+		\end{solution}
+		
+		\item[(e)]
+		\begin{answer}
+			True.
+		\end{answer}
+		\begin{solution}
+			By the Corollary of Theorem 7.14, we suppose 
+			$$
+			f(t) = (\lambda_1-t)^{n_1} (\lambda_2-t)^{n_2} \cdots (\lambda_k-t)^{n_k}
+			$$
+			where $\lambda_1, \lambda_2, \cdots, \lambda_k$ are different eigenvalues of $T$. Then there exists $m_1, m_2, \cdots, m_k$ where $1\leq m_i \leq n_i$ for each $i$ such that
+			$$
+			p(t) = (t-\lambda_1)^{m_1} (t-\lambda_2)^{m_2} \cdots (t-\lambda_k)^{m_k}.
+			$$
+			Notice that $n_1+n_2+\cdots+n_k = n$. 
+			Hence $f(t)$ divides $ \big[p(t)\big]^n$.
+		\end{solution}
+		
+		\item[(f)]
+		\begin{answer}
+			False.
+		\end{answer}
+		\begin{solution}
+			The counter-example could see part (d).
+		\end{solution}
+		
+		\item[(g)]
+		\begin{answer}
+			False.
+		\end{answer}
+		\begin{solution}
+			Consider $T = \begin{pmatrix}
+			1 & 1 \\
+			0 & 1
+			\end{pmatrix}$. We know its minimal polynomial $(t-1)^2$ could split.
+			However, $T$ is not diagonalizable.
+		\end{solution}
+		
+		\item[(h)]
+		\begin{answer}
+			True.
+		\end{answer}
+		\begin{solution}
+			It follows from Theorem 7.15.
+		\end{solution}
+		
+		\item[(i)]
+		\begin{answer}
+			True.
+		\end{answer}
+		\begin{solution}
+			We know the degree of the minimal polynomial must be greater than or equal to $n$ by the Corollary of Theorem 7.14.
+			By Cayley-Hamilton Theorem, its degree must be less than or equal to $n$.
+			Hence the degree of the minimal polynomial must be equal to $n$.
+		\end{solution}
+		
+	\end{enumerate}
 \end{Exercise}

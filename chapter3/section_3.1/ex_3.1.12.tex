@@ -1,8 +1,8 @@
 % === Exercise 3.1.12 ===
 \begin{Exercise}
-\begin{proof}
-For $m=1$, we are done. Suppose the assertion holds for $m-1$, then for $m$, we pick $b$ such that $A_{a,b'} = 0$ for all $1\leq a \leq m$ and for all $b'<b$. Then pick $a'$ such that $A_{a',b}\neq 0$, we can use a sequence of elementary row operations of type 1 and 3 to transform $A_{1, b}\neq 0$. Let $B$ be the $(m-1)\times n$ matrix such that $B$ comes from deleting the first row of $A$. By supposition, we know $B$ is an upper triangular matrix. Now we recover the first row of $B$. This implies $A$ is also an upper triangular matrix.
-
-By induction, since $m$ is finite, we can find a finite sequence of such row operations to make $A$ be an upper triangular matrix.
-\end{proof}
+	\begin{proof}
+		For $m=1$, we are done. Suppose the assertion holds for $m-1$, then for $m$, we pick $b$ such that $A_{a,b'} = 0$ for all $1\leq a \leq m$ and for all $b'<b$. Then pick $a'$ such that $A_{a',b}\neq 0$, we can use a sequence of elementary row operations of type 1 and 3 to transform $A_{1, b}\neq 0$. Let $B$ be the $(m-1)\times n$ matrix such that $B$ comes from deleting the first row of $A$. By supposition, we know $B$ is an upper triangular matrix. Now we recover the first row of $B$. This implies $A$ is also an upper triangular matrix.
+		
+		By induction, since $m$ is finite, we can find a finite sequence of such row operations to make $A$ be an upper triangular matrix.
+	\end{proof}
 \end{Exercise}

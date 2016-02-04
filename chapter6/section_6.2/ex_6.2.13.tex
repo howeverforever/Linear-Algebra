@@ -1,29 +1,29 @@
 % === Exercise 6.2.13 ===
 \begin{Exercise}
-\begin{enumerate}[(a)]
-\item
-\begin{proof}
-Let $x\in S^{\perp}$. Then $\langle x,y \rangle$ for all $y\in S$. Since $S_0 \subseteq S$, $\langle x,y \rangle$ for all $y\in S_0$. Hence $x\in S_0^{\perp}$. Because $x$ was arbitrary, it follows that $S^{\perp}\subseteq S_0^{\perp}$.
-\end{proof}
-
-\item
-\begin{proof}
-Let $x\in S$, then for any $y\in S^{\perp}$, we have $\langle x,y \rangle = 0$. This means $x\in (S^{\perp})^{\perp}$. Since $x$ was arbitrary, $S\subseteq (S^{\perp})^{\perp}$. Because $\spann(S)$ is the smallest subspace containing $S$, we conclude $\spann(S)\subseteq (S^{\perp})^{\perp}$.
-\end{proof}
-
-\item
-\begin{proof}
-To prove $W = (W^{\perp})^{\perp}$, we need to prove $W \subseteq (W^{\perp})^{\perp}$ and $(W^{\perp})^{\perp} \subseteq W$.
-
-From part (b), we know $W \subseteq (W^{\perp})^{\perp}$. On the other hand, we suppose to contrary that  $(W^{\perp})^{\perp} \nsubseteq W$. Let $x\in (W^{\perp})^{\perp}$, then $x\notin W$. By Exercise 6.2.6, there exists $y\in V$ such that $y\in W^{\perp}$ implies $\langle x,y \rangle \neq 0$. However this contradicts $x\in (W^{\perp})^{\perp}$. Hence $(W^{\perp})^{\perp} \subseteq W$.
-\end{proof}
-
-\item
-\begin{proof}
-To prove $V = W \oplus W^{\perp}$, it suffice to prove $V = W + W^{\perp}$ and $W\cap W^{\perp} = \{0\}$.
-
-By Theorem 6.6, for any $x\in V$, we can find unique $y\in W$ and $z\in W^{\perp}$ such that $x = y+z$. This means $V = W + W^{\perp}$. Let $w\in W\cap W^{\perp}$, then $\langle w, w \rangle=0$. By definition, we know $w = 0$. So $W\cap W^{\perp} = \{0\}$.
-\end{proof}
-
-\end{enumerate}
+	\begin{enumerate}[(a)]
+		\item
+		\begin{proof}
+			Let $x\in S^{\perp}$. Then $\langle x,y \rangle$ for all $y\in S$. Since $S_0 \subseteq S$, $\langle x,y \rangle$ for all $y\in S_0$. Hence $x\in S_0^{\perp}$. Because $x$ was arbitrary, it follows that $S^{\perp}\subseteq S_0^{\perp}$.
+		\end{proof}
+		
+		\item
+		\begin{proof}
+			Let $x\in S$, then for any $y\in S^{\perp}$, we have $\langle x,y \rangle = 0$. This means $x\in (S^{\perp})^{\perp}$. Since $x$ was arbitrary, $S\subseteq (S^{\perp})^{\perp}$. Because $\spann(S)$ is the smallest subspace containing $S$, we conclude $\spann(S)\subseteq (S^{\perp})^{\perp}$.
+		\end{proof}
+		
+		\item
+		\begin{proof}
+			To prove $W = (W^{\perp})^{\perp}$, we need to prove $W \subseteq (W^{\perp})^{\perp}$ and $(W^{\perp})^{\perp} \subseteq W$.
+			
+			From part (b), we know $W \subseteq (W^{\perp})^{\perp}$. On the other hand, we suppose to contrary that  $(W^{\perp})^{\perp} \nsubseteq W$. Let $x\in (W^{\perp})^{\perp}$, then $x\notin W$. By Exercise 6.2.6, there exists $y\in V$ such that $y\in W^{\perp}$ implies $\langle x,y \rangle \neq 0$. However this contradicts $x\in (W^{\perp})^{\perp}$. Hence $(W^{\perp})^{\perp} \subseteq W$.
+		\end{proof}
+		
+		\item
+		\begin{proof}
+			To prove $V = W \oplus W^{\perp}$, it suffice to prove $V = W + W^{\perp}$ and $W\cap W^{\perp} = \{0\}$.
+			
+			By Theorem 6.6, for any $x\in V$, we can find unique $y\in W$ and $z\in W^{\perp}$ such that $x = y+z$. This means $V = W + W^{\perp}$. Let $w\in W\cap W^{\perp}$, then $\langle w, w \rangle=0$. By definition, we know $w = 0$. So $W\cap W^{\perp} = \{0\}$.
+		\end{proof}
+		
+	\end{enumerate}
 \end{Exercise}

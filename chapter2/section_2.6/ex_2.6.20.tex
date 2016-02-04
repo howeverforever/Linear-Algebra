@@ -1,56 +1,56 @@
 % === Exercise 2.6.20 ===
 \begin{Exercise}
-\begin{enumerate}[(a)]
-\item
-\begin{proof}
-$(\Longrightarrow)$
-Suppose $T^t(f) = 0$ for some $f\in W^*$. Then $T^t(f) = f(T(x)) = 0$ for all $x\in V$. Since $T$ is onto by assumption, then for $y\in W$, we have $y=T(x)$ for some $x\in V$. i.e., $f(y) = f(T(x)) = 0$. Hence $T^t$ is one-to-one.
-
-\vspace{2ex}
-
-$(\Longleftarrow)$
-Suppose to contrary that $T$ is not onto. This is equivalent to $R(T)\neq W$. Then by Exercise 2.6.19, there exists a linear functional $f\in W^*$ such that $f(x) = 0, \forall x\in R(T)$ with $f\neq 0$.
-
-Let $g=(T^t)f\in V^*$. For arbitrary $x\in V$, since $T(x)\in R(T)$, we have
-$$
-g(x) = ((T^t)f)(x) = f(T(x)) = 0.
-$$
-Because $x$ was arbitrary, this means $g(x) = 0$ for all $x\in V$. Then $(T^t)f = 0$. However $f\neq 0$, this contradicts $T^t$ is one-to-one by hypothesis. Hence $T$ is onto.
-\end{proof}
-
-\item
-\begin{proof}
-$(\Longrightarrow)$
-Let $x_0\in V$. So if $T$ is one-to-one, then $T(x_0) = 0$ implies $x_0 = 0$. Suppose to contrary that $x_0\neq 0$. We pick a basis $\beta$ for $V$ with $x_0\in\beta$.
-
-Define the function $h:\beta\to F$ by
-$$
-h(x) = \begin{cases}
-1 & \mbox{ for} x=x_0 \\
-0 & \mbox{ otherwise}
-\end{cases}.
-$$
-By exercise 2.6.19, there exists a linear functional $f\in V^*$ such that $f(x) = h(x)$ for all $x\in \beta$ with $f\neq 0$.
-
-Since $T^t$ is onto by hypothesis, then $(T^t)g = f$ for some $g\in W^*$; that is, for all $x\in V$, $g(T(x)) = f(x)$.
-
-Now pick $x\in\beta$ with $x\neq x_0$, then $f(x) = h(x)=0$. On the other hand, notice that $g$ is a linear functional, so $g(0) = 0$. It follows that $f(x_0) = g(T(x_0)) = g(0) = 0$.
-
-We have known $f(x) = 0$ for all $x\in\beta$ and $\beta$ is a basis for $V$, so $f=0$. This contradicts that $f\neq 0$. Hence $x_0 = 0$, and it follows $T$ is one-to-one.
-
-\vspace{2ex}
-
-$(\Longleftarrow)$
-Let $\beta$ be a basis for $V$. Since $T$ is one-to-one, then $T(\beta)$ is a linearly independent set in $W$. We can extend $T(\beta)$ to a basis $\beta'$ for $W$.
-
-Define $h:\beta'\to F$ by $(h\circ T)(x) = g(x)$ for $x\in \beta$, and $h(x) = 0$ otherwise. Notice that $g\in V^*$. 
-By Exercise 2.1.34, since $\beta'$ is a basis for $W$, there exists a linear transformation $f:W\to F$ such that $f(x)=h(x)$ for all $x\in \beta'$; that is, $f\in W^*$.
-
-Consider arbitrary $x\in\beta\subseteq\beta'$, we have
-$$
-g(x) = h(T(x)) = f(T(x)) = T^t f(x).
-$$
-Because $x$ was arbitrary, then this means for every $g\in V^*$, there exists $f\in W^*$ such that $T^t = g$. Hence $T^t$ is onto.
-\end{proof}
-\end{enumerate}
+	\begin{enumerate}[(a)]
+		\item
+		\begin{proof}
+			$(\Longrightarrow)$
+			Suppose $T^t(f) = 0$ for some $f\in W^*$. Then $T^t(f) = f(T(x)) = 0$ for all $x\in V$. Since $T$ is onto by assumption, then for $y\in W$, we have $y=T(x)$ for some $x\in V$. i.e., $f(y) = f(T(x)) = 0$. Hence $T^t$ is one-to-one.
+			
+			\vspace{2ex}
+			
+			$(\Longleftarrow)$
+			Suppose to contrary that $T$ is not onto. This is equivalent to $R(T)\neq W$. Then by Exercise 2.6.19, there exists a linear functional $f\in W^*$ such that $f(x) = 0, \forall x\in R(T)$ with $f\neq 0$.
+			
+			Let $g=(T^t)f\in V^*$. For arbitrary $x\in V$, since $T(x)\in R(T)$, we have
+			$$
+			g(x) = ((T^t)f)(x) = f(T(x)) = 0.
+			$$
+			Because $x$ was arbitrary, this means $g(x) = 0$ for all $x\in V$. Then $(T^t)f = 0$. However $f\neq 0$, this contradicts $T^t$ is one-to-one by hypothesis. Hence $T$ is onto.
+		\end{proof}
+		
+		\item
+		\begin{proof}
+			$(\Longrightarrow)$
+			Let $x_0\in V$. So if $T$ is one-to-one, then $T(x_0) = 0$ implies $x_0 = 0$. Suppose to contrary that $x_0\neq 0$. We pick a basis $\beta$ for $V$ with $x_0\in\beta$.
+			
+			Define the function $h:\beta\to F$ by
+			$$
+			h(x) = \begin{cases}
+			1 & \mbox{ for} x=x_0 \\
+			0 & \mbox{ otherwise}
+			\end{cases}.
+			$$
+			By exercise 2.6.19, there exists a linear functional $f\in V^*$ such that $f(x) = h(x)$ for all $x\in \beta$ with $f\neq 0$.
+			
+			Since $T^t$ is onto by hypothesis, then $(T^t)g = f$ for some $g\in W^*$; that is, for all $x\in V$, $g(T(x)) = f(x)$.
+			
+			Now pick $x\in\beta$ with $x\neq x_0$, then $f(x) = h(x)=0$. On the other hand, notice that $g$ is a linear functional, so $g(0) = 0$. It follows that $f(x_0) = g(T(x_0)) = g(0) = 0$.
+			
+			We have known $f(x) = 0$ for all $x\in\beta$ and $\beta$ is a basis for $V$, so $f=0$. This contradicts that $f\neq 0$. Hence $x_0 = 0$, and it follows $T$ is one-to-one.
+			
+			\vspace{2ex}
+			
+			$(\Longleftarrow)$
+			Let $\beta$ be a basis for $V$. Since $T$ is one-to-one, then $T(\beta)$ is a linearly independent set in $W$. We can extend $T(\beta)$ to a basis $\beta'$ for $W$.
+			
+			Define $h:\beta'\to F$ by $(h\circ T)(x) = g(x)$ for $x\in \beta$, and $h(x) = 0$ otherwise. Notice that $g\in V^*$. 
+			By Exercise 2.1.34, since $\beta'$ is a basis for $W$, there exists a linear transformation $f:W\to F$ such that $f(x)=h(x)$ for all $x\in \beta'$; that is, $f\in W^*$.
+			
+			Consider arbitrary $x\in\beta\subseteq\beta'$, we have
+			$$
+			g(x) = h(T(x)) = f(T(x)) = T^t f(x).
+			$$
+			Because $x$ was arbitrary, then this means for every $g\in V^*$, there exists $f\in W^*$ such that $T^t = g$. Hence $T^t$ is onto.
+		\end{proof}
+	\end{enumerate}
 \end{Exercise}

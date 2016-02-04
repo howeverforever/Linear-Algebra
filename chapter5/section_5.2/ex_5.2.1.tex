@@ -1,93 +1,93 @@
 % === Exercise 5.2.1 ===
 \begin{Exercise}
-\begin{enumerate}[(a)]
-\item[(a)]
-\begin{answer}
-False.
-\end{answer}
-\begin{solution}
-Since $\begin{pmatrix}
-1 & 0 & 0 \\
-0 & 0 & 0 \\
-0 & 0 & 0
-\end{pmatrix}$ is diagonalizable. However, it has two distinct eigenvalues $0$ and $1$.
-\end{solution}
-
-\item[(b)]
-\begin{answer}
-False.
-\end{answer}
-\begin{solution}
-Consider the matrix $\begin{pmatrix}
-4 & 0 & 1 \\
-2 & 3 & 2 \\
-1 & 0 & 4
-\end{pmatrix}$. We know $\begin{pmatrix}
-0 \\
-1 \\
-0
-\end{pmatrix}$, $\begin{pmatrix}
--1 \\
-0 \\
-1
-\end{pmatrix}$ are eigenvectors corresponding to the eigenvalue $3$; however, they are linearly independent.
-\end{solution}
-
-\item[(c)]
-\begin{answer}
-False.
-\end{answer}
-\begin{solution}
-The zero vector can not be an eigenvector.
-\end{solution}
-
-\item[(d)]
-\begin{answer}
-True.
-\end{answer}
-\begin{solution}
-Let $x\in E_{\lambda_1}\cap E_{\lambda_2}$, then $T x = \lambda_1 x = \lambda_2 x$. It follows that $x=0$ since $\lambda_1 \neq \lambda_2$.
-\end{solution}
-
-\item[(e)]
-\begin{answer}
-True.
-\end{answer}
-\begin{solution}
-It follows from Theorem 5.1.
-\end{solution}
-
-\item[(f)]
-\begin{answer}
-False.
-\end{answer}
-\begin{solution}
-It doesn't satisfy Theorem 5.9. Besides we also need the characteristic polynomial of $T$ can split.
-\end{solution}
-
-\item[(g)]
-\begin{answer}
-True.
-\end{answer}
-\begin{solution}
-Since the vector space is nonzero, then its characteristic polynomial must have degree more than $0$. Hence if it can diagonalize, then it must have an eigenvalue.
-\end{solution}
-
-\item[(h)]
-\begin{answer}
-True.
-\end{answer}
-\begin{solution}
-Since $W_i\cap \sum_{i\neq j} W_j = \{0\}$ by definition. We also know $W_j \in \sum_{k} W_k$. It follows that $W_i \cap W_j =\{0\}$ where $i\neq j$.
-\end{solution}
-
-\item[(i)]
-\begin{answer}
-False.
-\end{answer}
-\begin{solution}
-Consider $W_1 = span\{(0,1)\}$, $W_2 = span\{1,1\}$, $W_3 = span\{(1,0)\}$, then we have $W_i\cap W_j = \{0\}$ for $i\neq j$. However $W_1\cap (W_2+W_3) \neq \{0\}$.
-\end{solution}
-
-\end{enumerate}
+	\begin{enumerate}[(a)]
+		\item[(a)]
+		\begin{answer}
+			False.
+		\end{answer}
+		\begin{solution}
+			Since $\begin{pmatrix}
+			1 & 0 & 0 \\
+			0 & 0 & 0 \\
+			0 & 0 & 0
+			\end{pmatrix}$ is diagonalizable. However, it has two distinct eigenvalues $0$ and $1$.
+		\end{solution}
+		
+		\item[(b)]
+		\begin{answer}
+			False.
+		\end{answer}
+		\begin{solution}
+			Consider the matrix $\begin{pmatrix}
+			4 & 0 & 1 \\
+			2 & 3 & 2 \\
+			1 & 0 & 4
+			\end{pmatrix}$. We know $\begin{pmatrix}
+			0 \\
+			1 \\
+			0
+			\end{pmatrix}$, $\begin{pmatrix}
+			-1 \\
+			0 \\
+			1
+			\end{pmatrix}$ are eigenvectors corresponding to the eigenvalue $3$; however, they are linearly independent.
+		\end{solution}
+		
+		\item[(c)]
+		\begin{answer}
+			False.
+		\end{answer}
+		\begin{solution}
+			The zero vector can not be an eigenvector.
+		\end{solution}
+		
+		\item[(d)]
+		\begin{answer}
+			True.
+		\end{answer}
+		\begin{solution}
+			Let $x\in E_{\lambda_1}\cap E_{\lambda_2}$, then $T x = \lambda_1 x = \lambda_2 x$. It follows that $x=0$ since $\lambda_1 \neq \lambda_2$.
+		\end{solution}
+		
+		\item[(e)]
+		\begin{answer}
+			True.
+		\end{answer}
+		\begin{solution}
+			It follows from Theorem 5.1.
+		\end{solution}
+		
+		\item[(f)]
+		\begin{answer}
+			False.
+		\end{answer}
+		\begin{solution}
+			It doesn't satisfy Theorem 5.9. Besides we also need the characteristic polynomial of $T$ can split.
+		\end{solution}
+		
+		\item[(g)]
+		\begin{answer}
+			True.
+		\end{answer}
+		\begin{solution}
+			Since the vector space is nonzero, then its characteristic polynomial must have degree more than $0$. Hence if it can diagonalize, then it must have an eigenvalue.
+		\end{solution}
+		
+		\item[(h)]
+		\begin{answer}
+			True.
+		\end{answer}
+		\begin{solution}
+			Since $W_i\cap \sum_{i\neq j} W_j = \{0\}$ by definition. We also know $W_j \in \sum_{k} W_k$. It follows that $W_i \cap W_j =\{0\}$ where $i\neq j$.
+		\end{solution}
+		
+		\item[(i)]
+		\begin{answer}
+			False.
+		\end{answer}
+		\begin{solution}
+			Consider $W_1 = \spann\{(0,1)\}$, $W_2 = \spann\{1,1\}$, $W_3 = \spann\{(1,0)\}$, then we have $W_i\cap W_j = \{0\}$ for $i\neq j$. However $W_1\cap (W_2+W_3) \neq \{0\}$.
+		\end{solution}
+		
+	\end{enumerate}
 \end{Exercise}

@@ -1,18 +1,18 @@
 % === Config ===
 \let\oldproofname=\proofname
-\renewcommand{\proofname}{\rm\bf{\oldproofname}}
-  
+\renewcommand{\proofname}{\color{red}{\rm\bf{\oldproofname}}}
+
 \newenvironment{solution}
-  {\begin{proof}[$\mathbf{Solution}$]}
-  {\end{proof}}
-  
+{\begin{proof}[\color{red}{$\mathbf{Solution}$}]}
+	{\end{proof}}
+
 \newenvironment{sketch}
-  {\begin{proof}[$\mathbf{Sketch}$]}
-  {\end{proof}}
+{\begin{proof}[$\mathbf{Sketch}$]}
+	{\end{proof}}
 
 \newenvironment{answer}
-  {\begin{proof}[$\mathbf{Answer}$]\renewcommand{\qedsymbol}{}}
-  {\end{proof}}
+{\begin{proof}[\color{purple}{$\mathbf{Answer}$}]\renewcommand{\qedsymbol}{}}
+	{\end{proof}}
 
 \renewcommand{\dateseparator}{/}
 \renewcommand{\qedsymbol}{$\blacksquare$}

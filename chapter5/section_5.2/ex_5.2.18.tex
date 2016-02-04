@@ -1,21 +1,21 @@
 % === Exercise 5.2.18 ===
 \begin{Exercise}
-\begin{enumerate}[(a)]
-\item
-\begin{proof}
-Notice that if $D_T$, $D_U$ are diagonal matrices, then $D_T D_U = D_U D_T$.
-
-Suppose $T$, $U$ are $n\times n$ matrices. By hypothesis and definition, we know there exists a $n\times n$ matrix $Q$ which is invertible such that
-\begin{align*}
-D_T &= Q^{-1} T Q; \\
-D_U &= Q^{-1} U Q
-\end{align*}
-where $D_T$, $D_U$ are diagonal matrices. It follows that 
-\begin{align*}
-D_T D_U &= (Q^{-1} T Q) (Q^{-1} U Q) = Q^{-1} T U Q; \\
-D_U D_T &= (Q^{-1} U Q) (Q^{-1} T Q) = Q^{-1} U T Q.
-\end{align*}
-Observe $D_T D_U = D_U D_T$, then $Q^{-1} T U Q = Q^{-1} U T Q$. Hence $T U = U T$.
-\end{proof}
-\end{enumerate}
+	\begin{enumerate}[(a)]
+		\item
+		\begin{proof}
+			Notice that if $D_T$, $D_U$ are diagonal matrices, then $D_T D_U = D_U D_T$.
+			
+			Suppose $T$, $U$ are $n\times n$ matrices. By hypothesis and definition, we know there exists a $n\times n$ matrix $Q$ which is invertible such that
+			\begin{align*}
+			D_T &= Q^{-1} T Q; \\
+			D_U &= Q^{-1} U Q
+			\end{align*}
+			where $D_T$, $D_U$ are diagonal matrices. It follows that 
+			\begin{align*}
+			D_T D_U &= (Q^{-1} T Q) (Q^{-1} U Q) = Q^{-1} T U Q; \\
+			D_U D_T &= (Q^{-1} U Q) (Q^{-1} T Q) = Q^{-1} U T Q.
+			\end{align*}
+			Observe $D_T D_U = D_U D_T$, then $Q^{-1} T U Q = Q^{-1} U T Q$. Hence $T U = U T$.
+		\end{proof}
+	\end{enumerate}
 \end{Exercise}
