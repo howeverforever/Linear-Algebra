@@ -1,54 +1,54 @@
 % === Exercise 1.4.15 ===
 \begin{Exercise}
-\begin{proof}
-Let $v\in span(S_1\cap S_2)$ arbitrarily, then we pick scalars $a_i$ and vectors $x_i\in S_1\cap S_2$ for each $i=1,2,\cdots,n$. It follows that
-$$
-v = \sum_{i=1}^{n} a_i x_i.
-$$
-So $v\in span(S_1)$ and $v\in span(S_2)$. Then $v\in span(S_1)\cap span(S_2)$.
-
-By the arbitrary choice of $v$, we conclude $span(S_1\cap S_2) \subseteq span(S_1)\cap span(S_2)$.
-\end{proof}
-\begin{itemize}
-\item $Example\ of\ \mathbf{span(S_1\cap S_2) = span(S_1)\cap span(S_2)}$.
-\end{itemize}
-\begin{answer}
-$S_1 = S_2 = (1,1)$
-\end{answer}
-\begin{solution}
-Since
-$$
-span(S_1\cap S_2) = \left\{ (x,y):x=y \right\},
-$$
-and
-$$
-span(S_1)\cap span(S_2) = \left\{ (x,y):x=y) \right\} \cap \left\{ (x,y):x=y) \right\} = \left\{ (x,y):x=y) \right\}.
-$$
-Hence 
-$$
-span(S_1\cap S_2) = span(S_1)\cap span(S_2).
-$$
-\end{solution}
-
-\begin{itemize}
-\item $Example\ of\ \mathbf{span(S_1\cap S_2) \neq span(S_1)\cap span(S_2)}$.
-\end{itemize}
-\begin{answer}
-$S_1 = (0,1)$ and $S_2 = (1,0)$
-\end{answer}
-\begin{solution}
-Since
-$$
-span(S_1\cap S_2) = span(\emptyset) = \left\{ (0,0) \right\},
-$$
-and
-$$
-span(S_1)\cap span(S_2) = \mathbb{R}^2.
-$$
-Hence 
-$$
-span(S_1\cap S_2) \neq span(S_1)\cap span(S_2).
-$$
-\end{solution}
-
+	\begin{proof}
+		Let $v\in \spann(S_1\cap S_2)$ arbitrarily, then we pick scalars $a_i$ and vectors $x_i\in S_1\cap S_2$ for each $i=1,2,\cdots,n$. It follows that
+		$$
+		v = \sum_{i=1}^{n} a_i x_i.
+		$$
+		So $v\in span(S_1)$ and $v\in span(S_2)$. Then $v\in span(S_1)\cap span(S_2)$.
+		
+		By the arbitrary choice of $v$, we conclude $span(S_1\cap S_2) \subseteq span(S_1)\cap span(S_2)$.
+	\end{proof}
+	\begin{itemize}
+		\item $Example\ of\ \mathbf{span(S_1\cap S_2) = span(S_1)\cap span(S_2)}$.
+	\end{itemize}
+	\begin{answer}
+		$S_1 = S_2 = (1,1)$
+	\end{answer}
+	\begin{solution}
+		Since
+		$$
+		span(S_1\cap S_2) = \left\{ (x,y):x=y \right\},
+		$$
+		and
+		$$
+		span(S_1)\cap span(S_2) = \left\{ (x,y):x=y) \right\} \cap \left\{ (x,y):x=y) \right\} = \left\{ (x,y):x=y) \right\}.
+		$$
+		Hence 
+		$$
+		span(S_1\cap S_2) = span(S_1)\cap span(S_2).
+		$$
+	\end{solution}
+	
+	\begin{itemize}
+		\item $Example\ of\ \mathbf{span(S_1\cap S_2) \neq span(S_1)\cap span(S_2)}$.
+	\end{itemize}
+	\begin{answer}
+		$S_1 = (0,1)$ and $S_2 = (1,0)$
+	\end{answer}
+	\begin{solution}
+		Since
+		$$
+		span(S_1\cap S_2) = span(\emptyset) = \left\{ (0,0) \right\},
+		$$
+		and
+		$$
+		span(S_1)\cap span(S_2) = \mathbb{R}^2.
+		$$
+		Hence 
+		$$
+		span(S_1\cap S_2) \neq span(S_1)\cap span(S_2).
+		$$
+	\end{solution}
+	
 \end{Exercise}

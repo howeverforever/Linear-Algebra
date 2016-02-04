@@ -1,21 +1,21 @@
 % === Exercise 6.1.12 ===
 \begin{Exercise}
-\begin{proof}
-Since $\{v_1, v_2, \cdots, v_k\}$ is orthogonal, then $\langle v_i, v_j \rangle = 0$ for all $i\neq j$. Follow the hypothesis, then we fix $i$ to consider 
-$$
-\left\langle v_i, \sum_{j=1}^{k} a_j v_j \right\rangle
-= \sum_{j=1}^{k} \overline{a_j} \left\langle v_i, v_j \right\rangle
-= \overline{a_i}\left\langle v_i, v_i \right\rangle.
-$$
-It follows that
-\begin{align*}
-\left\| \sum_{i=1}^{k} a_i v_i \right\|^2
-&= \left\langle \sum_{i=1}^{k} a_i v_i, \sum_{j=1}^{k} a_j v_j \right\rangle \\
-&= \sum_{i=1}^{k} a_i \left\langle v_i, \sum_{j=1}^{k} a_j v_j \right\rangle \\
-&= \sum_{i=1}^{k} a_i \sum_{j=1}^{k} \overline{a_j} \left\langle v_i, v_j \right\rangle \\
-&= \sum_{i=1}^{k} a_i \overline{a_i} \left\langle v_i, v_i \right\rangle \\
-&= \sum_{i=1}^{k} |a_i|^2 \| v_i \|^2.
-\end{align*}
-We obtain the desired result.
-\end{proof}
+	\begin{proof}
+		Since $\{v_1, v_2, \cdots, v_k\}$ is orthogonal, then $\langle v_i, v_j \rangle = 0$ for all $i\neq j$. Follow the hypothesis, then we fix $i$ to consider 
+		$$
+		\left\langle v_i, \sum_{j=1}^{k} a_j v_j \right\rangle
+		= \sum_{j=1}^{k} \overline{a_j} \left\langle v_i, v_j \right\rangle
+		= \overline{a_i}\left\langle v_i, v_i \right\rangle.
+		$$
+		It follows that
+		\begin{align*}
+		\left\| \sum_{i=1}^{k} a_i v_i \right\|^2
+		&= \left\langle \sum_{i=1}^{k} a_i v_i, \sum_{j=1}^{k} a_j v_j \right\rangle \\
+		&= \sum_{i=1}^{k} a_i \left\langle v_i, \sum_{j=1}^{k} a_j v_j \right\rangle \\
+		&= \sum_{i=1}^{k} a_i \sum_{j=1}^{k} \overline{a_j} \left\langle v_i, v_j \right\rangle \\
+		&= \sum_{i=1}^{k} a_i \overline{a_i} \left\langle v_i, v_i \right\rangle \\
+		&= \sum_{i=1}^{k} |a_i|^2 \| v_i \|^2.
+		\end{align*}
+		We obtain the desired result.
+	\end{proof}
 \end{Exercise}

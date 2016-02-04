@@ -1,54 +1,55 @@
+
 % === Exercise 2.1.35 ===
 \begin{Exercise}
-\begin{enumerate}[(a)]
-\item
-\begin{proof}
-Notice that $V$ is finite-dimensional vector space. then both $\nullity(T)$ and $\rank(T)$ are finite. By hypothesis $V=R(T)+N(T)$, it suffices to prove $R(T)\cap N(T) = \{0\}$.
-
-By Exercise 1.6.29(a), we know 
-$$
-\dim(R(T)+N(T)) = \dim(R(T))+\dim(N(T))-\dim(R(T)\cap N(T)).
-$$
-By hypothesis, we have
-$$
-\dim(R(T)\cap N(T)) = \dim(R(T))+\dim(N(T))-\dim(V).
-$$
-Since $\dim(V)$ is finite, by the Dimension Theorem, we have
-$$
-\dim(V) = \rank(T)+ \nullity(T) = \dim(R(T))+\dim(N(T)).
-$$
-Finally we obtain
-$$
-\dim(R(T)\cap N(T)) = 0
-$$
-which implies
-$$
-R(T)\cap N(T) = \{0\}.
-$$
-Hence
-$$
-V = R(T)\oplus N(T).
-$$
-\end{proof}
-
-\item
-\begin{proof}
-This is similar to part (a). Notice that $\dim(V)$ is finite, then both $\nullity(T)$ and $\rank(T)$ are finite. Consider
-$$
-\dim(R(T)+N(T)) = \dim(R(T))+\dim(N(T))-\dim(R(T)\cap N(T)).
-$$
-By hypothesis, we know
-$$
-\dim(R(T)+N(T)) = \dim(R(T))+\dim(N(T))-0.
-$$
-By the Dimension Theorem, we have
-$$
-\dim(R(T)+N(T)) = \dim(R(T))+\dim(N(T)) = \dim(V).
-$$
-Hence $R(T)+N(T) = V$. Then following $R(T)\cap N(T) = \{0\}$ by hypothesis, we conclude
-$$
-V = R(T)\oplus N(T).
-$$
-\end{proof}
-\end{enumerate}
+	\begin{enumerate}[(a)]
+		\item
+		\begin{proof}
+			Notice that $V$ is finite-dimensional vector space. then both $\nullity(T)$ and $\rank(T)$ are finite. By hypothesis $V=R(T)+N(T)$, it suffices to prove $R(T)\cap N(T) = \{0\}$.
+			
+			By Exercise 1.6.29(a), we know 
+			$$
+			\dim(R(T)+N(T)) = \dim(R(T))+\dim(N(T))-\dim(R(T)\cap N(T)).
+			$$
+			By hypothesis, we have
+			$$
+			\dim(R(T)\cap N(T)) = \dim(R(T))+\dim(N(T))-\dim(V).
+			$$
+			Since $\dim(V)$ is finite, by the Dimension Theorem, we have
+			$$
+			\dim(V) = \rank(T)+ \nullity(T) = \dim(R(T))+\dim(N(T)).
+			$$
+			Finally we obtain
+			$$
+			\dim(R(T)\cap N(T)) = 0
+			$$
+			which implies
+			$$
+			R(T)\cap N(T) = \{0\}.
+			$$
+			Hence
+			$$
+			V = R(T)\oplus N(T).
+			$$
+		\end{proof}
+		
+		\item
+		\begin{proof}
+			This is similar to part (a). Notice that $\dim(V)$ is finite, then both $\nullity(T)$ and $\rank(T)$ are finite. Consider
+			$$
+			\dim(R(T)+N(T)) = \dim(R(T))+\dim(N(T))-\dim(R(T)\cap N(T)).
+			$$
+			By hypothesis, we know
+			$$
+			\dim(R(T)+N(T)) = \dim(R(T))+\dim(N(T))-0.
+			$$
+			By the Dimension Theorem, we have
+			$$
+			\dim(R(T)+N(T)) = \dim(R(T))+\dim(N(T)) = \dim(V).
+			$$
+			Hence $R(T)+N(T) = V$. Then following $R(T)\cap N(T) = \{0\}$ by hypothesis, we conclude
+			$$
+			V = R(T)\oplus N(T).
+			$$
+		\end{proof}
+	\end{enumerate}
 \end{Exercise}

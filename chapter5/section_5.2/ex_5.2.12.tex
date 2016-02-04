@@ -1,18 +1,18 @@
 % === Exercise 5.2.12 ===
 \begin{Exercise}
-\begin{enumerate}[(a)]
-\item
-\begin{proof}
-We denoted the eigenspace of $T$ corresponding to $\lambda$ by $E_{\lambda,T}$.
-
-Let $x\in E_{\lambda, T}$, then $T(x) = \lambda x$. Since $T$ is invertible, we have $x = \lambda T^{-1} x$. Moreover, by Exercise 5.1.8(a), $0$ is not an eigenvalue of $T$. Hence we can divide $\lambda$ on both sides to obtain $\lambda^{-1} x = T^{-1}(x)$. This means $x\in E_{\lambda^{-1},T^{-1}}$. Conversely, a similar argument establishes $x\in E_{\lambda^{-1},T^{-1}}$ implies $x\in E_{\lambda, T}$.
-
-Since $x$ was arbitrary, we conclude $ E_{\lambda, T} = E_{\lambda^{-1},T^{-1}}$.
-\end{proof}
-
-\item
-\begin{proof}
-Since $T$ is diagonalizable, then $0$ is not an eigenvalue of $T$. Hence there exists $Q$ which is invertible such that $D = Q^{-1} T Q$ where $D$ is a diagonal matrix; also, $D^{-1}$ exists. It follows that $T = Q D Q^{-1}$. This implies that $T^{-1} = (Q D Q^{-1})^{-1} = Q D^{-1} Q^{-1}$. This means $T^{-1}$ is diagonalizable.
-\end{proof}
-\end{enumerate}
+	\begin{enumerate}[(a)]
+		\item
+		\begin{proof}
+			We denoted the eigenspace of $T$ corresponding to $\lambda$ by $E_{\lambda,T}$.
+			
+			Let $x\in E_{\lambda, T}$, then $T(x) = \lambda x$. Since $T$ is invertible, we have $x = \lambda T^{-1} x$. Moreover, by Exercise 5.1.8(a), $0$ is not an eigenvalue of $T$. Hence we can divide $\lambda$ on both sides to obtain $\lambda^{-1} x = T^{-1}(x)$. This means $x\in E_{\lambda^{-1},T^{-1}}$. Conversely, a similar argument establishes $x\in E_{\lambda^{-1},T^{-1}}$ implies $x\in E_{\lambda, T}$.
+			
+			Since $x$ was arbitrary, we conclude $ E_{\lambda, T} = E_{\lambda^{-1},T^{-1}}$.
+		\end{proof}
+		
+		\item
+		\begin{proof}
+			Since $T$ is diagonalizable, then $0$ is not an eigenvalue of $T$. Hence there exists $Q$ which is invertible such that $D = Q^{-1} T Q$ where $D$ is a diagonal matrix; also, $D^{-1}$ exists. It follows that $T = Q D Q^{-1}$. This implies that $T^{-1} = (Q D Q^{-1})^{-1} = Q D^{-1} Q^{-1}$. This means $T^{-1}$ is diagonalizable.
+		\end{proof}
+	\end{enumerate}
 \end{Exercise}

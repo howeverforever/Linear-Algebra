@@ -1,48 +1,48 @@
 % === Exercise 5.2.13 ===
 \begin{Exercise}
-\begin{enumerate}[(a)]
-\item
-\begin{proof}
-Let $A = \begin{pmatrix}
-1 & 1 \\
-0 & 2
-\end{pmatrix}$. Then $\lambda = 2$ is an eigenvalue of $A$. We know $\left\{\begin{pmatrix}
-1 \\
-1
-\end{pmatrix} \right\}$ is a basis for $E_{\lambda}$. Consdier $A^t$, $\lambda' = 2$ is also an eigenvalue of $A$. We know $\left\{\begin{pmatrix}
-0 \\
-1
-\end{pmatrix} \right\}$ is a basis for $E_{\lambda'}$.
-
-However $\spann\{(1,1)\} \neq \spann\{(0,1)\}$ since $\spann\{(1,1)\} = \mathbb{R}^2$, $\spann\{(0,1)\} = \mathbb{R}^1$.
-\end{proof}
-
-\item
-\begin{proof}
-Pick an arbitrary eigenvalue $\lambda$. By the Dimension Theorem, we have
-\begin{align*}
-\dim(E_{\lambda}) &= \dim(N(A-\lambda I)) = n-\rank(A-\lambda I); \\
-\dim(E'_{\lambda}) &= \dim(N(A^t-\lambda I)) = n-\rank(A^t-\lambda I).
-\end{align*}
-Since $(A-\lambda I)^t = A^t - \lambda I$, then 
-$$
-\rank(A-\lambda I) = \rank((A-\lambda I)^t) = \rank(A^t-\lambda I).
-$$
-Hence we know for a particular eigenvalue $\lambda$,
-$$
-\dim(E_{\lambda}) = \dim(E'_{\lambda}).
-$$
-
-Since $\lambda$ was arbitrary, the statement follows.
-\end{proof}
-
-\item
-\begin{proof}
-Since $A$ is diagonalizable, then $\det(A-\lambda I)$ can split and $\dim(E_{\lambda})$ equals to the multiplicity of $\lambda$ for each $\lambda$.
-
-Because $\det(A-\lambda I) = \det((A-\lambda I)^t) = \det(A^t-\lambda I)$, $A^t$ can split, too. From part (b), we know $\dim(E_{\lambda}) = \dim(E'_{\lambda})$; hence $\dim(E'_{\lambda})$ equals to the multiplicity of $\lambda$ for each $\lambda$.
-
-They follows $A^t$ is diagonalizable.
-\end{proof}
-\end{enumerate}
+	\begin{enumerate}[(a)]
+		\item
+		\begin{proof}
+			Let $A = \begin{pmatrix}
+			1 & 1 \\
+			0 & 2
+			\end{pmatrix}$. Then $\lambda = 2$ is an eigenvalue of $A$. We know $\left\{\begin{pmatrix}
+			1 \\
+			1
+			\end{pmatrix} \right\}$ is a basis for $E_{\lambda}$. Consdier $A^t$, $\lambda' = 2$ is also an eigenvalue of $A$. We know $\left\{\begin{pmatrix}
+			0 \\
+			1
+			\end{pmatrix} \right\}$ is a basis for $E_{\lambda'}$.
+			
+			However $\spann\{(1,1)\} \neq \spann\{(0,1)\}$ since $\spann\{(1,1)\} = \mathbb{R}^2$, $\spann\{(0,1)\} = \mathbb{R}^1$.
+		\end{proof}
+		
+		\item
+		\begin{proof}
+			Pick an arbitrary eigenvalue $\lambda$. By the Dimension Theorem, we have
+			\begin{align*}
+			\dim(E_{\lambda}) &= \dim(N(A-\lambda I)) = n-\rank(A-\lambda I); \\
+			\dim(E'_{\lambda}) &= \dim(N(A^t-\lambda I)) = n-\rank(A^t-\lambda I).
+			\end{align*}
+			Since $(A-\lambda I)^t = A^t - \lambda I$, then 
+			$$
+			\rank(A-\lambda I) = \rank((A-\lambda I)^t) = \rank(A^t-\lambda I).
+			$$
+			Hence we know for a particular eigenvalue $\lambda$,
+			$$
+			\dim(E_{\lambda}) = \dim(E'_{\lambda}).
+			$$
+			
+			Since $\lambda$ was arbitrary, the statement follows.
+		\end{proof}
+		
+		\item
+		\begin{proof}
+			Since $A$ is diagonalizable, then $\det(A-\lambda I)$ can split and $\dim(E_{\lambda})$ equals to the multiplicity of $\lambda$ for each $\lambda$.
+			
+			Because $\det(A-\lambda I) = \det((A-\lambda I)^t) = \det(A^t-\lambda I)$, $A^t$ can split, too. From part (b), we know $\dim(E_{\lambda}) = \dim(E'_{\lambda})$; hence $\dim(E'_{\lambda})$ equals to the multiplicity of $\lambda$ for each $\lambda$.
+			
+			They follows $A^t$ is diagonalizable.
+		\end{proof}
+	\end{enumerate}
 \end{Exercise}

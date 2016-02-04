@@ -1,23 +1,23 @@
 % === Exercise 5.1.12 ===
 \begin{Exercise}
-\begin{enumerate}[(a)]
-\item
-\begin{proof}
-Suppose $A$ is similar to $B$, there exists $Q$ which is invertible such that $A = Q^{-1} B Q$. Then consider
-\begin{align*}
-\det(A-\lambda I)
-&= \det(Q^{-1} B Q -\lambda I) \\
-&= \det(Q^{-1} B Q - Q^{-1} \lambda I Q ) \\
-&= \det(Q^{-1} (B-\lambda I) Q ) \\
-&= \det(Q^{-1})\det(B-\lambda I)\det(Q) \\
-&= \det(B-\lambda I).
-\end{align*}
-Hence $A,B$ have the same characteristic polynomial.
-\end{proof}
-
-\item
-\begin{proof}
-Let $\alpha$ and $\beta$ be arbitrary different bases for $V$, and $T$ be a linear operator on $V$. Since $[T]_{\alpha}$ is similar to $[T]_{\beta}$, from part (a), we know they have the same characteristic polynomial. Because $\alpha$, $\beta$ were arbitrary, this leads to that the statement holds.
-\end{proof}
-\end{enumerate}
+	\begin{enumerate}[(a)]
+		\item
+		\begin{proof}
+			Suppose $A$ is similar to $B$, there exists $Q$ which is invertible such that $A = Q^{-1} B Q$. Then consider
+			\begin{align*}
+			\det(A-\lambda I)
+			&= \det(Q^{-1} B Q -\lambda I) \\
+			&= \det(Q^{-1} B Q - Q^{-1} \lambda I Q ) \\
+			&= \det(Q^{-1} (B-\lambda I) Q ) \\
+			&= \det(Q^{-1})\det(B-\lambda I)\det(Q) \\
+			&= \det(B-\lambda I).
+			\end{align*}
+			Hence $A,B$ have the same characteristic polynomial.
+		\end{proof}
+		
+		\item
+		\begin{proof}
+			Let $\alpha$ and $\beta$ be arbitrary different bases for $V$, and $T$ be a linear operator on $V$. Since $[T]_{\alpha}$ is similar to $[T]_{\beta}$, from part (a), we know they have the same characteristic polynomial. Because $\alpha$, $\beta$ were arbitrary, this leads to that the statement holds.
+		\end{proof}
+	\end{enumerate}
 \end{Exercise}

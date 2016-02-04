@@ -1,0 +1,125 @@
+% === Exercise 6.7.4 ===
+\begin{Exercise}
+	\begin{enumerate}[(a)]
+		\item[(a)]
+		\begin{answer}
+			$A = \left[ \dfrac{1}{\sqrt{2}}\begin{pmatrix}
+			1 & 1 \\
+			1 & -1
+			\end{pmatrix} \right] \left[ \dfrac{1}{2} \begin{pmatrix}
+			3\sqrt{2} & -\sqrt{2} \\
+			-\sqrt{2} & 3\sqrt{2}
+			\end{pmatrix} \right]$
+		\end{answer}
+		\begin{solution}
+			Let $A = \begin{pmatrix}
+			1 & 1 \\
+			2 & -2
+			\end{pmatrix}$.
+			Calculate $A^* A = \begin{pmatrix}
+			5 & -3 \\
+			-3 & 5
+			\end{pmatrix}$.
+			Hence we know the eigenvalues are
+			$$
+			\lambda_1 = 8,~ \lambda_2 = 2.
+			$$
+			It follows that
+			$$
+			v'_1 = \begin{pmatrix}
+			1 \\
+			-1
+			\end{pmatrix},~ v'_2 = \begin{pmatrix}
+			1 \\
+			1
+			\end{pmatrix}
+			$$
+			are corresponding eigenvectors.
+			Normalize them to obtain
+			$$
+			v_1 = \dfrac{1}{\sqrt{2}}\begin{pmatrix}
+			1 \\
+			-1
+			\end{pmatrix},~ v_2 = \dfrac{1}{\sqrt{2}}\begin{pmatrix}
+			1 \\
+			1
+			\end{pmatrix}.
+			$$
+			We know the singular values are
+			$$
+			\sigma_1 = \sqrt{\lambda_1} = \sqrt{8},~
+			\sigma_2 = \sqrt{\lambda_2} = \sqrt{2}.
+			$$
+			This means
+			\begin{align*}
+			u_1 
+			&= \frac{1}{\sigma_1}A v_1 = \frac{1}{\sqrt{8}} \begin{pmatrix}
+			1 & 1 \\
+			2 & -2
+			\end{pmatrix} \dfrac{1}{\sqrt{2}}\begin{pmatrix}
+			1 \\
+			-1
+			\end{pmatrix} = \begin{pmatrix}
+			0 \\
+			1
+			\end{pmatrix}; \\
+			u_2 
+			&= \frac{1}{\sigma_2}A v_2 = \frac{1}{\sqrt{2}} \begin{pmatrix}
+			1 & 1 \\
+			2 & -2
+			\end{pmatrix} \dfrac{1}{\sqrt{2}}\begin{pmatrix}
+			1 \\
+			1
+			\end{pmatrix} = \begin{pmatrix}
+			1 \\
+			0
+			\end{pmatrix}
+			\end{align*}
+			such that $\{u_1, u_2\}$ is an orthonormal basis.
+			So we have
+			$$
+			U = \begin{pmatrix}
+			0 & 1 \\
+			1 & 0
+			\end{pmatrix},~ \Sigma = \begin{pmatrix}
+			\sqrt{8} & 0 \\
+			0 & \sqrt{2}
+			\end{pmatrix},~ V = \frac{1}{\sqrt{2}}\begin{pmatrix}
+			1 & 1 \\
+			-1 & 1
+			\end{pmatrix}.
+			$$
+			Hence we get the polar decomposition $A = WP$ where
+			\begin{align*}
+			W 
+			&= UV^* 
+			=  \begin{pmatrix}
+			0 & 1 \\
+			1 & 0
+			\end{pmatrix} \left[\frac{1}{\sqrt{2}}\begin{pmatrix}
+			1 & -1 \\
+			1 & 1
+			\end{pmatrix} \right] = \frac{1}{\sqrt{2}}\begin{pmatrix}
+			1 & 1 \\
+			1 & -1
+			\end{pmatrix}; \\
+			P
+			&= V\Sigma V^*
+			= \left[\frac{1}{\sqrt{2}}\begin{pmatrix}
+			1 & 1 \\
+			-1 & 1
+			\end{pmatrix}\right] \begin{pmatrix}
+			\sqrt{8} & 0 \\
+			0 & \sqrt{2}
+			\end{pmatrix} \left[\frac{1}{\sqrt{2}}\begin{pmatrix}
+			1 & -1 \\
+			1 & 1
+			\end{pmatrix}\right]
+			= \frac{1}{2} \begin{pmatrix}
+			3\sqrt{2} & -\sqrt{2} \\
+			-\sqrt{2} & 3\sqrt{2}
+			\end{pmatrix}.
+			\end{align*}
+		\end{solution}
+	\end{enumerate}
+\end{Exercise}

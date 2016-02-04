@@ -1,15 +1,15 @@
 % === Exercise 2.2.8 ===
 \begin{Exercise}
-\begin{proof}
-Let $\beta := (v_1,\cdots, v_n)$ be a basis for $V$. Then $x = \sum_{i=1}^{n} a_i v_i$ and $y = \sum_{i=1}^{n} b_i v_i$ where $a_i, b_i \in F$. For $c\in F$, we consider
-\begin{align*}
-T(c x+y)
-&= T\left(c+\sum_{i=1}^{n} a_i v_i + \sum_{i=1}^{n} b_i v_i \right) \\
-&= T\left(\sum_{i=1}^{n} (c a_i + b_i)v_i \right) \\
-&= (c a_1 + b_1, \cdots, c a_n + b_n) \\
-&= c (a_1,\cdots, a_n) + (b_1,\cdots, b_n) \\
-&= c T(x) + T(y).
-\end{align*}
-Hence $T$ is linear.
-\end{proof}
+	\begin{proof}
+		Let $\beta := (v_1,\cdots, v_n)$ be a basis for $V$. Then $x = \sum_{i=1}^{n} a_i v_i$ and $y = \sum_{i=1}^{n} b_i v_i$ where $a_i, b_i \in F$. For $c\in F$, we consider
+		\begin{align*}
+		T(c x+y)
+		&= T\left(c+\sum_{i=1}^{n} a_i v_i + \sum_{i=1}^{n} b_i v_i \right) \\
+		&= T\left(\sum_{i=1}^{n} (c a_i + b_i)v_i \right) \\
+		&= (c a_1 + b_1, \cdots, c a_n + b_n) \\
+		&= c (a_1,\cdots, a_n) + (b_1,\cdots, b_n) \\
+		&= c T(x) + T(y).
+		\end{align*}
+		Hence $T$ is linear.
+	\end{proof}
 \end{Exercise}
