@@ -1,25 +1,25 @@
 % === Exercise 2.6.19 ===
 \begin{Exercise}
-\begin{proof}
-Since $W\subset V$ but $W\neq V$ by hypothesis, we can pick $x_0\in V\setminus W$. Let $\beta$ be a basis for $W$. Since $x_0\notin W$, then we have $\beta\cup \{x_0\}$ is linearly independent. Now we extend $\beta\cup \{x_0\}$ to $\beta'$ which is a basis for $V$.
-
-Define a function $g:\beta'\to F$ by 
-$$
-g(x)=\begin{cases}
-1 & \mbox{ for} x=x_0 \\
-0 & \mbox{ otherwise}
-\end{cases}.
-$$
-Hence we know $g(x)=0$ for all $x\in \beta$.
-
-By Exercise 2.1.34, we know there exists the unique linear transformation $f:\beta'\to F$ such that $f(x)=g(x)$ for all $x\in \beta'$. Then, we can write $y\in W$ as $y=\sum_{j=1}^{n} c_j y_j$ where $y_j\in \beta$ and $c_j\in F$. Consider
-$$
-f(y) = f(\sum_{j=1}^{n} c_j y_j) 
-= \sum_{j=1}^{n} c_j f(x_j)
-= \sum_{j=1}^{n} c_j g(x_j)
-= 0
-$$
-for all $y\in W$.
-Notice that $f(x_0) = g(x_0) = 1$ implies that $f$ is nonzero. In particular, $f$ maps $\beta'$ to $F$, we know $f$ is a linear functional. i.e., $f$ is what we desire.
-\end{proof}
+	\begin{proof}
+		Since $W\subset V$ but $W\neq V$ by hypothesis, we can pick $x_0\in V\setminus W$. Let $\beta$ be a basis for $W$. Since $x_0\notin W$, then we have $\beta\cup \{x_0\}$ is linearly independent. Now we extend $\beta\cup \{x_0\}$ to $\beta'$ which is a basis for $V$.
+		
+		Define a function $g:\beta'\to F$ by 
+		$$
+		g(x)=\begin{cases}
+		1 & \mbox{ for} x=x_0 \\
+		0 & \mbox{ otherwise}
+		\end{cases}.
+		$$
+		Hence we know $g(x)=0$ for all $x\in \beta$.
+		
+		By Exercise 2.1.34, we know there exists the unique linear transformation $f:\beta'\to F$ such that $f(x)=g(x)$ for all $x\in \beta'$. Then, we can write $y\in W$ as $y=\sum_{j=1}^{n} c_j y_j$ where $y_j\in \beta$ and $c_j\in F$. Consider
+		$$
+		f(y) = f(\sum_{j=1}^{n} c_j y_j) 
+		= \sum_{j=1}^{n} c_j f(x_j)
+		= \sum_{j=1}^{n} c_j g(x_j)
+		= 0
+		$$
+		for all $y\in W$.
+		Notice that $f(x_0) = g(x_0) = 1$ implies that $f$ is nonzero. In particular, $f$ maps $\beta'$ to $F$, we know $f$ is a linear functional. i.e., $f$ is what we desire.
+	\end{proof}
 \end{Exercise}

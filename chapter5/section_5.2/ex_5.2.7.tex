@@ -1,56 +1,56 @@
 % === Exercise 5.2.7 ===
 \begin{Exercise}
-\begin{answer}
-$A^n = \frac{1}{3}\begin{pmatrix}
-5^n+2(-1)^n & 2\cdot 5^n - 2(-1)^n \\
-5^n-(-1)^n & 2\cdot 5^n + (-1)^n
-\end{pmatrix}$.
-\end{answer}
-\begin{solution}
-Solve $\det(A-\lambda I) = 0$, we have $(\lambda-5)(\lambda+1) = 0$. Pick $\lambda_1 = 5$, $\lambda_2 = -1$. For $\lambda_1 = 5$, we know $\left\{\begin{pmatrix}
-1 \\
-1
-\end{pmatrix}\right\}$ is a basis for $N_{\lambda_1}$. For $\lambda_2 = -1$, we know $\left\{\begin{pmatrix}
--2 \\
-1
-\end{pmatrix}\right\}$ is a basis for $N_{\lambda_2}$. Hence we pick $Q = \begin{pmatrix}
-1 & -2 \\
-1 & 1
-\end{pmatrix}$. It follows that
-$$
-\begin{pmatrix}
-5 & 0 \\
-0 & -1
-\end{pmatrix} = Q^{-1} A Q.
-$$
-This implies
-$$
-\begin{pmatrix}
-5 & 0 \\
-0 & -1
-\end{pmatrix}^n = (Q^{-1} A Q)^n = Q^{-1} A^n Q.
-$$
-So we conclude
-\begin{align*}
-A^n 
-&= Q \begin{pmatrix}
-5^n & 0 \\
-0 & (-1)^n
-\end{pmatrix} Q^{-1} \\ 
-&= \begin{pmatrix}
-1 & -2 \\
-1 & 1
-\end{pmatrix} \begin{pmatrix}
-5^n & 0 \\
-0 & (-1)^n
-\end{pmatrix} \left( \frac{1}{3}\begin{pmatrix}
-1 & 2 \\
--1 & 1
-\end{pmatrix} \right) \\
-&= \frac{1}{3}\begin{pmatrix}
-5^n+2(-1)^n & 2\cdot 5^n - 2(-1)^n \\
-5^n-(-1)^n & 2\cdot 5^n + (-1)^n
-\end{pmatrix}.
-\end{align*}
-\end{solution}
+	\begin{answer}
+		$A^n = \frac{1}{3}\begin{pmatrix}
+		5^n+2(-1)^n & 2\cdot 5^n - 2(-1)^n \\
+		5^n-(-1)^n & 2\cdot 5^n + (-1)^n
+		\end{pmatrix}$.
+	\end{answer}
+	\begin{solution}
+		Solve $\det(A-\lambda I) = 0$, we have $(\lambda-5)(\lambda+1) = 0$. Pick $\lambda_1 = 5$, $\lambda_2 = -1$. For $\lambda_1 = 5$, we know $\left\{\begin{pmatrix}
+		1 \\
+		1
+		\end{pmatrix}\right\}$ is a basis for $N_{\lambda_1}$. For $\lambda_2 = -1$, we know $\left\{\begin{pmatrix}
+		-2 \\
+		1
+		\end{pmatrix}\right\}$ is a basis for $N_{\lambda_2}$. Hence we pick $Q = \begin{pmatrix}
+		1 & -2 \\
+		1 & 1
+		\end{pmatrix}$. It follows that
+		$$
+		\begin{pmatrix}
+		5 & 0 \\
+		0 & -1
+		\end{pmatrix} = Q^{-1} A Q.
+		$$
+		This implies
+		$$
+		\begin{pmatrix}
+		5 & 0 \\
+		0 & -1
+		\end{pmatrix}^n = (Q^{-1} A Q)^n = Q^{-1} A^n Q.
+		$$
+		So we conclude
+		\begin{align*}
+		A^n 
+		&= Q \begin{pmatrix}
+		5^n & 0 \\
+		0 & (-1)^n
+		\end{pmatrix} Q^{-1} \\ 
+		&= \begin{pmatrix}
+		1 & -2 \\
+		1 & 1
+		\end{pmatrix} \begin{pmatrix}
+		5^n & 0 \\
+		0 & (-1)^n
+		\end{pmatrix} \left( \frac{1}{3}\begin{pmatrix}
+		1 & 2 \\
+		-1 & 1
+		\end{pmatrix} \right) \\
+		&= \frac{1}{3}\begin{pmatrix}
+		5^n+2(-1)^n & 2\cdot 5^n - 2(-1)^n \\
+		5^n-(-1)^n & 2\cdot 5^n + (-1)^n
+		\end{pmatrix}.
+		\end{align*}
+	\end{solution}
 \end{Exercise}

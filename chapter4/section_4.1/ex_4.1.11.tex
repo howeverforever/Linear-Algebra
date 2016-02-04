@@ -1,102 +1,102 @@
 % === Exercise 4.1.11 ===
 \begin{Exercise}
-\begin{proof}
-First, we need to know the values of $\delta\begin{pmatrix}
-1 & 0 \\
-1 & 0
-\end{pmatrix}, \delta\begin{pmatrix}
-1 & 0 \\
-0 & 1
-\end{pmatrix}, \delta\begin{pmatrix}
-0 & 1 \\
-1 & 0
-\end{pmatrix}, \delta\begin{pmatrix}
-0 & 1 \\
-0 & 1
-\end{pmatrix}$.
-
-By property (ii), we know 
-$$
-\delta\begin{pmatrix}
-1 & 0 \\
-1 & 0
-\end{pmatrix} = \delta\begin{pmatrix}
-0 & 1 \\
-0 & 1
-\end{pmatrix} = 0;
-$$
-also by property (iii), we know $\delta\begin{pmatrix}
-1 & 0 \\
-0 & 1
-\end{pmatrix} = 1$. Since
-\begin{align*}
-0 = \delta\begin{pmatrix}
-1 & 1 \\
-1 & 1
-\end{pmatrix} 
-&= \delta\begin{pmatrix}
-1 & 0 \\
-1 & 1
-\end{pmatrix} + \delta\begin{pmatrix}
-0 & 1 \\
-1 & 1
-\end{pmatrix} \\
-&= \left( \delta\begin{pmatrix}
-1 & 0 \\
-1 & 0
-\end{pmatrix} + \delta\begin{pmatrix}
-1 & 0 \\
-0 & 1
-\end{pmatrix} \right) + \left( \delta\begin{pmatrix}
-0 & 1 \\
-1 & 0
-\end{pmatrix} + \delta\begin{pmatrix}
-0 & 1 \\
-0 & 1
-\end{pmatrix} \right) \\
-&= ( 0 + 1 ) + \left(\delta\begin{pmatrix}
-0 & 1 \\
-1 & 0
-\end{pmatrix} + 0 \right),
-\end{align*}
-this implies $\delta\begin{pmatrix}
-0 & 1 \\
-1 & 0
-\end{pmatrix} = -1$.
-
-Let $A = \begin{pmatrix}
-a & b \\
-c & d
-\end{pmatrix}\in M_{2\times 2}(F)$. Now consider
-\begin{align*}
-\delta(A)
-&= \delta\begin{pmatrix}
-a & b \\
-c & d
-\end{pmatrix} \\
-&= a\delta\begin{pmatrix}
-1 & 0 \\
-c & d
-\end{pmatrix} + b\delta\begin{pmatrix}
-0 & 1 \\
-c & d
-\end{pmatrix} \\
-&= a\left(c\delta\begin{pmatrix}
-1 & 0 \\
-1 & 0
-\end{pmatrix} + d\delta\begin{pmatrix}
-1 & 0 \\
-0 & 1
-\end{pmatrix}\right) + b\left( c\delta\begin{pmatrix}
-0 & 1 \\
-1 & 0
-\end{pmatrix} + d\delta\begin{pmatrix}
-0 & 1 \\
-0 & 1
-\end{pmatrix}\right) \\
-&= a d - b c \\
-&= \det(A).
-\end{align*}
-Hence we complete the proof.
-\end{proof}
+	\begin{proof}
+		First, we need to know the values of $\delta\begin{pmatrix}
+		1 & 0 \\
+		1 & 0
+		\end{pmatrix}, \delta\begin{pmatrix}
+		1 & 0 \\
+		0 & 1
+		\end{pmatrix}, \delta\begin{pmatrix}
+		0 & 1 \\
+		1 & 0
+		\end{pmatrix}, \delta\begin{pmatrix}
+		0 & 1 \\
+		0 & 1
+		\end{pmatrix}$.
+		
+		By property (ii), we know 
+		$$
+		\delta\begin{pmatrix}
+		1 & 0 \\
+		1 & 0
+		\end{pmatrix} = \delta\begin{pmatrix}
+		0 & 1 \\
+		0 & 1
+		\end{pmatrix} = 0;
+		$$
+		also by property (iii), we know $\delta\begin{pmatrix}
+		1 & 0 \\
+		0 & 1
+		\end{pmatrix} = 1$. Since
+		\begin{align*}
+		0 = \delta\begin{pmatrix}
+		1 & 1 \\
+		1 & 1
+		\end{pmatrix} 
+		&= \delta\begin{pmatrix}
+		1 & 0 \\
+		1 & 1
+		\end{pmatrix} + \delta\begin{pmatrix}
+		0 & 1 \\
+		1 & 1
+		\end{pmatrix} \\
+		&= \left( \delta\begin{pmatrix}
+		1 & 0 \\
+		1 & 0
+		\end{pmatrix} + \delta\begin{pmatrix}
+		1 & 0 \\
+		0 & 1
+		\end{pmatrix} \right) + \left( \delta\begin{pmatrix}
+		0 & 1 \\
+		1 & 0
+		\end{pmatrix} + \delta\begin{pmatrix}
+		0 & 1 \\
+		0 & 1
+		\end{pmatrix} \right) \\
+		&= ( 0 + 1 ) + \left(\delta\begin{pmatrix}
+		0 & 1 \\
+		1 & 0
+		\end{pmatrix} + 0 \right),
+		\end{align*}
+		this implies $\delta\begin{pmatrix}
+		0 & 1 \\
+		1 & 0
+		\end{pmatrix} = -1$.
+		
+		Let $A = \begin{pmatrix}
+		a & b \\
+		c & d
+		\end{pmatrix}\in M_{2\times 2}(F)$. Now consider
+		\begin{align*}
+		\delta(A)
+		&= \delta\begin{pmatrix}
+		a & b \\
+		c & d
+		\end{pmatrix} \\
+		&= a\delta\begin{pmatrix}
+		1 & 0 \\
+		c & d
+		\end{pmatrix} + b\delta\begin{pmatrix}
+		0 & 1 \\
+		c & d
+		\end{pmatrix} \\
+		&= a\left(c\delta\begin{pmatrix}
+		1 & 0 \\
+		1 & 0
+		\end{pmatrix} + d\delta\begin{pmatrix}
+		1 & 0 \\
+		0 & 1
+		\end{pmatrix}\right) + b\left( c\delta\begin{pmatrix}
+		0 & 1 \\
+		1 & 0
+		\end{pmatrix} + d\delta\begin{pmatrix}
+		0 & 1 \\
+		0 & 1
+		\end{pmatrix}\right) \\
+		&= a d - b c \\
+		&= \det(A).
+		\end{align*}
+		Hence we complete the proof.
+	\end{proof}
 \end{Exercise}

@@ -1,80 +1,80 @@
 % === Exercise 7.1.1 ===
 \begin{Exercise}
-\begin{enumerate}[(a)]
-\item[(a)]
-\begin{answer}
-True.
-\end{answer}
-\begin{solution}
-It follows from definition.
-\end{solution}
-
-\item[(b)]
-\begin{answer}
-False.
-\end{answer}
-\begin{solution}
-Let $x$ be a generalized eigenvector of $T$, then by definition, there exists $p$ is the smallest integer such that $(T-\lambda I)^p(x) = 0$. However $y = (T-\lambda I)^{p-1}\neq 0$ is an eigenvector corresponding to $\lambda$. This means $\lambda$ is an eigenvalue.
-\end{solution}
-
-\item[(c)]
-\begin{answer}
-False.
-\end{answer}
-\begin{solution}
-It also need to satisfy the characteristic polynomial can split. It follows from the Corollary 1 of Theorem 7.7.
-\end{solution}
-
-\item[(d)]
-\begin{answer}
-True.
-\end{answer}
-\begin{solution}
-It follows from the Corollary of Theorem 7.6.
-\end{solution}
-
-\item[(e)]
-\begin{answer}
-False.
-\end{answer}
-\begin{solution}
-Consider $A = \begin{pmatrix}
-2 & -1 & 0 & 1 \\
-0 & 3 & -1 & 0 \\
-0 & 1 & 1 & 0 \\
-0 & -1 & 0 & 3
-\end{pmatrix}$. Corresponding to the eigenvalue $2$, we have two cycle of generalized eigenvectors of $A$.
-\end{solution}
-
-\item[(f)]
-\begin{answer}
-False.
-\end{answer}
-\begin{solution}
-Consider $T = \begin{pmatrix}
-1 & 1 \\
-0 & 1
-\end{pmatrix}$. Observe the eigenvalue is $1$. Then $K_1 = \mathbb{R}^2$. We pick $\beta = \{(1,-1),(1,1)\}$ to know that $[T]_{\beta} = \begin{pmatrix}
-1 & 2 \\
--1 & 0
-\end{pmatrix}$ is not a Jordan canonical form.
-\end{solution}
-
-\item[(g)]
-\begin{answer}
-True.
-\end{answer}
-\begin{solution}
-We just pick $\beta$ be the standard basis. Then $[L_\mathcal{J}]_{\beta} = \mathcal{J}$.
-\end{solution}
-
-\item[(h)]
-\begin{answer}
-True.
-\end{answer}
-\begin{solution}
-It follows from Theorem 7.2(b).
-\end{solution}
-
-\end{enumerate}
+	\begin{enumerate}[(a)]
+		\item[(a)]
+		\begin{answer}
+			True.
+		\end{answer}
+		\begin{solution}
+			It follows from definition.
+		\end{solution}
+		
+		\item[(b)]
+		\begin{answer}
+			False.
+		\end{answer}
+		\begin{solution}
+			Let $x$ be a generalized eigenvector of $T$, then by definition, there exists $p$ is the smallest integer such that $(T-\lambda I)^p(x) = 0$. However $y = (T-\lambda I)^{p-1}\neq 0$ is an eigenvector corresponding to $\lambda$. This means $\lambda$ is an eigenvalue.
+		\end{solution}
+		
+		\item[(c)]
+		\begin{answer}
+			False.
+		\end{answer}
+		\begin{solution}
+			It also need to satisfy the characteristic polynomial can split. It follows from the Corollary 1 of Theorem 7.7.
+		\end{solution}
+		
+		\item[(d)]
+		\begin{answer}
+			True.
+		\end{answer}
+		\begin{solution}
+			It follows from the Corollary of Theorem 7.6.
+		\end{solution}
+		
+		\item[(e)]
+		\begin{answer}
+			False.
+		\end{answer}
+		\begin{solution}
+			Consider $A = \begin{pmatrix}
+			2 & -1 & 0 & 1 \\
+			0 & 3 & -1 & 0 \\
+			0 & 1 & 1 & 0 \\
+			0 & -1 & 0 & 3
+			\end{pmatrix}$. Corresponding to the eigenvalue $2$, we have two cycle of generalized eigenvectors of $A$.
+		\end{solution}
+		
+		\item[(f)]
+		\begin{answer}
+			False.
+		\end{answer}
+		\begin{solution}
+			Consider $T = \begin{pmatrix}
+			1 & 1 \\
+			0 & 1
+			\end{pmatrix}$. Observe the eigenvalue is $1$. Then $K_1 = \mathbb{R}^2$. We pick $\beta = \{(1,-1),(1,1)\}$ to know that $[T]_{\beta} = \begin{pmatrix}
+			1 & 2 \\
+			-1 & 0
+			\end{pmatrix}$ is not a Jordan canonical form.
+		\end{solution}
+		
+		\item[(g)]
+		\begin{answer}
+			True.
+		\end{answer}
+		\begin{solution}
+			We just pick $\beta$ be the standard basis. Then $[L_\mathcal{J}]_{\beta} = \mathcal{J}$.
+		\end{solution}
+		
+		\item[(h)]
+		\begin{answer}
+			True.
+		\end{answer}
+		\begin{solution}
+			It follows from Theorem 7.2(b).
+		\end{solution}
+		
+	\end{enumerate}
 \end{Exercise}

@@ -1,43 +1,43 @@
 % === Exercise 5.4.42 ===
 \begin{Exercise}
-\begin{answer}
-$\begin{cases}
-(-1)^n t^{n-1} (t-n) & \mbox{if }n>1 \\
-t-1 & \mbox{if } n=1
-\end{cases}$.
-\end{answer}
-\begin{proof}
-For $n=1$, the characteristic polynomial is $t-1$ trivially.
-
-For $n>1$, since all columns of $A$ are the same as $\begin{pmatrix}
-1 \\
-1 \\
-\vdots \\
-1
-\end{pmatrix}_{n\times 1}$, we know $A = \spann\left\{\begin{pmatrix}
-1 \\
-1 \\
-\vdots \\
-1
-\end{pmatrix}_{n\times 1}\right\}$. So $\rank(A) = 1$. By the Dimension Theorem, we know $\nullity(A) = n-1$. That is, $A$ is not invertible, by Exercise 5.1.8(a), we know $0$ is an eigenvalue of $A$. Also notice that
-$$
-A\begin{pmatrix}
-1 \\
-1 \\
-\vdots \\
-1
-\end{pmatrix} = \begin{pmatrix}
-n \\
-n \\
-\vdots \\
-n
-\end{pmatrix} = n\begin{pmatrix}
-1 \\
-1 \\
-\vdots \\
-1
-\end{pmatrix}.
-$$
-It follows that $n$ is also an eigenvalue of $A$. If $\lambda$ has multiplicity $m_{\lambda}$, by Theorem 5.7, we have $1\leq \dim(E_{\lambda}) \leq m_{\lambda}$. Hence $m_0 \geq n-1$, $m_n \geq 1$. Moreover, the degree of characteristic polynomial is $n$, then $m_0 + m_n \leq n$. It follows that $m_0 = n-1$, $m_n = 1$. So the characteristic polynomial of $A$ is $(-1)^n t^{n-1} (t-n)$. 
-\end{proof}
+	\begin{answer}
+		$\begin{cases}
+		(-1)^n t^{n-1} (t-n) & \mbox{if }n>1 \\
+		t-1 & \mbox{if } n=1
+		\end{cases}$.
+	\end{answer}
+	\begin{proof}
+		For $n=1$, the characteristic polynomial is $t-1$ trivially.
+		
+		For $n>1$, since all columns of $A$ are the same as $\begin{pmatrix}
+		1 \\
+		1 \\
+		\vdots \\
+		1
+		\end{pmatrix}_{n\times 1}$, we know $A = \spann\left\{\begin{pmatrix}
+		1 \\
+		1 \\
+		\vdots \\
+		1
+		\end{pmatrix}_{n\times 1}\right\}$. So $\rank(A) = 1$. By the Dimension Theorem, we know $\nullity(A) = n-1$. That is, $A$ is not invertible, by Exercise 5.1.8(a), we know $0$ is an eigenvalue of $A$. Also notice that
+		$$
+		A\begin{pmatrix}
+		1 \\
+		1 \\
+		\vdots \\
+		1
+		\end{pmatrix} = \begin{pmatrix}
+		n \\
+		n \\
+		\vdots \\
+		n
+		\end{pmatrix} = n\begin{pmatrix}
+		1 \\
+		1 \\
+		\vdots \\
+		1
+		\end{pmatrix}.
+		$$
+		It follows that $n$ is also an eigenvalue of $A$. If $\lambda$ has multiplicity $m_{\lambda}$, by Theorem 5.7, we have $1\leq \dim(E_{\lambda}) \leq m_{\lambda}$. Hence $m_0 \geq n-1$, $m_n \geq 1$. Moreover, the degree of characteristic polynomial is $n$, then $m_0 + m_n \leq n$. It follows that $m_0 = n-1$, $m_n = 1$. So the characteristic polynomial of $A$ is $(-1)^n t^{n-1} (t-n)$. 
+	\end{proof}
 \end{Exercise}
