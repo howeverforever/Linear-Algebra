@@ -1,0 +1,41 @@
+% === Exercise 6.8.3 ===
+\begin{Exercise}
+	Let $H_1, H_2 : V\times V\to \mathbb{R}$ be bilinear forms and $a,c$ be scalars.
+	\begin{enumerate}[(a)]
+		\item
+		\begin{proof}
+			Check
+			\begin{align*}
+			(H_1+H_2)(ax_1+x_2,y)
+			&= H_1(ax_1+x_2,y) + H_2(ax_1+x_2,y) \\
+			&= a H_1(x_1,y) + H_1(x_2,y) + aH_2(x_1,y) + H_2(x_2,y) \\
+			&= a(H_1+H_2)(x_1,y) + (H_1+H_2)(x_2,y).
+			\end{align*}
+			A similar argument shows that 
+			$$
+			(H_1+H_2)(x,ay_1+y_2)
+			=  a(H_1+H_2)(x,y_1) + (H_1+H_2)(x,y_2).
+			$$
+		\end{proof}
+		
+		\item
+		\begin{proof}
+			Check
+			\begin{align*}
+			c H(ax_1+x_2,y)
+			&= c \big( a H(x_1,y) + H(x_2,y) \big) \\
+			&= a c H(x_1,y) + c H(x_2,y); \\
+			c H(x,ay_1+y_2)
+			&= c \big( a H(x,y_1) + H(x,y_2) \big) \\
+			&= a c H(x,y_1) + c H(x,y_2).
+			\end{align*}
+		\end{proof}
+		
+		\item
+		\begin{proof}
+			Put $H_0(x,y) = 0$.
+			Check properties from $(VS\ 1)$ to $(VS\ 8)$.
+			It is so tedious that we skip verification here.
+		\end{proof}
+	\end{enumerate}
+\end{Exercise}
